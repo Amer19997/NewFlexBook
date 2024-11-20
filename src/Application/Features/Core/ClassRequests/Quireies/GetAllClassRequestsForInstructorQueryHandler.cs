@@ -67,23 +67,54 @@ public class GetAllClassRequestsForInstructorQueryHandler : IRequestHandler<GetA
         //}
 
         // Map to ClassRequestDto
-        var classRequestDtos = await Task.WhenAll(classRequests.Select(async req =>
+        //var classRequestDtos = await Task.WhenAll(classRequests.Select(async req =>
+        //{
+        //    // Include Faculty and Department when fetching the student
+        //    string includeProperties = "Faculty,Department";
+
+        //    User student = await _unitOfWork.Users.GetByIdAsync(
+        //        c => c.Id == req.StudentId,   // Filter by StudentId
+        //        includeProperties,            // Include Faculty and Department
+        //        cancellationToken
+        //    );
+        //    // Handle null case
+        //    if (student == null)
+        //    {
+        //        // You can log the issue or handle it as per your application's needs
+        //        throw new Exception($"Student with ID {req.StudentId} not found.");
+        //    }
+        //    return new
+        //    {
+        //        RequestId = req.Id,
+        //        ClassId = req.ClassId,
+        //        StudentId = req.StudentId,
+        //        StudentFirstName = student.FirstName,
+        //        StudentLastName = student.LastName,
+        //        FacultyNameAr = student.Faculty.NameAr,
+        //        FacultyNameEn = student.Faculty.NameEn,
+        //        DepartmentNameAr = student.Department.NameAr,
+        //        DepartmentNameEn = student.Department.NameEn,
+        //        Status = req.Status
+        //    };
+        //}));
+        var classRequestDtos = new List<object>();
+
+        foreach (var req in classRequests)
         {
             // Include Faculty and Department when fetching the student
             string includeProperties = "Faculty,Department";
-
             User student = await _unitOfWork.Users.GetByIdAsync(
-                c => c.Id == req.StudentId,   // Filter by StudentId
-                includeProperties,            // Include Faculty and Department
+                c => c.Id == req.StudentId, // Filter by StudentId
+                includeProperties, // Include Faculty and Department
                 cancellationToken
             );
-            // Handle null case
+
             if (student == null)
             {
-                // You can log the issue or handle it as per your application's needs
                 throw new Exception($"Student with ID {req.StudentId} not found.");
             }
-            return new
+
+            classRequestDtos.Add(new
             {
                 RequestId = req.Id,
                 ClassId = req.ClassId,
@@ -95,10 +126,11 @@ public class GetAllClassRequestsForInstructorQueryHandler : IRequestHandler<GetA
                 DepartmentNameAr = student.Department.NameAr,
                 DepartmentNameEn = student.Department.NameEn,
                 Status = req.Status.ToString()
-            };
-        }));
+            });
+        }
+
+        return TResponse<IEnumerable<object>>.Success(classRequestDtos);
 
         // Return success response with mapped DTOs
-        return TResponse<IEnumerable<object>>.Success(classRequestDtos);
-    }
+     }
 }
