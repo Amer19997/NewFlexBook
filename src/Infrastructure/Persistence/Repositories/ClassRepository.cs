@@ -35,10 +35,13 @@ namespace FlexBook.Infrastructure.Persistence.Repositories;
     public async Task<IEnumerable<Class>> GetClassesByInstructorAsync(Guid instructorId, CancellationToken cancellationToken)
     {
         return await dbContext.Classes
-            .Where(c => c.InstructorId == instructorId)
-            .Include(c=>c.Instructor)
-            .Include(c => c.Course)
-            .ToListAsync(cancellationToken);
+        .Where(c => c.InstructorId == instructorId)
+        .Include(c => c.Instructor) // Include the Instructor entity
+            .ThenInclude(i => i.Faculty) // Include Faculty of the Instructor
+        .Include(c => c.Instructor)
+            .ThenInclude(i => i.Department) // Include Department of the Instructor
+        .Include(c => c.Course) // Include the related Course entity
+        .ToListAsync(cancellationToken);
     }
 
     // Get all classes where a specific student is enrolled

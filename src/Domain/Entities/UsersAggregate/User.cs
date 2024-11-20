@@ -153,5 +153,10 @@ namespace FlexBook.Domain.Entities.UsersAggregate
             this.SpecializationId = specializationId;
             return this;
         }
+
+        public static implicit operator User(Task<User> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

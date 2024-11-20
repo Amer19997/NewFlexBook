@@ -9,7 +9,7 @@ using FlexBook.Domain.Entities.Catalog.Dtos;
 using MediatR;
 
 namespace FlexBook.Application.Features.Core.ClassRequests.Quireies;
-public class GetAllClassRequestsForInstructorQuery : IRequest<TResponse<IEnumerable<ClassRequestDto>>>
+public class GetAllClassRequestsForInstructorQuery : IRequest<TResponse<IEnumerable<object>>>
 {
 
     public GetAllClassRequestsForInstructorQuery()
