@@ -1,0 +1,588 @@
+ using System;
+using System.Collections.Generic;
+using FlexBook.Domain.Entities.LookUps;
+
+namespace FlexBook.Domain.Entities.UsersAggregate
+{
+    public class User : AuditableDomainEntity<User, Guid>
+    {
+        // General user properties
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
+        public string MobileNumber { get; private set; }
+        public string Email { get; private set; }
+        public DateTime? LastModifiedStatus { get; set; }
+        public DateTimeOffset RegisterAt { get; private set; }
+        public UserStatus Status { get; private set; }
+        public string Password { get; private set; }
+        public bool IsSuperAdmin { get; private set; }
+        public UserTypeEnum UserType { get; private set; }
+
+        // Lookup relationships
+        public int? CountryId { get; private set; }
+        public Guid? UniversityId { get; private set; }
+        public Guid? DepartmentId { get; private set; }
+        public Guid? FacultyId { get; private set; }
+
+        public Country Country { get; private set; }
+        public University University { get; private set; }
+        public Faculty Faculty { get; private set; }
+        public Department Department { get; private set; }
+
+        // Properties specific to students
+        public string? AcademicYear { get; set; }    // Specific to Students
+        public string? StudyLevel { get; set; }      // Specific to Students
+
+        // Properties specific to instructors
+        public Guid? SpecializationId { get; set; } // Specific to Instructors
+
+        // Interests and relationships
+        public List<UserInterstes> UserInterstesList { get; set; }
+        public Guid? RoleId { get; set; }
+        public Role Role { get; set; }
+
+        // Private constructor for EF Core
+        private User() { }
+
+        // Full parameter constructor for creating new instances
+        public User(Guid id, string firstName, string lastName, string mobileNumber, string email, DateTimeOffset registerAt, UserStatus status, int countryId, Guid? universityId, Guid? facultyId, Guid? departmentId, UserTypeEnum userType, string password)
+        {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            RegisterAt = registerAt;
+            Status = status;
+            MobileNumber = mobileNumber;
+            Created = DateTime.Now;
+            CountryId = countryId;
+            UniversityId = universityId;
+            FacultyId = facultyId;
+            DepartmentId = departmentId;
+            UserType = userType;
+            Password = password;
+
+            // Initialize student or instructor specific properties
+            if (userType == UserTypeEnum.Student)
+            {
+                AcademicYear = null;
+                StudyLevel = null;
+            }
+            else if (userType == UserTypeEnum.Instructor)
+            {
+                SpecializationId = null;
+            }
+        }
+
+        // Static factory method to initialize a new user
+        public static User Init(string firstName, string lastName, string mobileNumber, string email, int countryId, Guid? universityId, Guid? facultyId, Guid? departmentId, UserTypeEnum userType, string password)
+        {
+            return new User(Guid.NewGuid(), firstName, lastName, mobileNumber, email, DateTimeOffset.Now, UserStatus.Pending, countryId, universityId, facultyId, departmentId, userType, password);
+        }
+
+        // Method to update the user's status and look-up statuses
+        public User UpdateUserStatus(UserStatus userStatus, LookUpStatus? lookUpStatus)
+        {
+            this.Status = userStatus;
+
+            if (this.University != null)
+                this.University.LookUpStatus = lookUpStatus ?? LookUpStatus.Pending;
+            if (this.Faculty != null)
+                this.Faculty.LookUpStatus = lookUpStatus ?? LookUpStatus.Pending;
+            if (this.Department != null)
+                this.Department.LookUpStatus = lookUpStatus ?? LookUpStatus.Pending;
+
+            return this;
+        }
+
+        // Method to update the last modified status timestamp
+        public User UpdateLastModifyStatus(DateTime lastModify)
+        {
+            this.LastModifiedStatus = lastModify;
+            return this;
+        }
+
+        // Method to update user's basic information
+        public User UpdateUser(string firstName, string lastName, string mobileNumber, string email, DateTime? lastModifiedStatus)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.MobileNumber = string.IsNullOrEmpty(mobileNumber) ? string.Empty : mobileNumber;
+            this.Email = email;
+            this.LastModifiedStatus = lastModifiedStatus;
+            return this;
+        }
+
+        // Method to update the user's password
+        public User UpdateUserPassword(string password, bool updateStatus)
+        {
+            this.Password = password;
+
+            if (updateStatus && this.Status != UserStatus.Active)
+                this.Status = UserStatus.Active;
+
+            return this;
+        }
+
+        // Method to update academic information (for students)
+        public User UpdateStudentAcademicInfo(string academicYear, string studyLevel)
+        {
+            if (this.UserType != UserTypeEnum.Student)
+                throw new InvalidOperationException("Only students can have academic information.");
+
+            this.AcademicYear = academicYear;
+            this.StudyLevel = studyLevel;
+            return this;
+        }
+
+        // Method to update specialization information (for instructors)
+        public User UpdateInstructorSpecialization(Guid specializationId)
+        {
+            if (this.UserType != UserTypeEnum.Instructor)
+                throw new InvalidOperationException("Only instructors can have specialization information.");
+
+            this.SpecializationId = specializationId;
+            return this;
+        }
+    }
+}using FlexBook.Domain.Entities.UsersAggregate;
+
+namespace FlexBook.Domain.Entities.LookUps;
+public class University: BaseEntity<Guid>
+{
+    public string NameAr { get; set; }
+    public string NameEn {  get; set; }
+    public LookUpStatus LookUpStatus {  get; set; }
+    public int CountryId {  get; set; }
+    public Country Country { get; set; }
+    public List<Faculty> FacultyList {  get; set; }
+    public List<User> UserList { get; set; }
+
+}using FlexBook.Domain.Entities.UsersAggregate;
+
+namespace FlexBook.Domain.Entities.LookUps;
+public class Faculty:BaseEntity<Guid>
+{
+    public string NameAr {  get; set; }
+    public string NameEn {  get; set; }
+    public LookUpStatus LookUpStatus { get; set; }
+    public Guid UniversityId {  get; set; }
+    public University University {  get; set; }
+    public List<Department> DepartmentList { get; set; }
+    public List<User> UserList { get; set; }
+}using FlexBook.Domain.Entities.UsersAggregate;
+
+namespace FlexBook.Domain.Entities.LookUps;
+public class Department: BaseEntity<Guid>
+{
+    public string NameAr { get; set; }
+    public string NameEn { get; set; }
+    public LookUpStatus LookUpStatus { get; set; }
+    public Guid? FacultyId { get; set; }
+    public Faculty Faculty { get; set; }
+    public List<User> UserList { get; set; }
+}public class Specialization
+{
+    public Guid Id { get; set; }
+    public string NameAr { get; set; }
+    public string NameEn { get; set; }  }using FlexBook.Domain.Entities.Catalog;
+using FlexBook.Domain.Entities.UsersAggregate;
+using static System.Collections.Specialized.BitVector32;
+
+namespace FlexBook.Domain.Entities.LookUps;
+public class Course:BaseEntity<Guid>
+{
+    public string NameAr {  get; set; }
+    public string NameEn {  get; set; }
+    public string DiscriptionAr {  get; set; }
+    public string DiscriptionEn {  get; set; }
+    public Guid CategoryId { get; set; }
+    public Category Category { get; set; } = default!;
+    public string CoverPhoto { get; set; } // Added CoverPhoto property
+    public ICollection<FlexBook.Domain.Entities.Catalog.Section> Sections { get; set; } = new List<FlexBook.Domain.Entities.Catalog.Section>();
+    // Add the following lines for the Topic relationship
+    public Guid TopicId { get; set; }
+    public Topic Topic { get; set; }
+    public List<UserInterstes> UserInterstesList { get; set; }
+}using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FlexBook.Domain.Entities.Catalog.Dtos;
+   public class CourseDto
+    {
+        public Guid Id { get; set; }
+        public string NameAr { get; set; } = default!;
+        public string NameEn { get; set; } = default!;
+        public string DiscriptionAr { get; set; } = default!;
+        public string DiscriptionEn { get; set; } = default!;
+        public string CoverPhoto { get; set; } = default!;
+        //public List<SectionDto> Sections { get; set; } = new List<SectionDto>();
+    } using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using FlexBook.Domain.Entities.LookUps;
+
+namespace FlexBook.Infrastructure.Persistence.Configurations;
+public class CourseConfiguration : IEntityTypeConfiguration<Course>
+{
+    public void Configure(EntityTypeBuilder<Course> builder)
+    {
+        builder.ToTable("Courses");
+
+        builder.HasKey(c => c.Id);
+        builder.Property(c => c.NameAr).IsRequired().HasMaxLength(150);
+        builder.Property(c => c.NameEn).IsRequired().HasMaxLength(150);
+        builder.Property(c => c.DiscriptionAr).HasMaxLength(500);
+        builder.Property(c => c.DiscriptionEn).HasMaxLength(500);
+
+        // Category relationship - Cascade delete is allowed here
+        builder.HasOne(c => c.Category)
+               .WithMany(c => c.Courses)
+               .HasForeignKey(c => c.CategoryId)
+               .OnDelete(DeleteBehavior.Cascade);
+
+        // Topic relationship - Use Restrict to avoid multiple cascade paths
+        builder.HasOne(c => c.Topic)
+               .WithMany(t => t.Courses)
+               .HasForeignKey(c => c.TopicId)
+               .OnDelete(DeleteBehavior.Restrict); // No cascading on delete
+
+        // Sections relationship - Cascade delete
+        builder.HasMany(c => c.Sections)
+               .WithOne(s => s.Course)
+               .HasForeignKey(s => s.CourseId)
+               .OnDelete(DeleteBehavior.Cascade);
+    }
+}using System.Reflection;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using FlexBook.Domain.Entities.UsersAggregate;
+
+namespace FlexBook.Infrastructure.Persistence.Configurations;
+public class UserConfiguration : IEntityTypeConfiguration<User>
+{
+    public void Configure(EntityTypeBuilder<User> builder)
+    {
+        builder.ToTable("Users");
+
+        builder.HasKey(c => c.Id);
+
+        builder.HasIndex(c => c.Email)
+            .IsUnique(true);
+
+        builder.Property(_ => _.FirstName)
+           .IsRequired()
+           .HasMaxLength(100);
+
+        builder.Property(_ => _.LastName)
+          .IsRequired()
+          .HasMaxLength(100);
+
+        builder.Property(_ => _.Email)
+           .IsRequired()
+           .HasMaxLength(100);
+
+        builder.Property(_ => _.Password)
+           .IsRequired(false)
+        .HasMaxLength(200);
+
+
+        builder.HasOne(m=>m.Country)
+               .WithMany(m=>m.UserList)
+               .HasForeignKey(x => x.CountryId);
+
+        builder.HasOne(m => m.University)
+               .WithMany(m => m.UserList)
+               .HasForeignKey(x => x.UniversityId);
+
+        builder.HasOne(m => m.Faculty)
+               .WithMany(m => m.UserList)
+               .HasForeignKey(x => x.FacultyId);
+
+        builder.HasOne(m => m.Department)
+               .WithMany(m => m.UserList)
+               .HasForeignKey(x => x.DepartmentId);
+
+        builder.Property(n => n.MobileNumber)
+        .HasColumnName("MobileNumber")
+        .IsRequired()
+        .HasMaxLength(50);
+
+        builder.Property(n => n.IsSuperAdmin)
+            .HasDefaultValue(false);
+    }
+}using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using FlexBook.Domain.Entities.LookUps;
+
+namespace FlexBook.Infrastructure.Persistence.Configurations;
+public class DepartmentConfiguration : IEntityTypeConfiguration<Department>
+{
+    public void Configure(EntityTypeBuilder<Department> builder)
+    {
+        builder.HasKey(c => c.Id);
+        builder.HasOne(m => m.Faculty)
+               .WithMany(m => m.DepartmentList)
+               .HasForeignKey(m => m.FacultyId);
+    }
+}using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using FlexBook.Domain.Entities.LookUps;
+
+namespace FlexBook.Infrastructure.Persistence.Configurations
+{
+    public class FacultyConfiguration : IEntityTypeConfiguration<Faculty>
+    {
+        public void Configure(EntityTypeBuilder<Faculty> builder)
+        {
+            builder.ToTable("Faculty");
+            builder.HasKey(c => c.Id);
+
+            builder.HasOne(m => m.University)
+                   .WithMany(m => m.FacultyList)
+                   .HasForeignKey(m => m.UniversityId);
+        }
+    }
+}using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using FlexBook.Domain.Entities.LookUps;
+
+namespace FlexBook.Infrastructure.Persistence.Configurations;
+public class UniversityConfiguration : IEntityTypeConfiguration<University>
+{
+    public void Configure(EntityTypeBuilder<University> builder)
+    {
+        builder.HasKey(c => c.Id);
+        builder.HasOne(m => m.Country)
+               .WithMany(m => m.UniversityList)
+               .HasForeignKey(m=>m.CountryId);
+    }
+}using FlexBook.Application.Common.Models;
+using FlexBook.Application.Features.LookUps.Courses.Queries.GetCourseById;
+using FlexBook.Application.Features.LookUps.Courses.Queries.GetCourses;
+using FlexBook.Application.Features.LookUps.Courses.Queries.GetCoursesBasicListQuery;
+using FlexBook.Application.Features.LookUps.Topics.Queries.GetTopicsList;
+using FlexBook.Domain.Entities.Catalog.Dtos;
+using FlexBook.WebAPI.Controllers;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+
+namespace WebAPI.Controllers.Catalog;
+[Route("api/[controller]")]
+[ApiController]
+public class CatalogController : ApiControllerBase
+{
+    //[HttpGet("UserInterests")]
+    //public async Task<ActionResult<TResponse<GetCoursesBasicListResult>>> GetBasicCourseList()
+    //{
+    //    return Ok(await Mediator.Send(new GetCoursesBasicListQuery()));
+    //}
+    [HttpGet("GetTopics")]
+    public async Task<ActionResult<TResponse<GetTopicsResult>>> GetTopicsWithCourses()
+    {
+        var result = await Mediator.Send(new GetTopicsWithCoursesQuery());
+        return Ok(result);
+    }
+    // Get courses with optional filters for Topic, Category, and Keyword (with pagination, sorting, and includes)
+    [HttpGet("GetCourses")]
+  /*  [Authorize(Policy = "createbooks")] */ // Protect this endpoint with the "ViewCourses" policy
+
+    public async Task<IActionResult> GetCourses(
+        [FromQuery] Guid? topicId,
+        [FromQuery] Guid? categoryId,
+        [FromQuery] string keyword = "",
+        [FromQuery] int pageNumber = 1,
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string sortBy = "NameEn",
+        [FromQuery] string sortDirection = "asc"
+        /*[FromQuery] string includeProperties = ""*/)
+    {
+        var query = new GetCoursesQuery(topicId, categoryId, keyword, pageNumber, pageSize, sortBy, sortDirection);
+        var result = await Mediator.Send(query);
+        return Ok(result);
+       
+    }
+
+    //// Endpoint to get a course by its ID
+    //[HttpGet("courses/{courseId}")]
+    //public async Task<IActionResult> GetCourseById(Guid courseId)
+    //{
+    //    var query = new GetCourseByIdQuery(courseId);
+    //    var result = await Mediator.Send(query);
+    //    if (result == null)
+    //    {
+    //        return NotFound();  // Return 404 if course is not found
+    //    }
+    //    return Ok(result);
+    //}
+    [HttpGet("{courseId}")]
+    [ProducesResponseType(typeof(TResponse<CourseDetailDTO>), StatusCodes.Status200OK)]  // Success response
+    [ProducesResponseType(typeof(TResponse<CourseDetailDTO>), StatusCodes.Status404NotFound)]  // Not found response
+    public async Task<IActionResult> GetCourseById(Guid courseId)
+    {
+        var query = new GetCourseByIdQuery(courseId);
+
+        // Send the query using Mediator
+        var result = await Mediator.Send(query);
+
+        // Check the result using the 'Success' property (without parentheses)
+        if (!result.success)
+        {
+            // Return the error response with its status code
+            return StatusCode(result.StatusCode, result);
+        }
+
+        // Return success response
+        return Ok(result);
+    }
+
+
+
+}using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using FlexBook.Application.Common.Models;
+using FlexBook.Domain.Entities.Catalog.Dtos;
+using MediatR;
+using X.PagedList;
+
+namespace FlexBook.Application.Features.LookUps.Courses.Queries.GetCourses;
+// Application/Queries/GetCoursesQuery.cs
+public record GetCoursesQuery(
+    Guid? TopicId,
+    Guid? CategoryId,
+    string Keyword = "",
+    int PageNumber = 1,
+    int PageSize = 10,
+    string SortBy = "NameEn",
+    string SortDirection = "asc"
+   // string IncludeProperties = ""  // Added Include Properties
+) : IRequest<TResponse<GetCoursesResult>>;using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using AutoMapper;
+using FlexBook.Domain.Entities.Catalog.Dtos;
+using FlexBook.Domain;
+using MediatR;
+using X.PagedList;
+using FlexBook.Application.Common.Models;
+using FlexBook.Application.Features.LookUps.Topics.Queries.GetTopicsList;
+
+namespace FlexBook.Application.Features.LookUps.Courses.Queries.GetCourses;
+public class GetCoursesQueryHandler : IRequestHandler<GetCoursesQuery, TResponse<GetCoursesResult>>
+{
+    private readonly IUnitOfWork _unitOfWork;
+    private readonly IMapper _mapper;
+
+    public GetCoursesQueryHandler(IUnitOfWork unitOfWork, IMapper mapper)
+    {
+        _unitOfWork = unitOfWork;
+        _mapper = mapper;
+    }
+ 
+    public async Task<TResponse<GetCoursesResult>> Handle(GetCoursesQuery request, CancellationToken cancellationToken)
+    {
+        // Call the repository method with sorting, pagination, and include properties
+        var pagedCourses = await _unitOfWork.CouresRepository.GetPaginatedCoursesWithFilterAsync(
+            request.TopicId,
+            request.CategoryId,
+            request.Keyword,
+            request.PageNumber,
+            request.PageSize,
+            request.SortBy,
+            request.SortDirection,
+            //  request.IncludeProperties,  // Include Properties
+            cancellationToken
+        );
+        var total = await _unitOfWork.CouresRepository.CountCoursesAsync(request.TopicId,
+            request.CategoryId,
+            request.Keyword,
+          
+            //  request.IncludeProperties,  // Include Properties
+            cancellationToken);
+
+        // Map the result to CourseDto (paged)
+        var coursesresult = _mapper.Map<IPagedList<CourseDto>>(pagedCourses);
+        return TResponse<GetCoursesResult>.Success(new GetCoursesResult
+        {
+            Courseslist = coursesresult.ToList(),
+            TotalCount = total
+            
+        });
+    }
+    public async Task<TResponse<GetTopicsResult>> Handle(GetTopicsWithCoursesQuery request, CancellationToken cancellationToken)
+    {
+        // Assuming no filtering is required, but you can adjust based on the request properties
+        var topics = await _unitOfWork.TopicRepository.FindAsync(
+            filter: null,  // You can replace `null` with an actual filter if needed
+            includeProperties: "Categories,Categories.Courses"  // Correctly handle multiple includes
+        );
+
+        // Map the result to DTOs
+        var topicsresult = _mapper.Map<List<TopicDto>>(topics);
+        return TResponse<GetTopicsResult>.Success(new GetTopicsResult
+        {
+            TopicsList = topicsresult
+        });
+    }
+} using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using FlexBook.Domain.Entities.Catalog.Dtos;
+
+namespace FlexBook.Application.Features.LookUps.Courses.Queries.GetCourses;
+
+public class GetCoursesResult
+{
+    public List<CourseDto> Courseslist { get; set; }
+    public int TotalCount { get; set; }
+    public int pageNumber { get; set; }
+    public int pageSize { get; set; }
+}
+
+
+
+
+
+customise the code i provided to fit the following requirements:
+-instructor belong to 1 university,and 1 faculty and 1 department and 1 specialization.
+-course can be in more than 1 university and more than 1 faculty and more than 1 deparmtent and more than 1 specialization.
+-university can have more than one faculty.
+-faculty can have more than one department.
+-department can have more than one specialization.
+-specialiaztion can have more than one book.
+-user may be instructor,student,DashboardUser 
+public enum UserTypeEnum
+{
+    [Display(Name = "Student")]
+    Student = 1,
+
+    [Display(Name = "Instructor")]
+    Instructor = 2,
+
+    [Display(Name = "Dashboard User")]
+    DashboardUser = 3
+}
+
+
+*Each instructor can have more than one course these courses will be the courses that are in the same universtiy and same department of the insctructor.
+*The instructor only can be made from the dashboard and when he made from the dashboard his university and his faculty and his department and his specializtion 
+must be chosen.
+*Each instructor can have more than one course these courses will be the courses that are in the same universtiy and same faculty and same department and same specialiaztion of the insctructor.
+
+
+
+
+-what will be the course code?
+-specialization not in sign up only in dashbard
+
+

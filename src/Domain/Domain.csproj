@@ -1,0 +1,166 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>FlexBook.Domain</RootNamespace>
+        <AssemblyName>FlexBook.Domain</AssemblyName>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Common\wwwroot\interactive\27ce840b-8a2a-434b-8e87-2f5234739c5f\**" />
+      <Compile Remove="Common\wwwroot\interactive\34cdc23a-860b-4a35-944c-34a7de71c6af\**" />
+      <Compile Remove="Common\wwwroot\interactive\35bc6227-04e1-4103-a503-8845e2828c16\**" />
+      <Compile Remove="Common\wwwroot\interactive\46ede254-c074-40eb-9942-f89c18a53e23\**" />
+      <Compile Remove="Common\wwwroot\interactive\501c22d9-9d0c-420f-855c-49221f3db1f9\**" />
+      <Compile Remove="Common\wwwroot\interactive\56499e09-fab0-45f2-ac7c-ebb9c33782f0\**" />
+      <Compile Remove="Common\wwwroot\interactive\5b75d7a4-d1da-48a9-8ff5-fb5275a19b58\**" />
+      <Compile Remove="Common\wwwroot\interactive\7aceea74-19b1-4345-81c2-66d8dd4d9dba\**" />
+      <Compile Remove="Common\wwwroot\interactive\909badb3-3a87-4256-aa48-0f66a693854e\**" />
+      <Compile Remove="Common\wwwroot\interactive\a2c1202f-4295-4583-b25f-0d9a377687b9\**" />
+      <Compile Remove="Common\wwwroot\interactive\bbae70e9-add6-4754-b383-47b9c5bff7bc\**" />
+      <Compile Remove="Common\wwwroot\interactive\c28d1443-dc0f-4ecb-b833-468c1f81dfaf\**" />
+      <Compile Remove="Common\wwwroot\interactive\dcc3b30b-7809-4b80-a3eb-6c2e31f2d524\**" />
+      <Compile Remove="Common\wwwroot\interactive\fba576a2-ce44-4950-b53b-14b191baa1ae\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\27ce840b-8a2a-434b-8e87-2f5234739c5f\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\34cdc23a-860b-4a35-944c-34a7de71c6af\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\35bc6227-04e1-4103-a503-8845e2828c16\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\46ede254-c074-40eb-9942-f89c18a53e23\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\501c22d9-9d0c-420f-855c-49221f3db1f9\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\56499e09-fab0-45f2-ac7c-ebb9c33782f0\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\5b75d7a4-d1da-48a9-8ff5-fb5275a19b58\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\7aceea74-19b1-4345-81c2-66d8dd4d9dba\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\909badb3-3a87-4256-aa48-0f66a693854e\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\a2c1202f-4295-4583-b25f-0d9a377687b9\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\bbae70e9-add6-4754-b383-47b9c5bff7bc\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\c28d1443-dc0f-4ecb-b833-468c1f81dfaf\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\dcc3b30b-7809-4b80-a3eb-6c2e31f2d524\**" />
+      <EmbeddedResource Remove="Common\wwwroot\interactive\fba576a2-ce44-4950-b53b-14b191baa1ae\**" />
+      <None Remove="Common\wwwroot\interactive\27ce840b-8a2a-434b-8e87-2f5234739c5f\**" />
+      <None Remove="Common\wwwroot\interactive\34cdc23a-860b-4a35-944c-34a7de71c6af\**" />
+      <None Remove="Common\wwwroot\interactive\35bc6227-04e1-4103-a503-8845e2828c16\**" />
+      <None Remove="Common\wwwroot\interactive\46ede254-c074-40eb-9942-f89c18a53e23\**" />
+      <None Remove="Common\wwwroot\interactive\501c22d9-9d0c-420f-855c-49221f3db1f9\**" />
+      <None Remove="Common\wwwroot\interactive\56499e09-fab0-45f2-ac7c-ebb9c33782f0\**" />
+      <None Remove="Common\wwwroot\interactive\5b75d7a4-d1da-48a9-8ff5-fb5275a19b58\**" />
+      <None Remove="Common\wwwroot\interactive\7aceea74-19b1-4345-81c2-66d8dd4d9dba\**" />
+      <None Remove="Common\wwwroot\interactive\909badb3-3a87-4256-aa48-0f66a693854e\**" />
+      <None Remove="Common\wwwroot\interactive\a2c1202f-4295-4583-b25f-0d9a377687b9\**" />
+      <None Remove="Common\wwwroot\interactive\bbae70e9-add6-4754-b383-47b9c5bff7bc\**" />
+      <None Remove="Common\wwwroot\interactive\c28d1443-dc0f-4ecb-b833-468c1f81dfaf\**" />
+      <None Remove="Common\wwwroot\interactive\dcc3b30b-7809-4b80-a3eb-6c2e31f2d524\**" />
+      <None Remove="Common\wwwroot\interactive\fba576a2-ce44-4950-b53b-14b191baa1ae\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Entities\LookUps\CMSSections.cs" />
+      <Compile Remove="Entities\LookUps\Permission.cs" />
+      <Compile Remove="Entities\UsersAggregate\Role.cs" />
+      <Compile Remove="Entities\UsersAggregate\RolePermission.cs" />
+      <Compile Remove="Entities\UsersAggregate\UserRole.cs" />
+      <Compile Remove="Enums\CMSActionTypes.cs" />
+      <Compile Remove="Repositories\ICMSSectionRepository.cs" />
+      <Compile Remove="Repositories\IPermissionReposiroty.cs" />
+      <Compile Remove="Repositories\IRolePermissionRepository.cs" />
+      <Compile Remove="Repositories\IRoleRepository.cs" />
+      <Compile Remove="Repositories\ITestRepository.cs" />
+      <Compile Remove="Repositories\IUserRoleRepository.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Common\wwwroot\Association\029152ad-e6c9-41f9-b7a1-586435e25ce4.pdf" />
+      <None Remove="Common\wwwroot\images\course6.jpg" />
+      <None Remove="Common\wwwroot\interactive\1d0adb44-4933-49d9-bd1f-e3b11cb9237d.zip" />
+      <None Remove="Common\wwwroot\interactive\1e992c00-2833-4b21-af44-c3acc54b1847.zip" />
+      <None Remove="Common\wwwroot\interactive\34758dd1-104c-4498-9104-ea4b2bdf2822.zip" />
+      <None Remove="Common\wwwroot\interactive\4b2d4eb6-a89c-4d94-b889-628d7d327795.zip" />
+      <None Remove="Common\wwwroot\interactive\4ed2be9d-b55a-4dab-b192-c45f42a7cd88.zip" />
+      <None Remove="Common\wwwroot\interactive\59ed5065-8b32-47f5-8bb9-4742e45935e1.zip" />
+      <None Remove="Common\wwwroot\interactive\701b5840-503a-41d3-a57e-b4cec3e5104e.zip" />
+      <None Remove="Common\wwwroot\interactive\87a076ba-92a6-4fa9-aa18-a67d2d07ff23.zip" />
+      <None Remove="Common\wwwroot\interactive\91f68490-0b3c-4c41-bc63-652affef2f88.zip" />
+      <None Remove="Common\wwwroot\interactive\9323709a-b697-461b-9819-0cd38fdc216c.zip" />
+      <None Remove="Common\wwwroot\interactive\a80e0fa9-8045-4034-b2ee-c41683b71dfe.zip" />
+      <None Remove="Common\wwwroot\interactive\bf1243a4-daed-4cd3-b2d8-b1a3d28453aa.zip" />
+      <None Remove="Common\wwwroot\interactive\bfe2d329-c005-4554-803d-12332799aaa5.zip" />
+      <None Remove="Common\wwwroot\interactive\eeee556e-e786-464e-ae57-636b3b321ce1.zip" />
+      <None Remove="Common\wwwroot\TemplateEmail\email.png" />
+      <None Remove="Common\wwwroot\TemplateEmail\Facebook.svg" />
+      <None Remove="Common\wwwroot\TemplateEmail\Google Plus.svg" />
+      <None Remove="Common\wwwroot\TemplateEmail\Instagram.svg" />
+      <None Remove="Common\wwwroot\TemplateEmail\Linkedin.svg" />
+      <None Remove="Common\wwwroot\TemplateEmail\Shape_foolish_Azaam.svg" />
+      <None Remove="Common\wwwroot\TemplateEmail\Snapchat.svg" />
+      <None Remove="Common\wwwroot\TemplateEmail\Twitter.svg" />
+      <None Remove="Common\wwwroot\TemplateEmail\waqfiLogo.png" />
+      <None Remove="Common\wwwroot\TemplateEmail\Youtube.svg" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Common\wwwroot\Association\029152ad-e6c9-41f9-b7a1-586435e25ce4.pdf">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\images\course6.jpg">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\TemplateEmail\email.png">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\TemplateEmail\Facebook.svg">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\TemplateEmail\Google Plus.svg">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\TemplateEmail\Instagram.svg">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\TemplateEmail\Linkedin.svg">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\TemplateEmail\Shape_foolish_Azaam.svg">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\TemplateEmail\Snapchat.svg">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\TemplateEmail\Twitter.svg">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\TemplateEmail\waqfiLogo.png">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Common\wwwroot\TemplateEmail\Youtube.svg">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="9.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+      <PackageReference Include="X.PagedList" Version="8.4.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Common\wwwroot\interactive\" />
+      <Folder Include="Common\wwwroot\videos\" />
+      <Folder Include="Entities\Catalog\Dtos\Create\" />
+      <Folder Include="Entities\Catalog\Dtos\Delete\" />
+      <Folder Include="Entities\Catalog\Dtos\Get\Student\" />
+      <Folder Include="Entities\Catalog\Dtos\Update\" />
+    </ItemGroup>
+
+</Project>

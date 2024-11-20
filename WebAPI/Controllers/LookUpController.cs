@@ -1,0 +1,75 @@
+﻿using FlexBook.Application.Common.Models;
+using FlexBook.Application.Features.LookUps.Categories.Queries;
+using FlexBook.Application.Features.LookUps.Country.Queries.GetCountryList;
+using FlexBook.Application.Features.LookUps.Courses.Queries.GetCourses;
+using FlexBook.Application.Features.LookUps.Courses.Queries.GetCoursesBasicListQuery;
+using FlexBook.Application.Features.LookUps.Courses.Queries.GetCoursesList;
+using FlexBook.Application.Features.LookUps.Department.Queries.GetDepartmentList;
+using FlexBook.Application.Features.LookUps.Faculty.Queries.GetFacultyList;
+using FlexBook.Application.Features.LookUps.Specialization.Queries.GetSpecializationsList;
+using FlexBook.Application.Features.LookUps.Topics.Queries.GetTopicsList;
+using FlexBook.Application.Features.LookUps.Univesity.Queries.GetUnivesityList;
+using FlexBook.WebAPI.Controllers;
+using Microsoft.AspNetCore.Mvc;
+
+namespace WebAPI.Controllers;
+
+[Route("api/v1/[controller]")]
+[ApiController]
+public class LookUpController : ApiControllerBase
+{
+    [HttpGet("GetCountryList")]
+    public async Task<ActionResult<TResponse<GetCountryListResult>>> GetCountryList()
+        => Ok(await Mediator.Send(new GetCountryListQuery()));
+
+    //====================================================================================================================================
+
+    [HttpGet("GetUnivesityList")]
+    public async Task<ActionResult<TResponse<GetUnivesityListResult>>> GetUnivesityList()
+      => Ok(await Mediator.Send(new GetUnivesityListQuery()));
+
+    //=====================================================================================================================================    //====================================================================================================================================
+    [HttpGet("GetFacultyList")]
+    public async Task<ActionResult<TResponse<GetFacultyListResult>>> GetFacultyList(Guid univesityId)
+  => Ok(await Mediator.Send(new GetFacultyListQuery(univesityId)));
+    //=====================================================================================================================================    //====================================================================================================================================
+    
+    [HttpGet("GetCouresList")]
+    public async Task<ActionResult<TResponse<GetCoursesListResult>>> GetCouresList(int pageNumber = 1, int pageSize = 10)
+  => Ok(await Mediator.Send(new GetCoursesListQuery(pageNumber, pageSize)));
+
+    //=====================================================================================================================================    //====================================================================================================================================
+
+    [HttpGet("GetDepartmentList")]
+    public async Task<ActionResult<TResponse<GetDepartmentListResult>>> GetDepartmentList(Guid facultyId)
+      => Ok(await Mediator.Send(new GetDepartmentListQuery(facultyId)));
+
+    //========================================================================
+    [HttpGet("GetAllSpecializations")]
+
+    [HttpGet]
+    public async Task<ActionResult<TResponse<GetSpecializationResult>>> GetAllSpecializations([FromQuery] Guid? departmentId)
+    {
+      
+
+        var result = await Mediator.Send(new GetSpecializationQuery(departmentId));
+
+        return Ok(result);
+    }
+    ////[HttpGet("UserInterests")]
+    ////public async Task<ActionResult<TResponse<GetCoursesBasicListResult>>> GetBasicCourseList()
+    ////{
+    ////    return Ok(await Mediator.Send(new GetCoursesBasicListQuery()));
+    ////}
+    ///
+
+    [HttpGet("UserInterests")]
+    public async Task<ActionResult<TResponse<GetCategoriestResult>>> GetBasicCourseList()
+    {
+        return Ok(await Mediator.Send(new GetCategoriesListQuery()));
+    }
+    
+
+
+}
+
