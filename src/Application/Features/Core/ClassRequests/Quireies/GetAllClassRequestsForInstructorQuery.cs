@@ -11,8 +11,7 @@ using MediatR;
 namespace FlexBook.Application.Features.Core.ClassRequests.Quireies;
 public class GetAllClassRequestsForInstructorQuery : IRequest<TResponse<IEnumerable<object>>>
 {
-
-    public GetAllClassRequestsForInstructorQuery()
-    {
-    }
+    public int ?Status { get; set; } = null;// The status filter for class requests
+    public int PageNumber { get; set; } = 1; // Default page number
+    public int PageSize { get; set; } = 10; // Default page size
 }

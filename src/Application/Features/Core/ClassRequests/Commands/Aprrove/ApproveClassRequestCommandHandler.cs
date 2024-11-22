@@ -79,50 +79,82 @@ public class ApproveClassRequestCommandHandler : IRequestHandler<ApproveClassReq
                 "The instructor does not have permission to approve this class request",
                 403);
         }
+        if (request.IsApprove)
+        {
+            // Approve the request
+            var accessCode = new Domain.Entities.AccessCode
+            {
+                ClassId = classRequest.ClassId,
+                StudentId = classRequest.StudentId,
+                Code = Guid.NewGuid().ToString("N").Substring(0, 8),
+                ExpiryDate = DateTime.UtcNow.AddHours(24),
+                IsUsed = false
+            };
 
-        // Generate an access code for the approved request
-        var accessCode = new Domain.Entities.AccessCode
-        {
-            ClassId = classRequest.ClassId,
-            StudentId = classRequest.StudentId,
-            Code = Guid.NewGuid().ToString("N").Substring(0, 8),
-            ExpiryDate = DateTime.UtcNow.AddHours(24),
-            IsUsed=false
-            
-        };
-        // Retrieve the student to send the email notification
-        var student = await _unitOfWork.Users.FindById(classRequest.StudentId, cancellationToken);
-        if (student == null || string.IsNullOrEmpty(student.Email))
-        {
-            return TResponse<bool>.Failure(
-                new[] { "Student email not found" },
-                "The student associated with this request does not have a valid email address",
-                400);
+            var student = await _unitOfWork.Users.FindById(classRequest.StudentId, cancellationToken);
+            if (student == null || string.IsNullOrEmpty(student.Email))
+            {
+                return TResponse<bool>.Failure(
+                    new[] { "Student email not found" },
+                    "The student associated with this request does not have a valid email address",
+                    400);
+            }
+
+            var emailMessage = new EmailMessage(
+                student.Email,
+                "Class Request Approved",
+                $"Your class request has been approved. Access code: {accessCode.Code}");
+
+            try
+            {
+                _notificationService.Push(new[] { emailMessage });
+            }
+            catch (Exception ex)
+            {
+                return TResponse<bool>.Failure(
+                    new[] { "Failed to send email" },
+                    $"An error occurred while sending the email: {ex.Message}",
+                    500);
+            }
+
+            classRequest.Status = RequestStatus.Approved;
+            await _unitOfWork.AccessCodeRepository.Add(accessCode, cancellationToken);
         }
-
-        // Step 5: Prepare and send the email notification
-        var emailMessage = new EmailMessage(
-            student.Email,
-            "Class Request",
-            $"Class request approved successfully." +
-            $"Please use this access code to join: {accessCode.Code}");
-        //'{classRequest.Class.ClassName}'
-        try
+        else
         {
-            _notificationService.Push(new[] { emailMessage });
-        }
-        catch (Exception ex)
-        {
-            return TResponse<bool>.Failure(
-                new[] { "Failed to send email access code" },
-                $"An error occurred while sending the access code: {ex.Message}",
-                500);
-        }
+            // Reject the request
+            //if (string.IsNullOrEmpty(request.RejectionReason))
+            //{
+            //    return TResponse<bool>.Failure(
+            //        new[] { "Rejection reason required" },
+            //        "A reason must be provided when rejecting a request",
+            //        400);
+            //}
 
+            var student = await _unitOfWork.Users.FindById(classRequest.StudentId, cancellationToken);
+            //if (student != null && !string.IsNullOrEmpty(student.Email))
+            //{
+            //    var rejectionEmail = new EmailMessage(
+            //        student.Email,
+            //        "Class Request Rejected",
+            //        $"Your class request has been rejected. Reason: {request.RejectionReason}");
 
-        // Approve the request and save the access code
-        classRequest.Status = RequestStatus.Approved;
-        await _unitOfWork.AccessCodeRepository.Add(accessCode, cancellationToken);
+            //    try
+            //    {
+            //        _notificationService.Push(new[] { rejectionEmail });
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        return TResponse<bool>.Failure(
+            //            new[] { "Failed to send rejection email" },
+            //            $"An error occurred while sending the rejection email: {ex.Message}",
+            //            500);
+            //    }
+            //}
+
+            classRequest.Status = RequestStatus.Denied;
+            //classRequest.RejectionReason = request.RejectionReason; // Assuming a RejectionReason property exists
+        }
         _unitOfWork.ClassRequestRepository.Update(classRequest);
         await _unitOfWork.CommitAsync(cancellationToken);
 
@@ -130,7 +162,8 @@ public class ApproveClassRequestCommandHandler : IRequestHandler<ApproveClassReq
         //await _emailService.SendEmailAsync(classRequest.Student.Email, "Your Access Code", $"Your access code is: {accessCode.Code}");
 
         // Return success response
-        return TResponse<bool>.Success(true, "Class request approved successfully");
-    }
+        var message = request.IsApprove ? "Class request approved successfully" : "Class request rejected successfully";
+        return TResponse<bool>.Success(true, message);
+     }
 }
 

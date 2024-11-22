@@ -51,7 +51,6 @@ public class GetAllClassRequestsForInstructorQueryHandler : IRequestHandler<GetA
                 404);
         }
 
-        // Retrieve class requests for the instructor
         var classRequests = await _classRequestRepository.GetAllClassRequestsForInstructorAsync(InstructorId, cancellationToken);
         if (classRequests == null)
         {
@@ -60,45 +59,25 @@ public class GetAllClassRequestsForInstructorQueryHandler : IRequestHandler<GetA
                 "No Requests found",
                 404);
         }
-        //foreach (var classRequest in classRequests) 
-        //{
-        //    var student = await _unitOfWork.Users.FindById(classRequest.StudentId,cancellationToken);
+        //var paginatedClassRequests = await _unitOfWork.ClassRequestRepository.GetPaginatedWithFilterAsync(
+        //         filter: b => (int)b.Status == request.Status,
+        //         orderBy: null,
+        //         pageNumber: request.PageNumber,
+        //         pageSize: request.PageSize,
+        //         cancellationToken: cancellationToken
+        //     );
+        // Combine instructor ID and status in the filter
+        // Apply filtering by keyword if provided
+        if (request.Status != null)
+        {
+            classRequests = classRequests.Where(c =>(int)c.Status == request.Status);
+        }
+        classRequests = classRequests.Skip((request.PageNumber - 1) * request.PageSize).Take(request.PageSize);
 
-        //}
-
-        // Map to ClassRequestDto
-        //var classRequestDtos = await Task.WhenAll(classRequests.Select(async req =>
-        //{
-        //    // Include Faculty and Department when fetching the student
-        //    string includeProperties = "Faculty,Department";
-
-        //    User student = await _unitOfWork.Users.GetByIdAsync(
-        //        c => c.Id == req.StudentId,   // Filter by StudentId
-        //        includeProperties,            // Include Faculty and Department
-        //        cancellationToken
-        //    );
-        //    // Handle null case
-        //    if (student == null)
-        //    {
-        //        // You can log the issue or handle it as per your application's needs
-        //        throw new Exception($"Student with ID {req.StudentId} not found.");
-        //    }
-        //    return new
-        //    {
-        //        RequestId = req.Id,
-        //        ClassId = req.ClassId,
-        //        StudentId = req.StudentId,
-        //        StudentFirstName = student.FirstName,
-        //        StudentLastName = student.LastName,
-        //        FacultyNameAr = student.Faculty.NameAr,
-        //        FacultyNameEn = student.Faculty.NameEn,
-        //        DepartmentNameAr = student.Department.NameAr,
-        //        DepartmentNameEn = student.Department.NameEn,
-        //        Status = req.Status
-        //    };
-        //}));
         var classRequestDtos = new List<object>();
 
+        // Repository method usage
+     
         foreach (var req in classRequests)
         {
             // Include Faculty and Department when fetching the student

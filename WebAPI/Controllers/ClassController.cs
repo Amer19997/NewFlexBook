@@ -69,10 +69,10 @@ public class ClassController : ApiControllerBase
         return Ok(result);
     }
     [HttpGet("GetAllClassRequestsForInstructor")]
-    public async Task<IActionResult> GetAllClassRequestsForInstructor()
+    public async Task<IActionResult> GetAllClassRequestsForInstructor([FromQuery]GetAllClassRequestsForInstructorQuery query)
     {
         // Construct the query with the provided instructor ID
-        var query = new GetAllClassRequestsForInstructorQuery();
+        //var query = new GetAllClassRequestsForInstructorQuery();
 
         // Send the query to the mediator
         var result = await Mediator.Send(query);
@@ -94,10 +94,10 @@ public class ClassController : ApiControllerBase
     }
 
     [HttpPost("ApproveClassRequest")]
-    public async Task<IActionResult> ApproveClassRequest([FromQuery] Guid requestId)
+    public async Task<IActionResult> ApproveClassRequest([FromQuery] Guid requestId, bool IsApprove)
     {
         // Construct the command using the request ID
-        var command = new ApproveClassRequestCommand(requestId);
+        var command = new ApproveClassRequestCommand(requestId, IsApprove);
 
         // Send the command to the mediator
         var result = await Mediator.Send(command);
