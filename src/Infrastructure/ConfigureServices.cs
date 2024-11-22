@@ -67,6 +67,8 @@ public static class ConfigureServices
         services.AddScoped<IAuthorizingTeamMemberRepository, AuthorizingTeamMemberRepository>();
         services.AddScoped<IResearchRepository, ResearchRepository>();
         services.AddScoped<IAcademicIntegrityrRepository, AcademicIntegrityrRepository>();
+        services.AddScoped<IStudentsGettingStartedArticleRepository, StudentsGettingStartedArticleRepository>();
+        services.AddScoped<IInstructorSuccessStoryRepository, InstructorSuccessStoryRepository>();
 
         services.AddScoped<ILessonRepository, LessonRepository>();
         services.AddScoped<IQuizRepository, QuizRepository>();

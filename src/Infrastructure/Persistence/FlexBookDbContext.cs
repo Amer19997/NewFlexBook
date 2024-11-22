@@ -66,6 +66,8 @@ public class FlexBookDbContext : DbContext
     public DbSet<StudentSuccessStory> StudentSuccessStories { get; set; } = default!;
     public DbSet<ResearchEntry> ResearchEntries { get; set; } = default!;
     public DbSet<AcademicIntegrity> AcademicIntegrities { get; set; } = default!;
+    public DbSet<InstructorSuccessStory> InstructorSuccessStories { get; set; } = default!;
+    public DbSet<StudentsGettingStartedArticle> StudentsGettingStartedArticles { get; set; } = default!;
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -110,7 +112,7 @@ public class FlexBookDbContext : DbContext
         base.OnModelCreating(builder);
 
         // Seed data
-        DataSeeder.Seed(builder, _configuration);
+        //DataSeeder.Seed(builder, _configuration);
     }
 
 

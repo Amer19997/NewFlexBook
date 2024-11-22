@@ -38,8 +38,8 @@ namespace FlexBook.Infrastructure.Persistence
         public IAuthorizingTeamMemberRepository AuthorizingTeamMemberRepository { get; }
         public IResearchRepository ResearchRepository { get; }
         public IAcademicIntegrityrRepository AcademicIntegrityrRepository { get; }
-
-
+        public IInstructorSuccessStoryRepository InstructorSuccessStoryRepository { get; set; }
+        public IStudentsGettingStartedArticleRepository StudentsGettingStartedArticleRepository { get; set; }
         public RoleRepositoryInterface RoleRepository { get; set; }  // This fixes the missing property
 
  
@@ -77,10 +77,10 @@ namespace FlexBook.Infrastructure.Persistence
             ,
                         IResearchRepository researchRepository,
 
-                        IAcademicIntegrityrRepository academicIntegrityrRepository
+                        IAcademicIntegrityrRepository academicIntegrityrRepository,
 
-
-
+            IInstructorSuccessStoryRepository instructorSuccessStoryRepository,
+            IStudentsGettingStartedArticleRepository studentsGettingStartedArticleRepository
 
 
 
@@ -135,9 +135,12 @@ namespace FlexBook.Infrastructure.Persistence
             AuthorizingTeamMemberRepository = authorizingTeamMemberRepository;
             ResearchRepository = researchRepository;
             AcademicIntegrityrRepository= academicIntegrityrRepository;
-        }
+            InstructorSuccessStoryRepository = instructorSuccessStoryRepository;
+            StudentsGettingStartedArticleRepository = studentsGettingStartedArticleRepository;
 
-        public async Task<int> CommitAsync(CancellationToken cancellationToken)
+    }
+
+    public async Task<int> CommitAsync(CancellationToken cancellationToken)
         {
             if (_disposed)
             {

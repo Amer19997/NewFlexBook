@@ -32,6 +32,10 @@ using FlexBook.Application.Features.StaticPages.AuthorizingTeamMembers.Commands;
 using FlexBook.Application.Features.StaticPages.Research.Commands;
 using FlexBook.Application.Features.StaticPages.Research.Queries;
 using FlexBook.Application.Features.StaticPages.AcademicIntegrity.Commands;
+using FlexBook.Application.Features.StaticPages.InstructorSuccessStories.Commands;
+using FlexBook.Application.Features.StaticPages.InstructorSuccessStories.Queries;
+using FlexBook.Application.Features.StaticPages.StudentsGettingStarted.Commands;
+using FlexBook.Application.Features.StaticPages.StudentsGettingStarted.Queries;
 
 namespace WebAPI.Controllers;
 [Route("api/[controller]")]
@@ -316,8 +320,150 @@ public class StaticPagesController : ApiControllerBase
             return Ok(response);
         ;
     }
-        /// <summary>
+    /// <summary>
     /// Get a paginated list of authorizing team members
     /// </summary>
+    /// 
+
+
+
+    // --------------------------------------------------
+    // Students Getting Started Endpoints
+    // --------------------------------------------------
+
+    /// <summary>
+    /// Get a paginated list of Students Getting Started articles
+    /// </summary>
+    [HttpGet("students-getting-started")]
+    [ProducesResponseType(typeof(TResponse<IPagedList<StudentsGettingStartedArticleDto>>), 200)]
+    public async Task<IActionResult> GetStudentsGettingStartedArticles(
+        [FromQuery] string search = "",
+        [FromQuery] int pageNumber = 1,
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string sortBy = "UpdatedAt",
+        [FromQuery] string sortDirection = "desc")
+    {
+        var query = new GetStudentsGettingStartedArticlesQuery(search, pageNumber, pageSize, sortBy, sortDirection);
+        var response = await Mediator.Send(query);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    /// <summary>
+    /// Get a specific Students Getting Started article by ID
+    /// </summary>
+    [HttpGet("students-getting-started/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<StudentsGettingStartedArticleDto>), 200)]
+    public async Task<IActionResult> GetStudentsGettingStartedArticleById(Guid id)
+    {
+        var query = new GetStudentsGettingStartedArticleByIdQuery(id);
+        var response = await Mediator.Send(query);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    /// <summary>
+    /// Create a new Students Getting Started article
+    /// </summary>
+    [HttpPost("students-getting-started")]
+    [ProducesResponseType(typeof(TResponse<object>), 201)]
+    public async Task<IActionResult> CreateStudentsGettingStartedArticle([FromForm] CreateStudentsGettingStartedArticleCommand command)
+    {
+        var response = await Mediator.Send(command);
+        return Ok(response);
+            }
+    /// <summary>
+    /// Update a specific Students Getting Started article
+    /// </summary>
+    [HttpPut("students-getting-started/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<StudentsGettingStartedArticleDto>), 200)]
+    public async Task<IActionResult> UpdateStudentsGettingStartedArticle(Guid id, [FromForm] UpdateStudentsGettingStartedArticleCommand command)
+    {
+        if (id != command.Id)
+            return BadRequest(new { Error = "The provided ID does not match the entity ID." });
+
+        var response = await Mediator.Send(command);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    /// <summary>
+    /// Delete a specific Students Getting Started article
+    /// </summary>
+    [HttpDelete("students-getting-started/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<bool>), 200)]
+    public async Task<IActionResult> DeleteStudentsGettingStartedArticle(Guid id)
+    {
+        var command = new DeleteStudentsGettingStartedArticleCommand(id);
+        var response = await Mediator.Send(command);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    // --------------------------------------------------
+    // Instructor Success Stories Endpoints
+    // --------------------------------------------------
+
+    /// <summary>
+    /// Get a paginated list of Instructor Success Stories
+    /// </summary>
+    [HttpGet("instructor-success-stories")]
+    [ProducesResponseType(typeof(TResponse<IPagedList<InstructorSuccessStoryDto>>), 200)]
+    public async Task<IActionResult> GetInstructorSuccessStories(
+        [FromQuery] string search = "",
+        [FromQuery] int pageNumber = 1,
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string sortBy = "CreatedAt",
+        [FromQuery] string sortDirection = "desc")
+    {
+        var query = new GetInstructorSuccessStoriesQuery(search, pageNumber, pageSize, sortBy, sortDirection);
+        var response = await Mediator.Send(query);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    /// <summary>
+    /// Get a specific Instructor Success Story by ID
+    /// </summary>
+    [HttpGet("instructor-success-stories/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<InstructorSuccessStoryDto>), 200)]
+    public async Task<IActionResult> GetInstructorSuccessStoryById(Guid id)
+    {
+        var query = new GetInstructorSuccessStoryByIdQuery(id);
+        var response = await Mediator.Send(query);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    /// <summary>
+    /// Create a new Instructor Success Story
+    /// </summary>
+    [HttpPost("instructor-success-stories")]
+    [ProducesResponseType(typeof(TResponse<InstructorSuccessStoryDto>), 201)]
+    public async Task<IActionResult> CreateInstructorSuccessStory([FromForm] CreateInstructorSuccessStoryCommand command)
+    {
+        var response = await Mediator.Send(command);
+        return Ok(response);
+    }
+
+    /// <summary>
+    /// Update a specific Instructor Success Story
+    /// </summary>
+    [HttpPut("instructor-success-stories/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<InstructorSuccessStoryDto>), 200)]
+    public async Task<IActionResult> UpdateInstructorSuccessStory(Guid id, [FromForm] UpdateInstructorSuccessStoryCommand command)
+    {
+        if (id != command.Id)
+            return BadRequest(new { Error = "The provided ID does not match the entity ID." });
+
+        var response = await Mediator.Send(command);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    /// <summary>
+    /// Delete a specific Instructor Success Story
+    /// </summary>
+    [HttpDelete("instructor-success-stories/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<bool>), 200)]
+    public async Task<IActionResult> DeleteInstructorSuccessStory(Guid id)
+    {
+        var command = new DeleteInstructorSuccessStoryCommand(id);
+        var response = await Mediator.Send(command);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
 
 }

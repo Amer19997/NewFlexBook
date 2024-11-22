@@ -33,7 +33,10 @@ namespace FlexBook.Domain
         public IAuthorizingTeamMemberRepository AuthorizingTeamMemberRepository { get; }
         public IResearchRepository ResearchRepository { get; }
         public IAcademicIntegrityrRepository AcademicIntegrityrRepository { get; }
+        public IInstructorSuccessStoryRepository InstructorSuccessStoryRepository { get; }
+        public IStudentsGettingStartedArticleRepository StudentsGettingStartedArticleRepository { get; set; }
 
+         
         Task<int> CommitAsync(CancellationToken cancellationToken);
     }
 }
