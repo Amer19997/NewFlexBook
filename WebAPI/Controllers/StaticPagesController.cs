@@ -36,6 +36,10 @@ using FlexBook.Application.Features.StaticPages.InstructorSuccessStories.Command
 using FlexBook.Application.Features.StaticPages.InstructorSuccessStories.Queries;
 using FlexBook.Application.Features.StaticPages.StudentsGettingStarted.Commands;
 using FlexBook.Application.Features.StaticPages.StudentsGettingStarted.Queries;
+using FlexBook.Application.Features.StaticPages.InstructorCommunity.Commands;
+using FlexBook.Application.Features.StaticPages.InstructorCommunity.Queries;
+using FlexBook.Application.Features.StaticPages.EvaluatingAdopting.Commands;
+using FlexBook.Application.Features.StaticPages.EvaluatingAdopting.Queries;
 
 namespace WebAPI.Controllers;
 [Route("api/[controller]")]
@@ -465,5 +469,112 @@ public class StaticPagesController : ApiControllerBase
         var response = await Mediator.Send(command);
         return response.success ? Ok(response) : BadRequest(response);
     }
+    // --------------------------------------------------
+    // Instructor Community Endpoints
+    // --------------------------------------------------
 
+    [HttpGet("GetInstructorCommunityEntries")]
+    [ProducesResponseType(typeof(TResponse<IPagedList<InstructorCommunityEntryDto>>), 200)]
+    public async Task<IActionResult> GetInstructorCommunityEntries(
+        [FromQuery] string search = "",
+        [FromQuery] int pageNumber = 1,
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string sortBy = "UpdatedAt",
+        [FromQuery] string sortDirection = "desc")
+    {
+        var query = new GetInstructorCommunityEntriesQuery(search, pageNumber, pageSize, sortBy, sortDirection);
+        var response = await Mediator.Send(query);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    [HttpGet("GetInstructorCommunityEntryById")]
+    [ProducesResponseType(typeof(TResponse<InstructorCommunityEntryDto>), 200)]
+    public async Task<IActionResult> GetInstructorCommunityEntryById(Guid id)
+    {
+        var query = new GetInstructorCommunityEntryByIdQuery(id);
+        var response = await Mediator.Send(query);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    [HttpPost("CreateInstructorCommunityEntry")]
+    [ProducesResponseType(typeof(TResponse<InstructorCommunityEntryDto>), 201)]
+    public async Task<IActionResult> CreateInstructorCommunityEntry([FromForm] CreateInstructorCommunityEntryCommand command)
+    {
+        var response = await Mediator.Send(command);
+        return Ok(response);
+    }
+
+    [HttpPut("UpdateInstructorCommunityEntry")]
+    [ProducesResponseType(typeof(TResponse<InstructorCommunityEntryDto>), 200)]
+    public async Task<IActionResult> UpdateInstructorCommunityEntry(Guid id, [FromForm] UpdateInstructorCommunityEntryCommand command)
+    {
+        if (id != command.Id)
+            return BadRequest(new { Error = "The provided ID does not match the entity ID." });
+
+        var response = await Mediator.Send(command);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    [HttpDelete("DeleteInstructorCommunityEntry")]
+    [ProducesResponseType(typeof(TResponse<bool>), 200)]
+    public async Task<IActionResult> DeleteInstructorCommunityEntry(Guid id)
+    {
+        var command = new DeleteInstructorCommunityEntryCommand(id);
+        var response = await Mediator.Send(command);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+    // --------------------------------------------------
+    // Evaluating & Adopting Endpoints
+    // --------------------------------------------------
+
+    [HttpGet("evaluating-adopting")]
+    [ProducesResponseType(typeof(TResponse<IPagedList<EvaluatingAdoptingArticleDto>>), 200)]
+    public async Task<IActionResult> GetEvaluatingAdoptingArticles(
+        [FromQuery] string search = "",
+        [FromQuery] int pageNumber = 1,
+        [FromQuery] int pageSize = 10,
+        [FromQuery] string sortBy = "UpdatedAt",
+        [FromQuery] string sortDirection = "desc")
+    {
+        var query = new GetEvaluatingAdoptingArticlesQuery(search, pageNumber, pageSize, sortBy, sortDirection);
+        var response = await Mediator.Send(query);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    [HttpGet("evaluating-adopting/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<EvaluatingAdoptingArticleDto>), 200)]
+    public async Task<IActionResult> GetEvaluatingAdoptingArticleById(Guid id)
+    {
+        var query = new GetEvaluatingAdoptingArticleByIdQuery(id);
+        var response = await Mediator.Send(query);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    [HttpPost("evaluating-adopting")]
+    [ProducesResponseType(typeof(TResponse<EvaluatingAdoptingArticleDto>), 201)]
+    public async Task<IActionResult> CreateEvaluatingAdoptingArticle([FromForm] CreateEvaluatingAdoptingArticleCommand command)
+    {
+        var response = await Mediator.Send(command);
+        return Ok(response);
+    }
+
+    [HttpPut("evaluating-adopting/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<EvaluatingAdoptingArticleDto>), 200)]
+    public async Task<IActionResult> UpdateEvaluatingAdoptingArticle(Guid id, [FromForm] UpdateEvaluatingAdoptingArticleCommand command)
+    {
+        if (id != command.Id)
+            return BadRequest(new { Error = "The provided ID does not match the entity ID." });
+
+        var response = await Mediator.Send(command);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
+
+    [HttpDelete("evaluating-adopting/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<bool>), 200)]
+    public async Task<IActionResult> DeleteEvaluatingAdoptingArticle(Guid id)
+    {
+        var command = new DeleteEvaluatingAdoptingArticleCommand(id);
+        var response = await Mediator.Send(command);
+        return response.success ? Ok(response) : BadRequest(response);
+    }
 }

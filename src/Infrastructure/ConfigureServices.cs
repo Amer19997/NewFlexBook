@@ -88,6 +88,10 @@ public static class ConfigureServices
 
         services.AddScoped<IPhotoStorageService, LocalPhotoStorageService>();
         services.AddScoped<IInteractiveContentService, LocalInteractiveContentService>();
+        services.AddScoped<ITeachersGettingStartedArticleRepository, TeachersGettingStartedArticleRepository>();
+        services.AddScoped<IEvaluatingAdoptingArticleRepository, EvaluatingAdoptingArticleRepository>();
+        services.AddScoped<IInstructorCommunityEntryRepository, InstructorCommunityEntryRepository>();
+        services.AddScoped<IInstructorSuccessStoryRepository, InstructorSuccessStoryRepository>();
 
 
         //services.AddScoped<ITopicRepository, TopicRepository>();

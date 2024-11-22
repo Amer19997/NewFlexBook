@@ -40,6 +40,10 @@ namespace FlexBook.Infrastructure.Persistence
         public IAcademicIntegrityrRepository AcademicIntegrityrRepository { get; }
         public IInstructorSuccessStoryRepository InstructorSuccessStoryRepository { get; set; }
         public IStudentsGettingStartedArticleRepository StudentsGettingStartedArticleRepository { get; set; }
+        public ITeachersGettingStartedArticleRepository TeachersGettingStartedArticleRepository { get; set; }
+        public IInstructorCommunityEntryRepository InstructorCommunityEntryRepository { get; set; }
+
+        public IEvaluatingAdoptingArticleRepository EvaluatingAdoptingArticleRepository { get; set; }
         public RoleRepositoryInterface RoleRepository { get; set; }  // This fixes the missing property
 
  
@@ -81,6 +85,34 @@ namespace FlexBook.Infrastructure.Persistence
 
             IInstructorSuccessStoryRepository instructorSuccessStoryRepository,
             IStudentsGettingStartedArticleRepository studentsGettingStartedArticleRepository
+,
+            ITeachersGettingStartedArticleRepository teachersGettingStartedArticleRepository
+,
+
+            IEvaluatingAdoptingArticleRepository evaluatingAdoptingArticleRepository,
+
+              IInstructorCommunityEntryRepository instructorCommunityEntryRepository  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -134,13 +166,15 @@ namespace FlexBook.Infrastructure.Persistence
             StudentSuccessStoryRepository = studentSuccessStoryRepository;
             AuthorizingTeamMemberRepository = authorizingTeamMemberRepository;
             ResearchRepository = researchRepository;
-            AcademicIntegrityrRepository= academicIntegrityrRepository;
+            AcademicIntegrityrRepository = academicIntegrityrRepository;
             InstructorSuccessStoryRepository = instructorSuccessStoryRepository;
             StudentsGettingStartedArticleRepository = studentsGettingStartedArticleRepository;
+            TeachersGettingStartedArticleRepository = teachersGettingStartedArticleRepository;
+            EvaluatingAdoptingArticleRepository = evaluatingAdoptingArticleRepository;
+            InstructorCommunityEntryRepository = instructorCommunityEntryRepository;
+        }
 
-    }
-
-    public async Task<int> CommitAsync(CancellationToken cancellationToken)
+        public async Task<int> CommitAsync(CancellationToken cancellationToken)
         {
             if (_disposed)
             {

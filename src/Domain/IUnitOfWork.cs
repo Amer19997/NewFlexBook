@@ -35,8 +35,11 @@ namespace FlexBook.Domain
         public IAcademicIntegrityrRepository AcademicIntegrityrRepository { get; }
         public IInstructorSuccessStoryRepository InstructorSuccessStoryRepository { get; }
         public IStudentsGettingStartedArticleRepository StudentsGettingStartedArticleRepository { get; set; }
+        public ITeachersGettingStartedArticleRepository TeachersGettingStartedArticleRepository  { get; set; }
+        public IEvaluatingAdoptingArticleRepository EvaluatingAdoptingArticleRepository { get; set; }
+        public IInstructorCommunityEntryRepository InstructorCommunityEntryRepository { get; set; }
 
          
-        Task<int> CommitAsync(CancellationToken cancellationToken);
+                Task<int> CommitAsync(CancellationToken cancellationToken);
     }
 }

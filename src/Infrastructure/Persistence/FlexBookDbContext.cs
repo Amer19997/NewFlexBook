@@ -68,6 +68,9 @@ public class FlexBookDbContext : DbContext
     public DbSet<AcademicIntegrity> AcademicIntegrities { get; set; } = default!;
     public DbSet<InstructorSuccessStory> InstructorSuccessStories { get; set; } = default!;
     public DbSet<StudentsGettingStartedArticle> StudentsGettingStartedArticles { get; set; } = default!;
+    public DbSet<EvaluatingAdoptingArticle> EvaluatingAdoptingArticles { get; set; } = default!;
+    public DbSet<TeachersGettingStartedArticle> TeachersGettingStartedArticles { get; set; } = default!;
+    public DbSet<InstructorCommunityEntry> InstructorCommunityEntries { get; set; } = default!;
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
