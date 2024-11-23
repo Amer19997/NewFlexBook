@@ -92,7 +92,8 @@ public static class ConfigureServices
         services.AddScoped<IEvaluatingAdoptingArticleRepository, EvaluatingAdoptingArticleRepository>();
         services.AddScoped<IInstructorCommunityEntryRepository, InstructorCommunityEntryRepository>();
         services.AddScoped<IInstructorSuccessStoryRepository, InstructorSuccessStoryRepository>();
-
+        services.AddScoped<IAboutUsSectionRepository,AboutUsSectionRepository>();
+        services.AddScoped<ITestimonialRepository, TestimonialRepository>();
 
         //services.AddScoped<ITopicRepository, TopicRepository>();
         services.AddScoped<ITopicRepository, TopicRepository>();

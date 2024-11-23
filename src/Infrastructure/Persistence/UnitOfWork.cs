@@ -45,8 +45,9 @@ namespace FlexBook.Infrastructure.Persistence
 
         public IEvaluatingAdoptingArticleRepository EvaluatingAdoptingArticleRepository { get; set; }
         public RoleRepositoryInterface RoleRepository { get; set; }  // This fixes the missing property
+         public IAboutUsSectionRepository AboutUsSectionRepository { get; set; }
+        public ITestimonialRepository TestimonialRepository { get; set; }
 
- 
         private bool _disposed = false;
 
         public UnitOfWork(FlexBookDbContext _context,
@@ -91,7 +92,9 @@ namespace FlexBook.Infrastructure.Persistence
 
             IEvaluatingAdoptingArticleRepository evaluatingAdoptingArticleRepository,
 
-              IInstructorCommunityEntryRepository instructorCommunityEntryRepository  
+              IInstructorCommunityEntryRepository instructorCommunityEntryRepository,
+            IAboutUsSectionRepository aboutUsSectionRepository,
+            ITestimonialRepository testimonialRepository
 
 
 
@@ -172,6 +175,9 @@ namespace FlexBook.Infrastructure.Persistence
             TeachersGettingStartedArticleRepository = teachersGettingStartedArticleRepository;
             EvaluatingAdoptingArticleRepository = evaluatingAdoptingArticleRepository;
             InstructorCommunityEntryRepository = instructorCommunityEntryRepository;
+            AboutUsSectionRepository= aboutUsSectionRepository;
+            TestimonialRepository= testimonialRepository;   
+
         }
 
         public async Task<int> CommitAsync(CancellationToken cancellationToken)

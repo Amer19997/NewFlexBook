@@ -7,6 +7,7 @@ namespace FlexBook.Domain.Repositories
     {
         // The new GetByIdsAsync method to retrieve entities by a list of IDs
         Task<IEnumerable<TEntity>> GetByIdsAsync(IEnumerable<Guid> ids, CancellationToken cancellationToken);
+        IQueryable<TEntity> GetAllAsQueryable();
 
         Task<TEntity?> FindById(Guid id, CancellationToken cancellationToken);
         Task<TEntity?> GetByIdAsync(Expression<Func<TEntity, bool>> filter, string includeProperties = "", CancellationToken cancellationToken = default);

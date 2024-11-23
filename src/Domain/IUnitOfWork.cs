@@ -38,8 +38,8 @@ namespace FlexBook.Domain
         public ITeachersGettingStartedArticleRepository TeachersGettingStartedArticleRepository  { get; set; }
         public IEvaluatingAdoptingArticleRepository EvaluatingAdoptingArticleRepository { get; set; }
         public IInstructorCommunityEntryRepository InstructorCommunityEntryRepository { get; set; }
-
-         
-                Task<int> CommitAsync(CancellationToken cancellationToken);
+        public IAboutUsSectionRepository AboutUsSectionRepository { get; set; }
+        public ITestimonialRepository TestimonialRepository { get; set; }
+        Task<int> CommitAsync(CancellationToken cancellationToken);
     }
 }

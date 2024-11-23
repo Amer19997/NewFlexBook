@@ -40,6 +40,8 @@ using FlexBook.Application.Features.StaticPages.InstructorCommunity.Commands;
 using FlexBook.Application.Features.StaticPages.InstructorCommunity.Queries;
 using FlexBook.Application.Features.StaticPages.EvaluatingAdopting.Commands;
 using FlexBook.Application.Features.StaticPages.EvaluatingAdopting.Queries;
+using FlexBook.Application.Features.StaticPages.AboutUs.Commands;
+using FlexBook.Application.Features.StaticPages.AboutUs.Queries;
 
 namespace WebAPI.Controllers;
 [Route("api/[controller]")]
@@ -577,4 +579,90 @@ public class StaticPagesController : ApiControllerBase
         var response = await Mediator.Send(command);
         return response.success ? Ok(response) : BadRequest(response);
     }
+
+
+
+    /// <summary>
+    /// Get all About Us Sections with their Testimonials
+    /// </summary>
+    [HttpGet("about-us")]
+    [ProducesResponseType(typeof(TResponse<List<AboutUsPageDto>>), 200)]
+    public async Task<IActionResult> GetAllAboutUsPages()
+    {
+        var query = new GetAllAboutUsPagesQuery();
+        var response = await Mediator.Send(query);
+
+        if (response.success)
+            return Ok(response);
+
+        return BadRequest(response);
+    }
+
+    /// <summary>
+    /// Get a specific About Us Section by ID (with Testimonials)
+    /// </summary>
+    [HttpGet("about-us/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<AboutUsPageDto>), 200)]
+    public async Task<IActionResult> GetAboutUsPage(Guid id)
+    {
+        var query = new GetAboutUsPageQuery(id);
+        var response = await Mediator.Send(query);
+
+        if (response.success)
+            return Ok(response);
+
+        return BadRequest(response);
+    }
+
+    /// <summary>
+    /// Create a new About Us Section with Testimonials
+    /// </summary>
+    [HttpPost("about-us")]
+    [ProducesResponseType(typeof(TResponse<object>), 201)]
+    public async Task<IActionResult> CreateAboutUsPage([FromForm] CreateAboutUsPageCommand command)
+    {
+        var response = await Mediator.Send(command);
+        return Ok(response);
+    }
+
+    /// <summary>
+    /// Update an existing About Us Section with Testimonials
+    /// </summary>
+    [HttpPut("about-us/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<AboutUsPageDto>), 200)]
+    public async Task<IActionResult> UpdateAboutUsPage(Guid id, [FromForm] UpdateAboutUsPageCommand command)
+    {
+        if (id != command.Id)
+            return BadRequest(new { Error = "The provided ID does not match the command ID." });
+
+        var response = await Mediator.Send(command);
+
+        if (response.success)
+            return Ok(response);
+
+        return BadRequest(response);
+    }
+
+    /// <summary>
+    /// Delete an About Us Section with Testimonials
+    /// </summary>
+    [HttpDelete("about-us/{id:guid}")]
+    [ProducesResponseType(typeof(TResponse<bool>), 200)]
+    public async Task<IActionResult> DeleteAboutUsPage(Guid id)
+    {
+        var command = new DeleteAboutUsPageCommand(id);
+        var response = await Mediator.Send(command);
+
+        if (response.success)
+            return Ok(response);
+
+        return BadRequest(response);
+    }
 }
+
+
+
+
+
+
+

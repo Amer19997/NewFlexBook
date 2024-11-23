@@ -13,7 +13,10 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         this.dbContext = dbContext;
     }
-
+    public IQueryable<TEntity> GetAllAsQueryable()
+    {
+        return dbContext.Set<TEntity>().AsQueryable();
+    }
     public async Task Add(TEntity entity, CancellationToken cancellationToken)
     => await dbContext.Set<TEntity>().AddAsync(entity, cancellationToken);
 
