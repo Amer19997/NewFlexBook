@@ -21,9 +21,11 @@ public class CreateCourseCommandHandler : IRequestHandler<CreateCourseCommand, G
     private readonly IResourceService _resourceService;
     private readonly AppSettings _appSettings;
     private readonly IMediator _mediator;
-
+    private readonly IFileUploadService _fileUploadService;
 
     public CreateCourseCommandHandler(IUnitOfWork unitOfWork,
+        IFileUploadService fileUploadService
+        ,
              IAccountService accountService,
              ITokenService tokenService,
              IOptions<AppSettings> appSettings,
@@ -36,10 +38,18 @@ public class CreateCourseCommandHandler : IRequestHandler<CreateCourseCommand, G
         _appSettings = appSettings.Value;
         _resourceService = resourceService;
         _mediator = mediator;
+        _fileUploadService= fileUploadService;
     }
 
     public async Task<GetAllCourseDetails> Handle(CreateCourseCommand request, CancellationToken cancellationToken)
     {
+        string coverphotopath=string.Empty
+            ;
+        if (request.CoverPhoto != null)
+        {
+           coverphotopath=await _fileUploadService.UploadFileAsync(request.CoverPhoto);
+        }
+
         // Create the course entity
         var course = new Course
         {
@@ -50,7 +60,7 @@ public class CreateCourseCommandHandler : IRequestHandler<CreateCourseCommand, G
             DiscriptionEn = request.DiscriptionEn,
             CategoryId = request.CategoryId,
             TopicId = request.TopicId,
-            CoverPhoto = request.CoverPhoto,
+            CoverPhoto = coverphotopath,
             Code = request.Code
         };
 

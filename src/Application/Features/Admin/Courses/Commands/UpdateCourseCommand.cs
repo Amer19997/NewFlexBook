@@ -1,15 +1,16 @@
-﻿using System;
+﻿// File: UpdateCourseCommand.cs
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FlexBook.Domain.Entities.Catalog.Dtos;
 using MediatR;
+using FlexBook.Domain.Entities.Catalog.Dtos;
+using FlexBook.Application.Common.Models;
 using Microsoft.AspNetCore.Http;
 
 namespace FlexBook.Application.Features.Admin.Courses.Commands;
-public class CreateCourseCommand : IRequest<GetAllCourseDetails>
+
+public class UpdateCourseCommand : IRequest<TResponse<GetAllCourseDetails>>
 {
+    public Guid CourseId { get; set; } // ID of the course to update
     public string NameAr { get; set; } = default!;
     public string NameEn { get; set; } = default!;
     public string DiscriptionAr { get; set; } = default!;
@@ -17,7 +18,7 @@ public class CreateCourseCommand : IRequest<GetAllCourseDetails>
     public Guid CategoryId { get; set; }
     public Guid TopicId { get; set; }
     public IFormFile CoverPhoto { get; set; } = default!;  // URL or path to the cover photo
-    public string Code { get; set; } = default!;  // Unique code for the course
+    public string Code { get; set; } = default!;
 
     // Relationships
     public List<Guid> UniversityIds { get; set; } = new List<Guid>();

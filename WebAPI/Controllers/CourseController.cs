@@ -54,7 +54,7 @@ public class CourseController : ApiControllerBase
     }
     // POST: api/course
     [HttpPost("addCourse")]
-    public async Task<IActionResult> CreateCourse([FromBody] CreateCourseCommand command, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateCourse([FromForm] CreateCourseCommand command, CancellationToken cancellationToken)
     {
         if (!ModelState.IsValid)
         {
@@ -65,5 +65,14 @@ public class CourseController : ApiControllerBase
         return Ok(result);
         // Return the newly created course details with a Created (201) status code
         //return CreatedAtAction(nameof(GetCourseById), new { id = result.Id }, result);
+    }
+    [HttpPut("UpdateCourse")]
+    public async Task<IActionResult> UpdateCourse(Guid id, [FromForm] UpdateCourseCommand command)
+    {
+     
+        var result = await Mediator.Send(command);
+
+
+        return Ok(result);
     }
 }
