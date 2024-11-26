@@ -47,6 +47,7 @@ namespace FlexBook.Infrastructure.Persistence
         public RoleRepositoryInterface RoleRepository { get; set; }  // This fixes the missing property
          public IAboutUsSectionRepository AboutUsSectionRepository { get; set; }
         public ITestimonialRepository TestimonialRepository { get; set; }
+        public IHomePageSectionRepository HomePageSectionRepository { get; set; }
 
         private bool _disposed = false;
 
@@ -94,8 +95,8 @@ namespace FlexBook.Infrastructure.Persistence
 
               IInstructorCommunityEntryRepository instructorCommunityEntryRepository,
             IAboutUsSectionRepository aboutUsSectionRepository,
-            ITestimonialRepository testimonialRepository
-
+            ITestimonialRepository testimonialRepository,
+                     IHomePageSectionRepository homePageSectionRepository 
 
 
 
@@ -177,7 +178,7 @@ namespace FlexBook.Infrastructure.Persistence
             InstructorCommunityEntryRepository = instructorCommunityEntryRepository;
             AboutUsSectionRepository= aboutUsSectionRepository;
             TestimonialRepository= testimonialRepository;   
-
+            HomePageSectionRepository= homePageSectionRepository;
         }
 
         public async Task<int> CommitAsync(CancellationToken cancellationToken)

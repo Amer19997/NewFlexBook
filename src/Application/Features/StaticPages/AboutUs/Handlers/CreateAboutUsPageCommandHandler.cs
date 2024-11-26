@@ -20,11 +20,13 @@ public class CreateAboutUsPageCommandHandler : IRequestHandler<CreateAboutUsPage
     public CreateAboutUsPageCommandHandler(
         IUnitOfWork unitOfWork,
         IFileUploadService fileUploadService,
-        IResourceService resourceService)
+        IResourceService resourceService
+        )
     {
         _unitOfWork = unitOfWork;
         _fileUploadService = fileUploadService;
         _resourceService = resourceService;
+        ;
     }
 
     public async Task<TResponse<object>> Handle(CreateAboutUsPageCommand request, CancellationToken cancellationToken)

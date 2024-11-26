@@ -40,6 +40,8 @@ namespace FlexBook.Domain
         public IInstructorCommunityEntryRepository InstructorCommunityEntryRepository { get; set; }
         public IAboutUsSectionRepository AboutUsSectionRepository { get; set; }
         public ITestimonialRepository TestimonialRepository { get; set; }
+        public IHomePageSectionRepository HomePageSectionRepository { get; set; }
+
         Task<int> CommitAsync(CancellationToken cancellationToken);
     }
 }

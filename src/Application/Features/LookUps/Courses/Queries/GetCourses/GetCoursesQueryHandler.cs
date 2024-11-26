@@ -49,7 +49,8 @@ public class GetCoursesQueryHandler : IRequestHandler<GetCoursesQuery, TResponse
         return TResponse<GetCoursesResult>.Success(new GetCoursesResult
         {
             Courseslist = coursesresult.ToList(),
-            TotalCount = total
+            TotalCount = total,
+            pageNumber= request.PageNumber, 
             
         });
     }

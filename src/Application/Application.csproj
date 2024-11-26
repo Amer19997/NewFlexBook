@@ -40,6 +40,7 @@
     <ItemGroup>
       <Folder Include="Features\Admin\Quizes\Queries\" />
       <Folder Include="Features\StaticPages\AcademicIntegrity\Queries\" />
+      <Folder Include="Features\StaticPages\HomePage\Handlers\NewFolder\" />
     </ItemGroup>
 
 </Project>

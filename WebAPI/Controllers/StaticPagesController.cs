@@ -42,28 +42,108 @@ using FlexBook.Application.Features.StaticPages.EvaluatingAdopting.Commands;
 using FlexBook.Application.Features.StaticPages.EvaluatingAdopting.Queries;
 using FlexBook.Application.Features.StaticPages.AboutUs.Commands;
 using FlexBook.Application.Features.StaticPages.AboutUs.Queries;
+using FlexBook.Application.Features.StaticPages.HomePage.Commands;
+using FlexBook.Application.Features.StaticPages.HomePage.Queries;
 
 namespace WebAPI.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 public class StaticPagesController : ApiControllerBase
 {
-    [HttpGet("GetAcademicIntegrityEntries")]
-    [ProducesResponseType(typeof(TResponse<IPagedList<AcademicIntegrityDto>>), 200)]
-    public async Task<IActionResult> GetAcademicIntegrityEntries(
-      [FromQuery] string search = "",
-      [FromQuery] int pageNumber = 1,
-      [FromQuery] int pageSize = 10,
-      [FromQuery] string sortBy = "CreatedAt",
-      [FromQuery] string sortDirection = "asc")
+    /// <summary>
+    /// Create a new Home Page Section
+    /// </summary>
+    //[HttpPost("Create")]
+    ////[ProducesResponseType(typeof(TResponse<object>), 201)]
+    //public async Task<IActionResult> CreateHomePageSection([FromForm] CreateHomePageSectionCommand command)
+    //{
+    //     var response = await Mediator.Send(command);
+
+    //    return (response);
+    //}
+    [HttpPost("CreateHomePage")]
+    public async Task<IActionResult> CreateHomePage([FromForm] CreateHomePageSectionCommand command)
     {
-        var query = new GetAcademicIntegrityListQuery(search, pageNumber, pageSize, sortBy, sortDirection);
-        var response = await Mediator.Send(query);
+        var response = await Mediator.Send(command);
 
         if (response.success)
             return Ok(response);
         return BadRequest(response);
     }
+    /// <summary>
+    /// Update an existing Home Page Section
+    /// </summary>
+    [HttpPut("UpdateHomePage")]
+    [ProducesResponseType(typeof(TResponse<object>), 200)]
+    public async Task<IActionResult> UpdateHomePage( [FromForm] UpdateHomePageSectionCommand command)
+    {
+        var result = await Mediator.Send(command);
+         return Ok(result);
+
+    }
+
+    ///// <summary>
+    ///// Delete a Home Page Section
+    ///// </summary>
+    //[HttpDelete("DeleteHomePage")]
+    //[ProducesResponseType(typeof(TResponse<object>), 200)]
+
+    //public async Task<IActionResult> DeleteHomePageSection(DeleteHomePageSectionCommand deleteHomePageSectionCommand)
+    //{
+    //    var result = await Mediator.Send(deleteHomePageSectionCommand);
+    //    return Ok(result);
+
+    //}
+    /// <summary>
+    /// Get a Home Page Section by ID
+    /// </summary>
+    /// <summary>
+    /// Get Home Page Section
+    /// </summary>
+    /// <returns>Home Page Section Details</returns>
+    [HttpGet("HomePageSection")]
+    public async Task<IActionResult> GetHomePageSection()
+    {
+        var query = new GetHomePageSectionByIdQuery(); // No parameters needed
+        var result = await Mediator.Send(query);
+
+        if (!result.success)
+        {
+            return StatusCode(result.StatusCode, result.Errors);
+        }
+
+        return Ok(result);
+    }
+
+    /// <summary>
+    /// Get all Home Page Sections
+    /// </summary>
+    //[HttpGet("GetAll")]
+    //[ProducesResponseType(typeof(TResponse<List<HomePageSectionDto>>), 200)]
+    //public async Task<IActionResult> GetAllHomePageSections()
+    //{
+    //    var query = new GetAllHomePageSectionsQuery();
+    //    var result = await _mediator.Send(query);
+    //    if (result.success) return Ok(result);
+
+    //    return BadRequest(result);
+    //}
+    //[HttpGet("GetAcademicIntegrityEntries")]
+    //[ProducesResponseType(typeof(TResponse<IPagedList<AcademicIntegrityDto>>), 200)]
+    //public async Task<IActionResult> GetAcademicIntegrityEntries(
+    //  [FromQuery] string search = "",
+    //  [FromQuery] int pageNumber = 1,
+    //  [FromQuery] int pageSize = 10,
+    //  [FromQuery] string sortBy = "CreatedAt",
+    //  [FromQuery] string sortDirection = "asc")
+    //{
+    //    var query = new GetAcademicIntegrityListQuery(search, pageNumber, pageSize, sortBy, sortDirection);
+    //    var response = await Mediator.Send(query);
+
+    //    if (response.success)
+    //        return Ok(response);
+    //    return BadRequest(response);
+    //}
 
     /// <summary>
     /// Get a specific Academic Integrity entry by ID

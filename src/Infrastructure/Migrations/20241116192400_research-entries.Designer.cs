@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlexBook.Infrastructure.Migrations
 {
     [DbContext(typeof(FlexBookDbContext))]
-    [Migration("20241120144147_init")]
-    partial class init
+    [Migration("20241116192400_research-entries")]
+    partial class researchentries
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,503 +57,503 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            DepartmentsId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            DepartmentsId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            DepartmentsId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            DepartmentsId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            DepartmentsId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            DepartmentsId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            DepartmentsId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            DepartmentsId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            DepartmentsId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            DepartmentsId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            DepartmentsId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            DepartmentsId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            DepartmentsId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            DepartmentsId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            DepartmentsId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            DepartmentsId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            DepartmentsId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            DepartmentsId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            DepartmentsId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            DepartmentsId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            DepartmentsId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            DepartmentsId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            DepartmentsId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            DepartmentsId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            DepartmentsId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            DepartmentsId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            DepartmentsId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            DepartmentsId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            DepartmentsId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            DepartmentsId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            DepartmentsId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            DepartmentsId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            DepartmentsId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            DepartmentsId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            DepartmentsId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            DepartmentsId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            DepartmentsId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            DepartmentsId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            DepartmentsId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            DepartmentsId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            DepartmentsId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            DepartmentsId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            DepartmentsId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            DepartmentsId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            DepartmentsId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            DepartmentsId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            DepartmentsId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            DepartmentsId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            DepartmentsId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            DepartmentsId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            DepartmentsId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            DepartmentsId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            DepartmentsId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            DepartmentsId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            DepartmentsId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            DepartmentsId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            DepartmentsId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            DepartmentsId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            DepartmentsId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            DepartmentsId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            DepartmentsId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            DepartmentsId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            DepartmentsId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            DepartmentsId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            DepartmentsId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            DepartmentsId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            DepartmentsId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            DepartmentsId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            DepartmentsId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            DepartmentsId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            DepartmentsId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            DepartmentsId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            DepartmentsId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            DepartmentsId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            DepartmentsId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            DepartmentsId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            DepartmentsId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            DepartmentsId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            DepartmentsId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            DepartmentsId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            DepartmentsId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            DepartmentsId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            DepartmentsId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            DepartmentsId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            DepartmentsId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            DepartmentsId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            DepartmentsId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            DepartmentsId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            DepartmentsId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            DepartmentsId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            DepartmentsId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            DepartmentsId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            DepartmentsId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            DepartmentsId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            DepartmentsId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            DepartmentsId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            DepartmentsId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            DepartmentsId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            DepartmentsId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            DepartmentsId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            DepartmentsId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            DepartmentsId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            DepartmentsId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            DepartmentsId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            DepartmentsId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            DepartmentsId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            DepartmentsId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            DepartmentsId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            DepartmentsId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            DepartmentsId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            DepartmentsId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            DepartmentsId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            DepartmentsId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            DepartmentsId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            DepartmentsId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            DepartmentsId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            DepartmentsId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            DepartmentsId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            DepartmentsId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            DepartmentsId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            DepartmentsId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            DepartmentsId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            DepartmentsId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            DepartmentsId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            DepartmentsId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            DepartmentsId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            DepartmentsId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            DepartmentsId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            DepartmentsId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            DepartmentsId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            DepartmentsId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            DepartmentsId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            DepartmentsId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            DepartmentsId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            DepartmentsId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            DepartmentsId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            DepartmentsId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            DepartmentsId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            DepartmentsId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            DepartmentsId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            DepartmentsId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            DepartmentsId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            DepartmentsId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            DepartmentsId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            DepartmentsId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            DepartmentsId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            DepartmentsId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            DepartmentsId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            DepartmentsId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            DepartmentsId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            DepartmentsId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            DepartmentsId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            DepartmentsId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            DepartmentsId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            DepartmentsId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            DepartmentsId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            DepartmentsId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            DepartmentsId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            DepartmentsId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            DepartmentsId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            DepartmentsId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            DepartmentsId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            DepartmentsId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            DepartmentsId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            DepartmentsId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            DepartmentsId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            DepartmentsId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            DepartmentsId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            DepartmentsId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            DepartmentsId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            DepartmentsId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            DepartmentsId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            DepartmentsId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            DepartmentsId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            DepartmentsId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            DepartmentsId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            DepartmentsId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            DepartmentsId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            DepartmentsId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            DepartmentsId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            DepartmentsId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            DepartmentsId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            DepartmentsId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            DepartmentsId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            DepartmentsId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            DepartmentsId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            DepartmentsId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            DepartmentsId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            DepartmentsId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            DepartmentsId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            DepartmentsId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            DepartmentsId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            DepartmentsId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            DepartmentsId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            DepartmentsId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            DepartmentsId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            DepartmentsId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            DepartmentsId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            DepartmentsId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            DepartmentsId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6")
                         });
                 });
 
@@ -574,503 +574,503 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            FacultiesId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            FacultiesId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            FacultiesId = new Guid("a3e71022-3255-4454-88a7-031080443bce")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            FacultiesId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            FacultiesId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            FacultiesId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            FacultiesId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            FacultiesId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            FacultiesId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            FacultiesId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            FacultiesId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            FacultiesId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            FacultiesId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            FacultiesId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            FacultiesId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            FacultiesId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            FacultiesId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            FacultiesId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            FacultiesId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            FacultiesId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            FacultiesId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            FacultiesId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            FacultiesId = new Guid("a3e71022-3255-4454-88a7-031080443bce")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            FacultiesId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            FacultiesId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            FacultiesId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            FacultiesId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            FacultiesId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            FacultiesId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            FacultiesId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            FacultiesId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            FacultiesId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            FacultiesId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            FacultiesId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            FacultiesId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            FacultiesId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            FacultiesId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            FacultiesId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            FacultiesId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            FacultiesId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            FacultiesId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            FacultiesId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            FacultiesId = new Guid("a3e71022-3255-4454-88a7-031080443bce")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            FacultiesId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            FacultiesId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            FacultiesId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            FacultiesId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            FacultiesId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            FacultiesId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            FacultiesId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            FacultiesId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            FacultiesId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            FacultiesId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            FacultiesId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            FacultiesId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            FacultiesId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            FacultiesId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            FacultiesId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            FacultiesId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            FacultiesId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            FacultiesId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            FacultiesId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            FacultiesId = new Guid("a3e71022-3255-4454-88a7-031080443bce")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            FacultiesId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            FacultiesId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            FacultiesId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            FacultiesId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            FacultiesId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            FacultiesId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            FacultiesId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            FacultiesId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            FacultiesId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            FacultiesId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            FacultiesId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            FacultiesId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            FacultiesId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            FacultiesId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            FacultiesId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            FacultiesId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            FacultiesId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            FacultiesId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            FacultiesId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            FacultiesId = new Guid("a3e71022-3255-4454-88a7-031080443bce")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            FacultiesId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            FacultiesId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            FacultiesId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            FacultiesId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            FacultiesId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            FacultiesId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            FacultiesId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            FacultiesId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            FacultiesId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            FacultiesId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            FacultiesId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            FacultiesId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            FacultiesId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            FacultiesId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            FacultiesId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            FacultiesId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            FacultiesId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            FacultiesId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            FacultiesId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            FacultiesId = new Guid("a3e71022-3255-4454-88a7-031080443bce")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            FacultiesId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            FacultiesId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            FacultiesId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            FacultiesId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            FacultiesId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            FacultiesId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            FacultiesId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            FacultiesId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            FacultiesId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            FacultiesId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            FacultiesId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            FacultiesId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            FacultiesId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            FacultiesId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            FacultiesId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            FacultiesId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            FacultiesId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            FacultiesId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            FacultiesId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            FacultiesId = new Guid("a3e71022-3255-4454-88a7-031080443bce")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            FacultiesId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            FacultiesId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            FacultiesId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            FacultiesId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            FacultiesId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            FacultiesId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            FacultiesId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            FacultiesId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            FacultiesId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            FacultiesId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            FacultiesId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            FacultiesId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            FacultiesId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            FacultiesId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            FacultiesId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            FacultiesId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            FacultiesId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            FacultiesId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            FacultiesId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            FacultiesId = new Guid("a3e71022-3255-4454-88a7-031080443bce")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            FacultiesId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            FacultiesId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            FacultiesId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            FacultiesId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            FacultiesId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            FacultiesId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            FacultiesId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            FacultiesId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            FacultiesId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            FacultiesId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            FacultiesId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            FacultiesId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            FacultiesId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            FacultiesId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            FacultiesId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            FacultiesId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            FacultiesId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            FacultiesId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            FacultiesId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            FacultiesId = new Guid("a3e71022-3255-4454-88a7-031080443bce")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            FacultiesId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            FacultiesId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            FacultiesId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            FacultiesId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            FacultiesId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            FacultiesId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            FacultiesId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            FacultiesId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            FacultiesId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            FacultiesId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            FacultiesId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            FacultiesId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            FacultiesId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            FacultiesId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            FacultiesId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            FacultiesId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            FacultiesId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            FacultiesId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            FacultiesId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            FacultiesId = new Guid("a3e71022-3255-4454-88a7-031080443bce")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            FacultiesId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            FacultiesId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            FacultiesId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            FacultiesId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            FacultiesId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            FacultiesId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            FacultiesId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            FacultiesId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            FacultiesId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            FacultiesId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            FacultiesId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            FacultiesId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            FacultiesId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            FacultiesId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            FacultiesId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            FacultiesId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            FacultiesId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac")
                         });
                 });
 
@@ -1091,503 +1091,503 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            SpecializationsId = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            SpecializationsId = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            SpecializationsId = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            SpecializationsId = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            SpecializationsId = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            SpecializationsId = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            SpecializationsId = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            SpecializationsId = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            SpecializationsId = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            SpecializationsId = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            SpecializationsId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            SpecializationsId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            SpecializationsId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            SpecializationsId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            SpecializationsId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            SpecializationsId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            SpecializationsId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            SpecializationsId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            SpecializationsId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            SpecializationsId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            SpecializationsId = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            SpecializationsId = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            SpecializationsId = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            SpecializationsId = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            SpecializationsId = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            SpecializationsId = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            SpecializationsId = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            SpecializationsId = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            SpecializationsId = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            SpecializationsId = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            SpecializationsId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            SpecializationsId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            SpecializationsId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            SpecializationsId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            SpecializationsId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            SpecializationsId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            SpecializationsId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            SpecializationsId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            SpecializationsId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            SpecializationsId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            SpecializationsId = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            SpecializationsId = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            SpecializationsId = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            SpecializationsId = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            SpecializationsId = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            SpecializationsId = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            SpecializationsId = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            SpecializationsId = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            SpecializationsId = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            SpecializationsId = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            SpecializationsId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            SpecializationsId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            SpecializationsId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            SpecializationsId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            SpecializationsId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            SpecializationsId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            SpecializationsId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            SpecializationsId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            SpecializationsId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            SpecializationsId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            SpecializationsId = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            SpecializationsId = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            SpecializationsId = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            SpecializationsId = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            SpecializationsId = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            SpecializationsId = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            SpecializationsId = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            SpecializationsId = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            SpecializationsId = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            SpecializationsId = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            SpecializationsId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            SpecializationsId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            SpecializationsId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            SpecializationsId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            SpecializationsId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            SpecializationsId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            SpecializationsId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            SpecializationsId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            SpecializationsId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            SpecializationsId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            SpecializationsId = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            SpecializationsId = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            SpecializationsId = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            SpecializationsId = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            SpecializationsId = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            SpecializationsId = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            SpecializationsId = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            SpecializationsId = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            SpecializationsId = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            SpecializationsId = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            SpecializationsId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            SpecializationsId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            SpecializationsId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            SpecializationsId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            SpecializationsId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            SpecializationsId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            SpecializationsId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            SpecializationsId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            SpecializationsId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            SpecializationsId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            SpecializationsId = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            SpecializationsId = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            SpecializationsId = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            SpecializationsId = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            SpecializationsId = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            SpecializationsId = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            SpecializationsId = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            SpecializationsId = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            SpecializationsId = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            SpecializationsId = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            SpecializationsId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            SpecializationsId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            SpecializationsId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            SpecializationsId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            SpecializationsId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            SpecializationsId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            SpecializationsId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            SpecializationsId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            SpecializationsId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            SpecializationsId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            SpecializationsId = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            SpecializationsId = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            SpecializationsId = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            SpecializationsId = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            SpecializationsId = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            SpecializationsId = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            SpecializationsId = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            SpecializationsId = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            SpecializationsId = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            SpecializationsId = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            SpecializationsId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            SpecializationsId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            SpecializationsId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            SpecializationsId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            SpecializationsId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            SpecializationsId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            SpecializationsId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            SpecializationsId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            SpecializationsId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            SpecializationsId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            SpecializationsId = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            SpecializationsId = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            SpecializationsId = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            SpecializationsId = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            SpecializationsId = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            SpecializationsId = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            SpecializationsId = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            SpecializationsId = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            SpecializationsId = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            SpecializationsId = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            SpecializationsId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            SpecializationsId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            SpecializationsId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            SpecializationsId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            SpecializationsId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            SpecializationsId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            SpecializationsId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            SpecializationsId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            SpecializationsId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            SpecializationsId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            SpecializationsId = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            SpecializationsId = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            SpecializationsId = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            SpecializationsId = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            SpecializationsId = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            SpecializationsId = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            SpecializationsId = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            SpecializationsId = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            SpecializationsId = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            SpecializationsId = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            SpecializationsId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            SpecializationsId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            SpecializationsId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            SpecializationsId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            SpecializationsId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            SpecializationsId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            SpecializationsId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            SpecializationsId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            SpecializationsId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            SpecializationsId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            SpecializationsId = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            SpecializationsId = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            SpecializationsId = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            SpecializationsId = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            SpecializationsId = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            SpecializationsId = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            SpecializationsId = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            SpecializationsId = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            SpecializationsId = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            SpecializationsId = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            SpecializationsId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            SpecializationsId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            SpecializationsId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            SpecializationsId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            SpecializationsId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            SpecializationsId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            SpecializationsId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            SpecializationsId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            SpecializationsId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            SpecializationsId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466")
                         });
                 });
 
@@ -1608,503 +1608,503 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            UniversitiesId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            UniversitiesId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            UniversitiesId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            UniversitiesId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            UniversitiesId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            UniversitiesId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            UniversitiesId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            UniversitiesId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            UniversitiesId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            UniversitiesId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            UniversitiesId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            UniversitiesId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            UniversitiesId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            UniversitiesId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            UniversitiesId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            UniversitiesId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            UniversitiesId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            UniversitiesId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            CoursesId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            UniversitiesId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            CoursesId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            UniversitiesId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            UniversitiesId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            UniversitiesId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            UniversitiesId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            UniversitiesId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            UniversitiesId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            UniversitiesId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            UniversitiesId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            UniversitiesId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            UniversitiesId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            UniversitiesId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            UniversitiesId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            UniversitiesId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            UniversitiesId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            UniversitiesId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            UniversitiesId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            UniversitiesId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            UniversitiesId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            UniversitiesId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            CoursesId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            UniversitiesId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            CoursesId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            UniversitiesId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            UniversitiesId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            UniversitiesId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            UniversitiesId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            UniversitiesId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            UniversitiesId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            UniversitiesId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            UniversitiesId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            UniversitiesId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            UniversitiesId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            UniversitiesId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            UniversitiesId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            UniversitiesId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            UniversitiesId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            UniversitiesId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            UniversitiesId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            UniversitiesId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            UniversitiesId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            UniversitiesId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            CoursesId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            UniversitiesId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            CoursesId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            UniversitiesId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            UniversitiesId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            UniversitiesId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            UniversitiesId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            UniversitiesId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            UniversitiesId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            UniversitiesId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            UniversitiesId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            UniversitiesId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            UniversitiesId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            UniversitiesId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            UniversitiesId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            UniversitiesId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            UniversitiesId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            UniversitiesId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            UniversitiesId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            UniversitiesId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            UniversitiesId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            UniversitiesId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            CoursesId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            UniversitiesId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            CoursesId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            UniversitiesId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            UniversitiesId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            UniversitiesId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            UniversitiesId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            UniversitiesId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            UniversitiesId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            UniversitiesId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            UniversitiesId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            UniversitiesId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            UniversitiesId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            UniversitiesId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            UniversitiesId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            UniversitiesId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            UniversitiesId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            UniversitiesId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            UniversitiesId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            UniversitiesId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            UniversitiesId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            UniversitiesId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            CoursesId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            UniversitiesId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            CoursesId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            UniversitiesId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            UniversitiesId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            UniversitiesId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            UniversitiesId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            UniversitiesId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            UniversitiesId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            UniversitiesId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            UniversitiesId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            UniversitiesId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            UniversitiesId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            UniversitiesId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            UniversitiesId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            UniversitiesId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            UniversitiesId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            UniversitiesId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            UniversitiesId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            UniversitiesId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            UniversitiesId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            UniversitiesId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            CoursesId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            UniversitiesId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            CoursesId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            UniversitiesId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            UniversitiesId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            UniversitiesId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            UniversitiesId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            UniversitiesId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            UniversitiesId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            UniversitiesId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            UniversitiesId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            UniversitiesId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            UniversitiesId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            UniversitiesId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            UniversitiesId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            UniversitiesId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            UniversitiesId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            UniversitiesId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            UniversitiesId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            UniversitiesId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            UniversitiesId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            UniversitiesId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            CoursesId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            UniversitiesId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            CoursesId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            UniversitiesId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            UniversitiesId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            UniversitiesId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            UniversitiesId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            UniversitiesId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            UniversitiesId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            UniversitiesId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            UniversitiesId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            UniversitiesId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            UniversitiesId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            UniversitiesId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            UniversitiesId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            UniversitiesId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            UniversitiesId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            UniversitiesId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            UniversitiesId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            UniversitiesId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            UniversitiesId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            UniversitiesId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            CoursesId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            UniversitiesId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            CoursesId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            UniversitiesId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            UniversitiesId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            UniversitiesId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            UniversitiesId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            UniversitiesId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            UniversitiesId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            UniversitiesId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            UniversitiesId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            UniversitiesId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            UniversitiesId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            UniversitiesId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            UniversitiesId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            UniversitiesId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            UniversitiesId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            UniversitiesId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            UniversitiesId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            UniversitiesId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            UniversitiesId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            UniversitiesId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            CoursesId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            UniversitiesId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            CoursesId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            UniversitiesId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            UniversitiesId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            UniversitiesId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            UniversitiesId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            UniversitiesId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            UniversitiesId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            UniversitiesId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            UniversitiesId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            UniversitiesId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            UniversitiesId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            UniversitiesId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            UniversitiesId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            UniversitiesId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            UniversitiesId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            UniversitiesId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            UniversitiesId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            UniversitiesId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            UniversitiesId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            UniversitiesId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            CoursesId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            UniversitiesId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            CoursesId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            UniversitiesId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         });
                 });
 
@@ -2180,35 +2180,35 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("cd65d3fd-85c6-417c-b45f-292c0a6951cc"),
+                            Id = new Guid("05cff971-40af-4fff-9056-6d3e97f7db8a"),
                             Action = "Create",
                             Name = "createcourses",
                             Resource = "Courses"
                         },
                         new
                         {
-                            Id = new Guid("15b40287-e1d0-4da5-8482-b44116d39068"),
+                            Id = new Guid("f37243ca-eaa2-40cd-a36c-7dbd2dde676a"),
                             Action = "Edit",
                             Name = "editcourses",
                             Resource = "Courses"
                         },
                         new
                         {
-                            Id = new Guid("5af320c5-6103-49c5-aacf-704d5b601764"),
+                            Id = new Guid("21cc46ac-850f-46d4-995a-cde4f5d091e4"),
                             Action = "Delete",
                             Name = "deletecourses",
                             Resource = "Courses"
                         },
                         new
                         {
-                            Id = new Guid("8d7094f9-f09e-45b4-931e-da3abff927c6"),
+                            Id = new Guid("ab73d966-7c61-432f-a168-fc218ead06c5"),
                             Action = "View",
                             Name = "viewusers",
                             Resource = "Users"
                         },
                         new
                         {
-                            Id = new Guid("72b51535-da3d-4249-bf95-6370ca89641e"),
+                            Id = new Guid("0fff2715-3110-497c-b01d-e4a28dccac02"),
                             Action = "Manage",
                             Name = "managedashboard",
                             Resource = "Dashboard"
@@ -2232,53 +2232,53 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            RoleId = new Guid("efa4df83-5507-4874-968e-decefcb037d6"),
-                            PermissionId = new Guid("cd65d3fd-85c6-417c-b45f-292c0a6951cc")
+                            RoleId = new Guid("467be47a-cd5a-46b9-94ab-6fa2ee4e9745"),
+                            PermissionId = new Guid("05cff971-40af-4fff-9056-6d3e97f7db8a")
                         },
                         new
                         {
-                            RoleId = new Guid("efa4df83-5507-4874-968e-decefcb037d6"),
-                            PermissionId = new Guid("15b40287-e1d0-4da5-8482-b44116d39068")
+                            RoleId = new Guid("467be47a-cd5a-46b9-94ab-6fa2ee4e9745"),
+                            PermissionId = new Guid("f37243ca-eaa2-40cd-a36c-7dbd2dde676a")
                         },
                         new
                         {
-                            RoleId = new Guid("efa4df83-5507-4874-968e-decefcb037d6"),
-                            PermissionId = new Guid("5af320c5-6103-49c5-aacf-704d5b601764")
+                            RoleId = new Guid("467be47a-cd5a-46b9-94ab-6fa2ee4e9745"),
+                            PermissionId = new Guid("21cc46ac-850f-46d4-995a-cde4f5d091e4")
                         },
                         new
                         {
-                            RoleId = new Guid("efa4df83-5507-4874-968e-decefcb037d6"),
-                            PermissionId = new Guid("8d7094f9-f09e-45b4-931e-da3abff927c6")
+                            RoleId = new Guid("467be47a-cd5a-46b9-94ab-6fa2ee4e9745"),
+                            PermissionId = new Guid("ab73d966-7c61-432f-a168-fc218ead06c5")
                         },
                         new
                         {
-                            RoleId = new Guid("efa4df83-5507-4874-968e-decefcb037d6"),
-                            PermissionId = new Guid("72b51535-da3d-4249-bf95-6370ca89641e")
+                            RoleId = new Guid("467be47a-cd5a-46b9-94ab-6fa2ee4e9745"),
+                            PermissionId = new Guid("0fff2715-3110-497c-b01d-e4a28dccac02")
                         },
                         new
                         {
-                            RoleId = new Guid("4dac6d1f-e5c7-47ef-80a8-4466a3e71d1b"),
-                            PermissionId = new Guid("cd65d3fd-85c6-417c-b45f-292c0a6951cc")
+                            RoleId = new Guid("a19767ba-9892-413a-9ec7-56b530b41722"),
+                            PermissionId = new Guid("05cff971-40af-4fff-9056-6d3e97f7db8a")
                         },
                         new
                         {
-                            RoleId = new Guid("4dac6d1f-e5c7-47ef-80a8-4466a3e71d1b"),
-                            PermissionId = new Guid("15b40287-e1d0-4da5-8482-b44116d39068")
+                            RoleId = new Guid("a19767ba-9892-413a-9ec7-56b530b41722"),
+                            PermissionId = new Guid("f37243ca-eaa2-40cd-a36c-7dbd2dde676a")
                         },
                         new
                         {
-                            RoleId = new Guid("4dac6d1f-e5c7-47ef-80a8-4466a3e71d1b"),
-                            PermissionId = new Guid("5af320c5-6103-49c5-aacf-704d5b601764")
+                            RoleId = new Guid("a19767ba-9892-413a-9ec7-56b530b41722"),
+                            PermissionId = new Guid("21cc46ac-850f-46d4-995a-cde4f5d091e4")
                         },
                         new
                         {
-                            RoleId = new Guid("326de8ac-dd85-4aa2-8576-960fdfcf6740"),
-                            PermissionId = new Guid("8d7094f9-f09e-45b4-931e-da3abff927c6")
+                            RoleId = new Guid("dc5fc5f1-d7bc-42a6-85b8-d606db13ec5a"),
+                            PermissionId = new Guid("ab73d966-7c61-432f-a168-fc218ead06c5")
                         },
                         new
                         {
-                            RoleId = new Guid("326de8ac-dd85-4aa2-8576-960fdfcf6740"),
-                            PermissionId = new Guid("72b51535-da3d-4249-bf95-6370ca89641e")
+                            RoleId = new Guid("dc5fc5f1-d7bc-42a6-85b8-d606db13ec5a"),
+                            PermissionId = new Guid("0fff2715-3110-497c-b01d-e4a28dccac02")
                         });
                 });
 
@@ -2312,138 +2312,138 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("966f702e-7938-4585-b496-1342b90bbf52"),
+                            Id = new Guid("c8878120-472b-477f-8166-2f9b9fffb022"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 1 في البرمجة",
                             NameEn = "Category 1 in Programming",
-                            TopicId = new Guid("101831e0-cef1-4d35-8202-2441fbb01a7e")
+                            TopicId = new Guid("949fdc1e-a9dc-4b66-aecf-9dc9821142a8")
                         },
                         new
                         {
-                            Id = new Guid("2de18ca2-46f0-4ce4-9cc0-b3bb042c77c9"),
+                            Id = new Guid("11b89670-4836-4a3f-aeaf-b548d423b657"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 2 في البرمجة",
                             NameEn = "Category 2 in Programming",
-                            TopicId = new Guid("101831e0-cef1-4d35-8202-2441fbb01a7e")
+                            TopicId = new Guid("949fdc1e-a9dc-4b66-aecf-9dc9821142a8")
                         },
                         new
                         {
-                            Id = new Guid("ad574fdd-1013-4ce3-a201-a396f30eeb48"),
+                            Id = new Guid("5e16047a-0fda-44bd-bdad-78c62777e283"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 3 في البرمجة",
                             NameEn = "Category 3 in Programming",
-                            TopicId = new Guid("101831e0-cef1-4d35-8202-2441fbb01a7e")
+                            TopicId = new Guid("949fdc1e-a9dc-4b66-aecf-9dc9821142a8")
                         },
                         new
                         {
-                            Id = new Guid("549ea9a1-7ba1-42c2-91e0-40188035909c"),
+                            Id = new Guid("170553dd-d7ba-48ae-b1d4-73cbaafd0906"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 1 في تحليل البيانات",
                             NameEn = "Category 1 in Data Analysis",
-                            TopicId = new Guid("2c040ccf-637d-4733-9cb7-4603691366c6")
+                            TopicId = new Guid("3e03ff9b-4582-4589-b66c-ffaef037e651")
                         },
                         new
                         {
-                            Id = new Guid("3f460378-116d-42ea-b25f-20fd9ff83ca5"),
+                            Id = new Guid("ff5bd01c-bb39-49a6-98e2-30bc8d530d4b"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 2 في تحليل البيانات",
                             NameEn = "Category 2 in Data Analysis",
-                            TopicId = new Guid("2c040ccf-637d-4733-9cb7-4603691366c6")
+                            TopicId = new Guid("3e03ff9b-4582-4589-b66c-ffaef037e651")
                         },
                         new
                         {
-                            Id = new Guid("379e01c3-91c6-4ac7-93b7-385d3fc8b0c5"),
+                            Id = new Guid("ebb9f5d1-4ccd-41a5-b6f6-add08ebfd4df"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 3 في تحليل البيانات",
                             NameEn = "Category 3 in Data Analysis",
-                            TopicId = new Guid("2c040ccf-637d-4733-9cb7-4603691366c6")
+                            TopicId = new Guid("3e03ff9b-4582-4589-b66c-ffaef037e651")
                         },
                         new
                         {
-                            Id = new Guid("b09566b9-2076-445e-b7fc-2ed81b3fdbd3"),
+                            Id = new Guid("dbc46e43-e917-4354-82a1-0c5bddbd92c8"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 1 في الذكاء الاصطناعي",
                             NameEn = "Category 1 in Artificial Intelligence",
-                            TopicId = new Guid("cf761fb2-6d0a-4a98-a452-1fde6b00d80e")
+                            TopicId = new Guid("5efa86c0-a08f-43a4-9d07-c0b5dcadae8d")
                         },
                         new
                         {
-                            Id = new Guid("2d8e1569-523a-4694-bfbb-ae0da6aeae9d"),
+                            Id = new Guid("7a41dd5d-864a-4fb0-a43a-168e478eb80f"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 2 في الذكاء الاصطناعي",
                             NameEn = "Category 2 in Artificial Intelligence",
-                            TopicId = new Guid("cf761fb2-6d0a-4a98-a452-1fde6b00d80e")
+                            TopicId = new Guid("5efa86c0-a08f-43a4-9d07-c0b5dcadae8d")
                         },
                         new
                         {
-                            Id = new Guid("0c76b7d3-15ed-40c1-a862-e5619cbd4565"),
+                            Id = new Guid("a59af3b6-bb81-473f-b5c9-e210b7706332"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 3 في الذكاء الاصطناعي",
                             NameEn = "Category 3 in Artificial Intelligence",
-                            TopicId = new Guid("cf761fb2-6d0a-4a98-a452-1fde6b00d80e")
+                            TopicId = new Guid("5efa86c0-a08f-43a4-9d07-c0b5dcadae8d")
                         },
                         new
                         {
-                            Id = new Guid("86518196-917c-47fc-b594-38d899ad2c62"),
+                            Id = new Guid("80e69fd0-8144-4371-a06a-37765af3b4a0"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 1 في أمن المعلومات",
                             NameEn = "Category 1 in Information Security",
-                            TopicId = new Guid("cf4f8f8b-9813-4303-a5e6-3167c13c08c7")
+                            TopicId = new Guid("b51afab2-338c-4eaf-b76b-ac4b500e8809")
                         },
                         new
                         {
-                            Id = new Guid("f32f5204-3dbb-45b5-a449-10511090e2a9"),
+                            Id = new Guid("12b68668-36a5-4309-a421-530ef299388a"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 2 في أمن المعلومات",
                             NameEn = "Category 2 in Information Security",
-                            TopicId = new Guid("cf4f8f8b-9813-4303-a5e6-3167c13c08c7")
+                            TopicId = new Guid("b51afab2-338c-4eaf-b76b-ac4b500e8809")
                         },
                         new
                         {
-                            Id = new Guid("d790f07c-392f-4918-9451-606ef1f8ad91"),
+                            Id = new Guid("67ca1aa5-ce71-4353-975e-c21e2e25bd0c"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 3 في أمن المعلومات",
                             NameEn = "Category 3 in Information Security",
-                            TopicId = new Guid("cf4f8f8b-9813-4303-a5e6-3167c13c08c7")
+                            TopicId = new Guid("b51afab2-338c-4eaf-b76b-ac4b500e8809")
                         },
                         new
                         {
-                            Id = new Guid("1a18d609-a4f2-43af-8417-d08666e7ed22"),
+                            Id = new Guid("cde74da4-c3f1-4f1f-a89a-d397aef601e2"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 1 في هندسة البرمجيات",
                             NameEn = "Category 1 in Software Engineering",
-                            TopicId = new Guid("0eccd409-3094-4c07-a8a3-db45fe8bef2d")
+                            TopicId = new Guid("bdc1dc36-7717-4b21-a202-4f1a39aec838")
                         },
                         new
                         {
-                            Id = new Guid("e0631c91-607d-4e3f-b941-43d1446380db"),
+                            Id = new Guid("e11cd7f3-45ad-42b5-9e3b-ccd74d43b8cc"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 2 في هندسة البرمجيات",
                             NameEn = "Category 2 in Software Engineering",
-                            TopicId = new Guid("0eccd409-3094-4c07-a8a3-db45fe8bef2d")
+                            TopicId = new Guid("bdc1dc36-7717-4b21-a202-4f1a39aec838")
                         },
                         new
                         {
-                            Id = new Guid("2d1e6312-d850-48e3-b6f9-31fac10996a1"),
+                            Id = new Guid("ca63e8ab-2ac8-4189-8bc3-af820a38114f"),
                             CoverPhoto = "https://localhost:7030/images/book-01.jpg",
                             IsActive = false,
                             NameAr = "تصنيف 3 في هندسة البرمجيات",
                             NameEn = "Category 3 in Software Engineering",
-                            TopicId = new Guid("0eccd409-3094-4c07-a8a3-db45fe8bef2d")
+                            TopicId = new Guid("bdc1dc36-7717-4b21-a202-4f1a39aec838")
                         });
                 });
 
@@ -2536,993 +2536,993 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("e90cf593-67a1-4664-9142-8a76d2e7a0c7"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(9597),
+                            Id = new Guid("474c921e-44e6-40cc-ac31-339a555bab98"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(7280),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 1 في دورة 1",
                             NameEn = "Lesson 1 in Section 1 in Course 1",
-                            SectionId = new Guid("fe29bc8b-b5a1-4ce7-b7a8-ab4ae5f221dd")
+                            SectionId = new Guid("1f2e46af-e866-40e1-98c7-e6652e7d322e")
                         },
                         new
                         {
-                            Id = new Guid("9784df96-94e0-41b8-bc21-3829409b48a4"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(9614),
+                            Id = new Guid("da15b491-9ef6-4d68-b9dc-085a3d6c4875"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(7307),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 1 في دورة 1",
                             NameEn = "Lesson 2 in Section 1 in Course 1",
-                            SectionId = new Guid("fe29bc8b-b5a1-4ce7-b7a8-ab4ae5f221dd")
+                            SectionId = new Guid("1f2e46af-e866-40e1-98c7-e6652e7d322e")
                         },
                         new
                         {
-                            Id = new Guid("f61d8b83-350c-495f-a6f8-64b00c5ce40c"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(9621),
+                            Id = new Guid("af868276-8261-4206-88b4-43d95d8644e9"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(7315),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 1 في دورة 1",
                             NameEn = "Lesson 3 in Section 1 in Course 1",
-                            SectionId = new Guid("fe29bc8b-b5a1-4ce7-b7a8-ab4ae5f221dd")
+                            SectionId = new Guid("1f2e46af-e866-40e1-98c7-e6652e7d322e")
                         },
                         new
                         {
-                            Id = new Guid("af3e8ff5-9421-4ece-a40c-88b986836661"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(9982),
+                            Id = new Guid("b38b829a-6f6e-40b0-b957-795403106966"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(7855),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 2 في دورة 1",
                             NameEn = "Lesson 1 in Section 2 in Course 1",
-                            SectionId = new Guid("a89ced5c-73ab-4b18-a4fd-a1cf11e37503")
+                            SectionId = new Guid("9d18e37d-af34-407a-b23f-a5e6596b7c42")
                         },
                         new
                         {
-                            Id = new Guid("949edc9a-0c5d-4ee8-8c73-276fe4de6232"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(9989),
+                            Id = new Guid("45744367-0112-46d6-9e6b-728f46514f83"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(7866),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 2 في دورة 1",
                             NameEn = "Lesson 2 in Section 2 in Course 1",
-                            SectionId = new Guid("a89ced5c-73ab-4b18-a4fd-a1cf11e37503")
+                            SectionId = new Guid("9d18e37d-af34-407a-b23f-a5e6596b7c42")
                         },
                         new
                         {
-                            Id = new Guid("0dab353c-7132-4d97-babf-d90932b5e10a"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(9995),
+                            Id = new Guid("e8cf7fdd-9e78-4f0b-a28e-14f33356b769"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(7875),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 2 في دورة 1",
                             NameEn = "Lesson 3 in Section 2 in Course 1",
-                            SectionId = new Guid("a89ced5c-73ab-4b18-a4fd-a1cf11e37503")
+                            SectionId = new Guid("9d18e37d-af34-407a-b23f-a5e6596b7c42")
                         },
                         new
                         {
-                            Id = new Guid("97e4d9d3-4525-4c72-9213-ef032fbf2789"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(188),
+                            Id = new Guid("a6cff617-f54b-43e1-a794-333d0e6dfba1"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8120),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 3 في دورة 1",
                             NameEn = "Lesson 1 in Section 3 in Course 1",
-                            SectionId = new Guid("3a9390bf-fed5-4b1e-b31f-e13508551535")
+                            SectionId = new Guid("7897cc14-3bae-47b0-bfe3-a05fb846fafb")
                         },
                         new
                         {
-                            Id = new Guid("1c29e702-ebae-407e-896d-20f216d88888"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(198),
+                            Id = new Guid("d443071e-a5c1-4d67-b76d-0c08d40f29b5"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8130),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 3 في دورة 1",
                             NameEn = "Lesson 2 in Section 3 in Course 1",
-                            SectionId = new Guid("3a9390bf-fed5-4b1e-b31f-e13508551535")
+                            SectionId = new Guid("7897cc14-3bae-47b0-bfe3-a05fb846fafb")
                         },
                         new
                         {
-                            Id = new Guid("1ed84cd0-3299-4edd-97cc-905b33c80128"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(203),
+                            Id = new Guid("ea8c2a19-7b32-43e3-8bc0-90d0c5a376b6"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8136),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 3 في دورة 1",
                             NameEn = "Lesson 3 in Section 3 in Course 1",
-                            SectionId = new Guid("3a9390bf-fed5-4b1e-b31f-e13508551535")
+                            SectionId = new Guid("7897cc14-3bae-47b0-bfe3-a05fb846fafb")
                         },
                         new
                         {
-                            Id = new Guid("502923ac-89e4-4326-9575-f03be6a320e5"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(385),
+                            Id = new Guid("0109ba16-8ef1-4c1b-aa02-33ec79a91b44"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8492),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 1 في دورة 2",
                             NameEn = "Lesson 1 in Section 1 in Course 2",
-                            SectionId = new Guid("1a99201e-35fe-4dda-a10e-b67373abca77")
+                            SectionId = new Guid("ca8490cb-7ea8-40b5-b4f6-1fe240337a87")
                         },
                         new
                         {
-                            Id = new Guid("045c10d3-7dcc-4415-aa52-69550d2b254f"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(393),
+                            Id = new Guid("27c10cf7-1152-4214-943b-749cad14e9f8"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8503),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 1 في دورة 2",
                             NameEn = "Lesson 2 in Section 1 in Course 2",
-                            SectionId = new Guid("1a99201e-35fe-4dda-a10e-b67373abca77")
+                            SectionId = new Guid("ca8490cb-7ea8-40b5-b4f6-1fe240337a87")
                         },
                         new
                         {
-                            Id = new Guid("2651c4dc-5a35-4fb3-b275-397011cd593d"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(398),
+                            Id = new Guid("c828965c-2fa9-4b80-b678-a7dc0f2b3235"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8509),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 1 في دورة 2",
                             NameEn = "Lesson 3 in Section 1 in Course 2",
-                            SectionId = new Guid("1a99201e-35fe-4dda-a10e-b67373abca77")
+                            SectionId = new Guid("ca8490cb-7ea8-40b5-b4f6-1fe240337a87")
                         },
                         new
                         {
-                            Id = new Guid("ce1c5822-a778-40a7-825f-237f1d115acb"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(524),
+                            Id = new Guid("38df48bb-3616-42a1-b23d-28ac47397e8d"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8755),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 2 في دورة 2",
                             NameEn = "Lesson 1 in Section 2 in Course 2",
-                            SectionId = new Guid("56ca78f5-e21c-484d-984e-1da68257a45d")
+                            SectionId = new Guid("15557eee-7a91-4da6-9a15-2869250cf1bf")
                         },
                         new
                         {
-                            Id = new Guid("84737464-7220-43c2-aeed-5ae441d1ac89"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(573),
+                            Id = new Guid("d1739e9e-4533-4ab4-b6da-d7412ceca3cc"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8764),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 2 في دورة 2",
                             NameEn = "Lesson 2 in Section 2 in Course 2",
-                            SectionId = new Guid("56ca78f5-e21c-484d-984e-1da68257a45d")
+                            SectionId = new Guid("15557eee-7a91-4da6-9a15-2869250cf1bf")
                         },
                         new
                         {
-                            Id = new Guid("ade7d45f-b8e7-4562-a2d6-56db6fdc3599"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(579),
+                            Id = new Guid("d4485bca-3af3-4636-bd79-6169ef638f32"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8771),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 2 في دورة 2",
                             NameEn = "Lesson 3 in Section 2 in Course 2",
-                            SectionId = new Guid("56ca78f5-e21c-484d-984e-1da68257a45d")
+                            SectionId = new Guid("15557eee-7a91-4da6-9a15-2869250cf1bf")
                         },
                         new
                         {
-                            Id = new Guid("2d978232-5137-454b-9b78-203e16ac11df"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(704),
+                            Id = new Guid("24dfe79e-2845-4be5-9165-12188125eba2"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8972),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 3 في دورة 2",
                             NameEn = "Lesson 1 in Section 3 in Course 2",
-                            SectionId = new Guid("c1efe640-42dc-483a-beac-9edcbdddbd67")
+                            SectionId = new Guid("ee2ce80b-2648-423b-924f-6822350fa30d")
                         },
                         new
                         {
-                            Id = new Guid("65bd4fb5-bdf8-46f4-940b-d14c572e403c"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(710),
+                            Id = new Guid("6153ae0d-52ef-4a80-b988-df0582c9e375"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8981),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 3 في دورة 2",
                             NameEn = "Lesson 2 in Section 3 in Course 2",
-                            SectionId = new Guid("c1efe640-42dc-483a-beac-9edcbdddbd67")
+                            SectionId = new Guid("ee2ce80b-2648-423b-924f-6822350fa30d")
                         },
                         new
                         {
-                            Id = new Guid("dda13df1-840d-421a-85c8-4bbde1dea86f"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(717),
+                            Id = new Guid("c78e67df-ac48-4a79-aace-d110dd4ff75f"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(8989),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 3 في دورة 2",
                             NameEn = "Lesson 3 in Section 3 in Course 2",
-                            SectionId = new Guid("c1efe640-42dc-483a-beac-9edcbdddbd67")
+                            SectionId = new Guid("ee2ce80b-2648-423b-924f-6822350fa30d")
                         },
                         new
                         {
-                            Id = new Guid("f845c274-cbcd-4963-966a-b526a4d770f0"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(888),
+                            Id = new Guid("65c04bf5-0d4e-4a97-a94b-83a7c4fe8e48"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9220),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 1 في دورة 3",
                             NameEn = "Lesson 1 in Section 1 in Course 3",
-                            SectionId = new Guid("9ed14ada-e20b-4a79-8f28-8a299bf9b1ca")
+                            SectionId = new Guid("19363869-8cbb-4e78-a14f-5d973aeaab0b")
                         },
                         new
                         {
-                            Id = new Guid("6144a950-58e8-4cbe-83e3-85f059c4f11e"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(898),
+                            Id = new Guid("1c5553da-f06f-46c0-9108-74345af7edd6"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9230),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 1 في دورة 3",
                             NameEn = "Lesson 2 in Section 1 in Course 3",
-                            SectionId = new Guid("9ed14ada-e20b-4a79-8f28-8a299bf9b1ca")
+                            SectionId = new Guid("19363869-8cbb-4e78-a14f-5d973aeaab0b")
                         },
                         new
                         {
-                            Id = new Guid("14fdb462-94a3-4153-b926-6c64332e983e"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(904),
+                            Id = new Guid("617bcfcc-a0d9-495c-bce8-f05cdfdefa88"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9237),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 1 في دورة 3",
                             NameEn = "Lesson 3 in Section 1 in Course 3",
-                            SectionId = new Guid("9ed14ada-e20b-4a79-8f28-8a299bf9b1ca")
+                            SectionId = new Guid("19363869-8cbb-4e78-a14f-5d973aeaab0b")
                         },
                         new
                         {
-                            Id = new Guid("c40b5fc8-7ef0-4bf6-b1c5-7f5c5e27d99f"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1074),
+                            Id = new Guid("cafbfe22-ca03-4f4c-8501-437eb290df91"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9450),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 2 في دورة 3",
                             NameEn = "Lesson 1 in Section 2 in Course 3",
-                            SectionId = new Guid("816b8d43-be29-476c-88c7-778e265093c6")
+                            SectionId = new Guid("3e0a87a3-9b5a-422d-bf2c-d6b35cd59d7c")
                         },
                         new
                         {
-                            Id = new Guid("63071dd4-d515-4d3e-b0c5-07b78f323b3f"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1081),
+                            Id = new Guid("3f2800df-138d-4e5d-b5ca-295a1897069f"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9459),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 2 في دورة 3",
                             NameEn = "Lesson 2 in Section 2 in Course 3",
-                            SectionId = new Guid("816b8d43-be29-476c-88c7-778e265093c6")
+                            SectionId = new Guid("3e0a87a3-9b5a-422d-bf2c-d6b35cd59d7c")
                         },
                         new
                         {
-                            Id = new Guid("a3d6bb40-7b2c-45c3-9cdc-6915f57774db"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1086),
+                            Id = new Guid("17c0870b-568f-44fa-b981-41bf334c53ef"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9466),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 2 في دورة 3",
                             NameEn = "Lesson 3 in Section 2 in Course 3",
-                            SectionId = new Guid("816b8d43-be29-476c-88c7-778e265093c6")
+                            SectionId = new Guid("3e0a87a3-9b5a-422d-bf2c-d6b35cd59d7c")
                         },
                         new
                         {
-                            Id = new Guid("71328164-72a7-4728-82e0-7ecc53b202e6"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1215),
+                            Id = new Guid("cd488446-1347-4649-8f23-4fc7d63a71e1"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9642),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 3 في دورة 3",
                             NameEn = "Lesson 1 in Section 3 in Course 3",
-                            SectionId = new Guid("ae9959dc-c4b4-4562-b844-43d5d6d112f6")
+                            SectionId = new Guid("fe4a8dc4-5349-4e2b-ab8f-b7131339183d")
                         },
                         new
                         {
-                            Id = new Guid("510af08b-e245-40d3-a408-f01777fed964"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1223),
+                            Id = new Guid("17aaae50-993b-4832-856d-13600c178c28"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9650),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 3 في دورة 3",
                             NameEn = "Lesson 2 in Section 3 in Course 3",
-                            SectionId = new Guid("ae9959dc-c4b4-4562-b844-43d5d6d112f6")
+                            SectionId = new Guid("fe4a8dc4-5349-4e2b-ab8f-b7131339183d")
                         },
                         new
                         {
-                            Id = new Guid("01cab6e0-44fa-436a-9e50-ad5927e47ddc"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1229),
+                            Id = new Guid("dd77ca01-0478-47f4-aa10-75e6c4c0c832"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9697),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 3 في دورة 3",
                             NameEn = "Lesson 3 in Section 3 in Course 3",
-                            SectionId = new Guid("ae9959dc-c4b4-4562-b844-43d5d6d112f6")
+                            SectionId = new Guid("fe4a8dc4-5349-4e2b-ab8f-b7131339183d")
                         },
                         new
                         {
-                            Id = new Guid("946c762f-b674-4010-b2e8-467ec5c19d83"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1420),
+                            Id = new Guid("e0decac2-a862-4de8-bd9d-2ca0d2ca66a8"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9873),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 1 في دورة 4",
                             NameEn = "Lesson 1 in Section 1 in Course 4",
-                            SectionId = new Guid("aae8552d-7eb5-4200-b1da-7d022abbc0a7")
+                            SectionId = new Guid("c6a88465-bb5b-4b05-a799-2fcba3ada87a")
                         },
                         new
                         {
-                            Id = new Guid("dd9c2322-a27a-48f9-b409-2afbeb04496f"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1426),
+                            Id = new Guid("ac19ac1a-cf01-436f-9017-5ff733940233"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9881),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 1 في دورة 4",
                             NameEn = "Lesson 2 in Section 1 in Course 4",
-                            SectionId = new Guid("aae8552d-7eb5-4200-b1da-7d022abbc0a7")
+                            SectionId = new Guid("c6a88465-bb5b-4b05-a799-2fcba3ada87a")
                         },
                         new
                         {
-                            Id = new Guid("260528cf-a786-41e1-800c-577a5fe723e6"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1432),
+                            Id = new Guid("47ee94ce-08ce-4d03-9533-5f2cd53519d6"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(9902),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 1 في دورة 4",
                             NameEn = "Lesson 3 in Section 1 in Course 4",
-                            SectionId = new Guid("aae8552d-7eb5-4200-b1da-7d022abbc0a7")
+                            SectionId = new Guid("c6a88465-bb5b-4b05-a799-2fcba3ada87a")
                         },
                         new
                         {
-                            Id = new Guid("afdef2c1-b971-4a6d-9138-0d60f39d8123"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1618),
+                            Id = new Guid("99db49ce-5cba-447b-95ea-f8449b4895a9"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(165),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 2 في دورة 4",
                             NameEn = "Lesson 1 in Section 2 in Course 4",
-                            SectionId = new Guid("bf12ebab-c723-4873-bcd1-c73f21e0db2e")
+                            SectionId = new Guid("a00c5d20-74db-49ca-9df3-7da895e34aee")
                         },
                         new
                         {
-                            Id = new Guid("6d52f7c7-0104-457e-b3d3-d1f010994dc5"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1628),
+                            Id = new Guid("15a96611-d3b7-44d9-9cc0-f6e6f903b730"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(174),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 2 في دورة 4",
                             NameEn = "Lesson 2 in Section 2 in Course 4",
-                            SectionId = new Guid("bf12ebab-c723-4873-bcd1-c73f21e0db2e")
+                            SectionId = new Guid("a00c5d20-74db-49ca-9df3-7da895e34aee")
                         },
                         new
                         {
-                            Id = new Guid("44df0801-1224-4b16-9f04-7ff2721bd8f7"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1633),
+                            Id = new Guid("f1b6cf63-c9b0-480e-96b6-e58ef20ba25e"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(181),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 2 في دورة 4",
                             NameEn = "Lesson 3 in Section 2 in Course 4",
-                            SectionId = new Guid("bf12ebab-c723-4873-bcd1-c73f21e0db2e")
+                            SectionId = new Guid("a00c5d20-74db-49ca-9df3-7da895e34aee")
                         },
                         new
                         {
-                            Id = new Guid("7c5fc05b-1525-4ea4-a7f9-44425e0300e5"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1807),
+                            Id = new Guid("1e642e5a-07e0-47b9-aedc-51ab3c6d4061"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(434),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 3 في دورة 4",
                             NameEn = "Lesson 1 in Section 3 in Course 4",
-                            SectionId = new Guid("29b76f14-dd5d-48c9-a24f-56882208da6c")
+                            SectionId = new Guid("e26769f7-32ce-4157-909c-2d354e23e35d")
                         },
                         new
                         {
-                            Id = new Guid("20616c2d-f9ec-4368-8cce-be29e5deaaa8"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1814),
+                            Id = new Guid("0b93affb-89f2-49fb-99a6-e7c458604f28"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(443),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 3 في دورة 4",
                             NameEn = "Lesson 2 in Section 3 in Course 4",
-                            SectionId = new Guid("29b76f14-dd5d-48c9-a24f-56882208da6c")
+                            SectionId = new Guid("e26769f7-32ce-4157-909c-2d354e23e35d")
                         },
                         new
                         {
-                            Id = new Guid("69c6ad9d-9a18-476a-b7ab-61159a548d38"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1819),
+                            Id = new Guid("27490598-c373-4bf7-9218-77c36f2306f7"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(449),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 3 في دورة 4",
                             NameEn = "Lesson 3 in Section 3 in Course 4",
-                            SectionId = new Guid("29b76f14-dd5d-48c9-a24f-56882208da6c")
+                            SectionId = new Guid("e26769f7-32ce-4157-909c-2d354e23e35d")
                         },
                         new
                         {
-                            Id = new Guid("edb33b67-a45b-41f1-87a8-c2cc20e57bfa"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1946),
+                            Id = new Guid("503bd483-ce9d-4247-80d5-aeca8500d6ea"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(621),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 1 في دورة 5",
                             NameEn = "Lesson 1 in Section 1 in Course 5",
-                            SectionId = new Guid("d44077c7-4c39-4e4e-a758-4dd4bda4e08c")
+                            SectionId = new Guid("6836b6fd-8d40-4afc-a9fc-9734a78f8879")
                         },
                         new
                         {
-                            Id = new Guid("bd9afb73-f4bb-49c1-8e36-fccc57df4de4"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1954),
+                            Id = new Guid("6f55223a-f48b-4a44-ab64-008f54ebb366"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(629),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 1 في دورة 5",
                             NameEn = "Lesson 2 in Section 1 in Course 5",
-                            SectionId = new Guid("d44077c7-4c39-4e4e-a758-4dd4bda4e08c")
+                            SectionId = new Guid("6836b6fd-8d40-4afc-a9fc-9734a78f8879")
                         },
                         new
                         {
-                            Id = new Guid("47bd1217-d6a5-4d8d-b404-e4e9ba961eb2"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(1960),
+                            Id = new Guid("a67ccc5b-c3d6-4d58-b686-3b26ae749f9e"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(635),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 1 في دورة 5",
                             NameEn = "Lesson 3 in Section 1 in Course 5",
-                            SectionId = new Guid("d44077c7-4c39-4e4e-a758-4dd4bda4e08c")
+                            SectionId = new Guid("6836b6fd-8d40-4afc-a9fc-9734a78f8879")
                         },
                         new
                         {
-                            Id = new Guid("efe60975-1cba-43ae-a2ad-c68acd715253"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2129),
+                            Id = new Guid("cb18ad4b-7c33-441b-b1ed-7f4ea8051f8f"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(852),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 2 في دورة 5",
                             NameEn = "Lesson 1 in Section 2 in Course 5",
-                            SectionId = new Guid("4d0c8db7-0501-45b6-8a3c-e0268275d01c")
+                            SectionId = new Guid("b34f2986-e8fe-401f-8b62-3aa86aed425e")
                         },
                         new
                         {
-                            Id = new Guid("87e95952-5449-4c61-94ef-1bfc582c0185"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2136),
+                            Id = new Guid("fb2400ab-346c-4b4b-bdf1-cfc5bb713b36"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(861),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 2 في دورة 5",
                             NameEn = "Lesson 2 in Section 2 in Course 5",
-                            SectionId = new Guid("4d0c8db7-0501-45b6-8a3c-e0268275d01c")
+                            SectionId = new Guid("b34f2986-e8fe-401f-8b62-3aa86aed425e")
                         },
                         new
                         {
-                            Id = new Guid("7197001c-8222-4a89-8611-822888a70b03"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2142),
+                            Id = new Guid("1a61e4ed-c812-4518-a060-0cff28293e2a"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(868),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 2 في دورة 5",
                             NameEn = "Lesson 3 in Section 2 in Course 5",
-                            SectionId = new Guid("4d0c8db7-0501-45b6-8a3c-e0268275d01c")
+                            SectionId = new Guid("b34f2986-e8fe-401f-8b62-3aa86aed425e")
                         },
                         new
                         {
-                            Id = new Guid("268ef601-1d71-42b8-b381-dbf104163992"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2309),
+                            Id = new Guid("d38a5a5d-d515-4a30-bee5-c5fc4a5bcaaf"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1119),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 3 في دورة 5",
                             NameEn = "Lesson 1 in Section 3 in Course 5",
-                            SectionId = new Guid("f8d34ccf-3408-4454-bc70-faf3010b320e")
+                            SectionId = new Guid("d9bc35f4-15cf-42cb-ae23-cdb94e6cb3fc")
                         },
                         new
                         {
-                            Id = new Guid("f3330534-ff77-4818-8cd9-b543ac7ca3e0"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2318),
+                            Id = new Guid("c2aabd3c-6249-4129-93f3-8417119db60a"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1127),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 3 في دورة 5",
                             NameEn = "Lesson 2 in Section 3 in Course 5",
-                            SectionId = new Guid("f8d34ccf-3408-4454-bc70-faf3010b320e")
+                            SectionId = new Guid("d9bc35f4-15cf-42cb-ae23-cdb94e6cb3fc")
                         },
                         new
                         {
-                            Id = new Guid("7fb60bdc-3ccd-49f6-be9c-aa8827d07956"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2323),
+                            Id = new Guid("28214ab6-fc54-4476-bd7d-5164eb75705c"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1134),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 3 في دورة 5",
                             NameEn = "Lesson 3 in Section 3 in Course 5",
-                            SectionId = new Guid("f8d34ccf-3408-4454-bc70-faf3010b320e")
+                            SectionId = new Guid("d9bc35f4-15cf-42cb-ae23-cdb94e6cb3fc")
                         },
                         new
                         {
-                            Id = new Guid("5df17b95-3099-49d9-9aa8-e28133804f42"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2449),
+                            Id = new Guid("a40331a1-13e7-4f65-bc8c-606b4a624248"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1320),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 1 في دورة 6",
                             NameEn = "Lesson 1 in Section 1 in Course 6",
-                            SectionId = new Guid("66a4610e-fd3c-430e-8128-56d44a38c2d6")
+                            SectionId = new Guid("c0623883-001b-47f9-bdb7-430c0489e32c")
                         },
                         new
                         {
-                            Id = new Guid("f76cf2a9-9424-4596-bd31-fcde3e04078e"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2455),
+                            Id = new Guid("2d8d2af4-87e2-41ee-a646-521101fd1f46"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1328),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 1 في دورة 6",
                             NameEn = "Lesson 2 in Section 1 in Course 6",
-                            SectionId = new Guid("66a4610e-fd3c-430e-8128-56d44a38c2d6")
+                            SectionId = new Guid("c0623883-001b-47f9-bdb7-430c0489e32c")
                         },
                         new
                         {
-                            Id = new Guid("ea4c195d-85bc-4ef5-ab0e-086152204fea"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2517),
+                            Id = new Guid("21c35446-abe6-417e-b0b1-9df7bc3f85e6"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1395),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 1 في دورة 6",
                             NameEn = "Lesson 3 in Section 1 in Course 6",
-                            SectionId = new Guid("66a4610e-fd3c-430e-8128-56d44a38c2d6")
+                            SectionId = new Guid("c0623883-001b-47f9-bdb7-430c0489e32c")
                         },
                         new
                         {
-                            Id = new Guid("fa1ec07b-5888-4d27-89f4-5dd8606aef47"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2644),
+                            Id = new Guid("0fc2db2c-7302-4af3-83ee-9736dd9d741b"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1578),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 2 في دورة 6",
                             NameEn = "Lesson 1 in Section 2 in Course 6",
-                            SectionId = new Guid("d111d1cb-4cc4-4eda-8c17-09e82fbbff7f")
+                            SectionId = new Guid("fa154793-59de-4882-9cfb-3ae017b84b4a")
                         },
                         new
                         {
-                            Id = new Guid("09406f69-e7f3-4606-8a08-f04d6aa68c87"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2653),
+                            Id = new Guid("f0363e76-e927-48df-8b8b-a69ec2af1b76"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1586),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 2 في دورة 6",
                             NameEn = "Lesson 2 in Section 2 in Course 6",
-                            SectionId = new Guid("d111d1cb-4cc4-4eda-8c17-09e82fbbff7f")
+                            SectionId = new Guid("fa154793-59de-4882-9cfb-3ae017b84b4a")
                         },
                         new
                         {
-                            Id = new Guid("23453b6f-8a34-40db-9a8c-8c7ca70c9fd0"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2659),
+                            Id = new Guid("6b028762-5819-4822-bd56-e99c3f9318f7"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1593),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 2 في دورة 6",
                             NameEn = "Lesson 3 in Section 2 in Course 6",
-                            SectionId = new Guid("d111d1cb-4cc4-4eda-8c17-09e82fbbff7f")
+                            SectionId = new Guid("fa154793-59de-4882-9cfb-3ae017b84b4a")
                         },
                         new
                         {
-                            Id = new Guid("1f64c550-778c-41fc-9feb-1af0e02a7af6"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2862),
+                            Id = new Guid("419014e9-b24c-48b3-8d0b-ab95c041b2a3"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1810),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 3 في دورة 6",
                             NameEn = "Lesson 1 in Section 3 in Course 6",
-                            SectionId = new Guid("42bc4fdb-169e-41ad-b1fa-237aef67f7e1")
+                            SectionId = new Guid("b17b486c-aa0a-4631-b00f-6c70e3b285b4")
                         },
                         new
                         {
-                            Id = new Guid("b02c9d22-914c-4fb5-b12e-e8f8e896dd52"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2869),
+                            Id = new Guid("7f1a7e62-a9ec-458e-aa91-e75c5bb187b0"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1818),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 3 في دورة 6",
                             NameEn = "Lesson 2 in Section 3 in Course 6",
-                            SectionId = new Guid("42bc4fdb-169e-41ad-b1fa-237aef67f7e1")
+                            SectionId = new Guid("b17b486c-aa0a-4631-b00f-6c70e3b285b4")
                         },
                         new
                         {
-                            Id = new Guid("1556589a-da18-4d98-9a0d-9c8e9728f9fa"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(2875),
+                            Id = new Guid("46a57f8c-e324-4ed2-9fb4-12ce68b6cfdd"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(1825),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 3 في دورة 6",
                             NameEn = "Lesson 3 in Section 3 in Course 6",
-                            SectionId = new Guid("42bc4fdb-169e-41ad-b1fa-237aef67f7e1")
+                            SectionId = new Guid("b17b486c-aa0a-4631-b00f-6c70e3b285b4")
                         },
                         new
                         {
-                            Id = new Guid("6a5e1fbc-1beb-492e-b990-b9d06729301f"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3058),
+                            Id = new Guid("62b55bda-bd61-45d4-bedc-91ad367f5780"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2072),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 1 في دورة 7",
                             NameEn = "Lesson 1 in Section 1 in Course 7",
-                            SectionId = new Guid("02d373b8-741d-4045-8f6d-dc7b8b7a606a")
+                            SectionId = new Guid("b856a07c-c505-46ae-a90a-b45afaec41fa")
                         },
                         new
                         {
-                            Id = new Guid("a1a5fa0d-f61a-4bb4-8056-536c51109908"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3067),
+                            Id = new Guid("754e0a32-9ee0-439e-9531-23c497cbbe9e"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2081),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 1 في دورة 7",
                             NameEn = "Lesson 2 in Section 1 in Course 7",
-                            SectionId = new Guid("02d373b8-741d-4045-8f6d-dc7b8b7a606a")
+                            SectionId = new Guid("b856a07c-c505-46ae-a90a-b45afaec41fa")
                         },
                         new
                         {
-                            Id = new Guid("9bbe9321-29b4-4182-9ab1-5eec2d2b7687"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3072),
+                            Id = new Guid("f642be23-560b-424c-8159-678617cc4258"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2088),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 1 في دورة 7",
                             NameEn = "Lesson 3 in Section 1 in Course 7",
-                            SectionId = new Guid("02d373b8-741d-4045-8f6d-dc7b8b7a606a")
+                            SectionId = new Guid("b856a07c-c505-46ae-a90a-b45afaec41fa")
                         },
                         new
                         {
-                            Id = new Guid("c16b0faf-20b7-458e-b4ef-16580e379f52"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3200),
+                            Id = new Guid("b22af5d0-e079-432b-900e-2b91ad2b4479"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2264),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 2 في دورة 7",
                             NameEn = "Lesson 1 in Section 2 in Course 7",
-                            SectionId = new Guid("77181389-bdd4-4424-aa34-c312d1f86582")
+                            SectionId = new Guid("6f374a98-11d0-4fd9-bf0d-85da58facaae")
                         },
                         new
                         {
-                            Id = new Guid("76f800ef-bfc7-4efb-a3d4-f1de5953939e"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3206),
+                            Id = new Guid("518ed167-b90b-45f9-875f-9e1b40cfdfc8"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2271),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 2 في دورة 7",
                             NameEn = "Lesson 2 in Section 2 in Course 7",
-                            SectionId = new Guid("77181389-bdd4-4424-aa34-c312d1f86582")
+                            SectionId = new Guid("6f374a98-11d0-4fd9-bf0d-85da58facaae")
                         },
                         new
                         {
-                            Id = new Guid("971d328c-933d-4dc6-ab88-78fa02a0a0ed"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3211),
+                            Id = new Guid("ac18398e-41ef-48da-b68a-f4cb7c2558f7"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2278),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 2 في دورة 7",
                             NameEn = "Lesson 3 in Section 2 in Course 7",
-                            SectionId = new Guid("77181389-bdd4-4424-aa34-c312d1f86582")
+                            SectionId = new Guid("6f374a98-11d0-4fd9-bf0d-85da58facaae")
                         },
                         new
                         {
-                            Id = new Guid("98846af9-4346-414c-9579-26897ec3d283"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3429),
+                            Id = new Guid("1cc8058f-e802-4cb5-a27a-1d62b3f766b0"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2530),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 3 في دورة 7",
                             NameEn = "Lesson 1 in Section 3 in Course 7",
-                            SectionId = new Guid("4908263b-6175-4fcf-9655-8457dd27ea46")
+                            SectionId = new Guid("1a52192b-73a8-4da5-a5dc-3d08c0c0076c")
                         },
                         new
                         {
-                            Id = new Guid("29419946-acf7-4667-9776-5c82ab1716f4"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3439),
+                            Id = new Guid("724e9de0-8b8d-4d86-ac61-8391727fb9cd"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2539),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 3 في دورة 7",
                             NameEn = "Lesson 2 in Section 3 in Course 7",
-                            SectionId = new Guid("4908263b-6175-4fcf-9655-8457dd27ea46")
+                            SectionId = new Guid("1a52192b-73a8-4da5-a5dc-3d08c0c0076c")
                         },
                         new
                         {
-                            Id = new Guid("75f5b328-210a-466a-9e38-7bc6669bdae9"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3444),
+                            Id = new Guid("52075238-2172-4171-b3f7-6274c8b0a1da"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2546),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 3 في دورة 7",
                             NameEn = "Lesson 3 in Section 3 in Course 7",
-                            SectionId = new Guid("4908263b-6175-4fcf-9655-8457dd27ea46")
+                            SectionId = new Guid("1a52192b-73a8-4da5-a5dc-3d08c0c0076c")
                         },
                         new
                         {
-                            Id = new Guid("b9579f53-539d-4bd4-a631-19058af2a259"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3615),
+                            Id = new Guid("7c825767-ebf9-44ca-a4c0-f8b563397a6f"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2792),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 1 في دورة 8",
                             NameEn = "Lesson 1 in Section 1 in Course 8",
-                            SectionId = new Guid("a69f3cf2-8ed1-4c8c-b4bb-a1200b287b09")
+                            SectionId = new Guid("6b024e23-d463-4aa6-b2a1-d0698ca5b6b7")
                         },
                         new
                         {
-                            Id = new Guid("577cbb4d-b447-4a24-85d4-a278e28412f0"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3623),
+                            Id = new Guid("39eee8a5-69b1-40bf-827c-9efc65ee6d53"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2800),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 1 في دورة 8",
                             NameEn = "Lesson 2 in Section 1 in Course 8",
-                            SectionId = new Guid("a69f3cf2-8ed1-4c8c-b4bb-a1200b287b09")
+                            SectionId = new Guid("6b024e23-d463-4aa6-b2a1-d0698ca5b6b7")
                         },
                         new
                         {
-                            Id = new Guid("856fbaac-ec06-47dd-a2f7-9fceef062084"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3630),
+                            Id = new Guid("5f635834-ddd7-420e-87ce-b149ad54533a"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(2809),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 1 في دورة 8",
                             NameEn = "Lesson 3 in Section 1 in Course 8",
-                            SectionId = new Guid("a69f3cf2-8ed1-4c8c-b4bb-a1200b287b09")
+                            SectionId = new Guid("6b024e23-d463-4aa6-b2a1-d0698ca5b6b7")
                         },
                         new
                         {
-                            Id = new Guid("bed28af3-00b0-46ac-92de-d28c3f96fb19"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3805),
+                            Id = new Guid("74dd0bbd-f214-4ccc-8be8-86238bad51ac"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3030),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 2 في دورة 8",
                             NameEn = "Lesson 1 in Section 2 in Course 8",
-                            SectionId = new Guid("e36efc1f-26ca-4e9b-88df-f3a0b9fb571f")
+                            SectionId = new Guid("a91b2b1f-5fdf-4ad9-aa0b-8662b660d88d")
                         },
                         new
                         {
-                            Id = new Guid("2c55a785-9008-4c85-bbb9-7b7dee281572"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3814),
+                            Id = new Guid("c3cdc7e0-ea25-40a5-941a-211d0e4fa1d4"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3039),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 2 في دورة 8",
                             NameEn = "Lesson 2 in Section 2 in Course 8",
-                            SectionId = new Guid("e36efc1f-26ca-4e9b-88df-f3a0b9fb571f")
+                            SectionId = new Guid("a91b2b1f-5fdf-4ad9-aa0b-8662b660d88d")
                         },
                         new
                         {
-                            Id = new Guid("9996d590-b522-4526-bb23-5a4e6346c1d3"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3820),
+                            Id = new Guid("37e9a157-ca2e-4274-bead-df1e90d463e6"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3045),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 2 في دورة 8",
                             NameEn = "Lesson 3 in Section 2 in Course 8",
-                            SectionId = new Guid("e36efc1f-26ca-4e9b-88df-f3a0b9fb571f")
+                            SectionId = new Guid("a91b2b1f-5fdf-4ad9-aa0b-8662b660d88d")
                         },
                         new
                         {
-                            Id = new Guid("d84dc5d0-4620-40bf-bc7e-c258dc1e190b"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3945),
+                            Id = new Guid("d7893a17-bfec-44e1-9a46-332a060509cd"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3215),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 3 في دورة 8",
                             NameEn = "Lesson 1 in Section 3 in Course 8",
-                            SectionId = new Guid("4e6e96c5-c121-4b8e-a4b9-750884009e6f")
+                            SectionId = new Guid("6f7963bc-fe8f-4558-9477-48092627b0c4")
                         },
                         new
                         {
-                            Id = new Guid("2099066a-f939-41ce-8165-100469e3ad15"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3952),
+                            Id = new Guid("6312ec85-f7d4-461a-9a08-d8bd52187fda"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3223),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 3 في دورة 8",
                             NameEn = "Lesson 2 in Section 3 in Course 8",
-                            SectionId = new Guid("4e6e96c5-c121-4b8e-a4b9-750884009e6f")
+                            SectionId = new Guid("6f7963bc-fe8f-4558-9477-48092627b0c4")
                         },
                         new
                         {
-                            Id = new Guid("e6228ee8-eb00-4d3b-aab5-06568307aa40"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(3957),
+                            Id = new Guid("783b544c-4e4e-44ea-ad1e-733b68bcfb6a"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3229),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 3 في دورة 8",
                             NameEn = "Lesson 3 in Section 3 in Course 8",
-                            SectionId = new Guid("4e6e96c5-c121-4b8e-a4b9-750884009e6f")
+                            SectionId = new Guid("6f7963bc-fe8f-4558-9477-48092627b0c4")
                         },
                         new
                         {
-                            Id = new Guid("492efa22-ee40-4f07-8fbb-beef32b21bdd"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4142),
+                            Id = new Guid("767a85c5-32e7-4e51-ab36-72b905b3a6f8"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3449),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 1 في دورة 9",
                             NameEn = "Lesson 1 in Section 1 in Course 9",
-                            SectionId = new Guid("fb726ff2-716a-4540-8225-64dd0b8ef8b1")
+                            SectionId = new Guid("2a51d0b6-0117-4652-ae3e-178df82ffa42")
                         },
                         new
                         {
-                            Id = new Guid("6b89cf25-eac3-4d72-b6e0-6abf8ae3d81d"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4151),
+                            Id = new Guid("3a72089d-6a3d-4a3c-963f-ababf39a9cc2"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3457),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 1 في دورة 9",
                             NameEn = "Lesson 2 in Section 1 in Course 9",
-                            SectionId = new Guid("fb726ff2-716a-4540-8225-64dd0b8ef8b1")
+                            SectionId = new Guid("2a51d0b6-0117-4652-ae3e-178df82ffa42")
                         },
                         new
                         {
-                            Id = new Guid("32bd9caa-bcb5-4ecc-aa59-18bbe31519c4"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4157),
+                            Id = new Guid("2948e8c9-86df-4374-bcfc-c4cb60fb66b8"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3464),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 1 في دورة 9",
                             NameEn = "Lesson 3 in Section 1 in Course 9",
-                            SectionId = new Guid("fb726ff2-716a-4540-8225-64dd0b8ef8b1")
+                            SectionId = new Guid("2a51d0b6-0117-4652-ae3e-178df82ffa42")
                         },
                         new
                         {
-                            Id = new Guid("2d3823b8-4cf0-4e6d-b8b5-675a557e4003"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4322),
+                            Id = new Guid("73b83623-8ded-415d-979d-1eac6766213f"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3695),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 2 في دورة 9",
                             NameEn = "Lesson 1 in Section 2 in Course 9",
-                            SectionId = new Guid("4631e5f5-94d1-4065-a5a1-37b824adfe47")
+                            SectionId = new Guid("34630889-9a9d-4936-9c01-b14d9762adda")
                         },
                         new
                         {
-                            Id = new Guid("78af4b86-dac1-4c42-bcb4-4686a301d102"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4329),
+                            Id = new Guid("12aba55c-10f2-4d0c-86e0-52c791c644c2"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3703),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 2 في دورة 9",
                             NameEn = "Lesson 2 in Section 2 in Course 9",
-                            SectionId = new Guid("4631e5f5-94d1-4065-a5a1-37b824adfe47")
+                            SectionId = new Guid("34630889-9a9d-4936-9c01-b14d9762adda")
                         },
                         new
                         {
-                            Id = new Guid("d710199e-c89e-41c5-8dc1-799902b6215b"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4334),
+                            Id = new Guid("8392c789-d8a5-4132-b802-8774ad128beb"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3710),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 2 في دورة 9",
                             NameEn = "Lesson 3 in Section 2 in Course 9",
-                            SectionId = new Guid("4631e5f5-94d1-4065-a5a1-37b824adfe47")
+                            SectionId = new Guid("34630889-9a9d-4936-9c01-b14d9762adda")
                         },
                         new
                         {
-                            Id = new Guid("347c82e6-bbf2-410b-9db4-e256a260e561"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4458),
+                            Id = new Guid("21086e4a-54c2-43a9-8836-eac8fc579f85"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3883),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 3 في دورة 9",
                             NameEn = "Lesson 1 in Section 3 in Course 9",
-                            SectionId = new Guid("395c042f-c57b-427b-9704-bd5f394cf91f")
+                            SectionId = new Guid("7cf98cf8-c262-4c4b-9377-93d93b8270c9")
                         },
                         new
                         {
-                            Id = new Guid("4fa2f00f-8990-4fe5-a6fc-6e014f36ad23"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4466),
+                            Id = new Guid("592cab06-d15d-4e30-b2bf-5ac749fc405d"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3890),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 3 في دورة 9",
                             NameEn = "Lesson 2 in Section 3 in Course 9",
-                            SectionId = new Guid("395c042f-c57b-427b-9704-bd5f394cf91f")
+                            SectionId = new Guid("7cf98cf8-c262-4c4b-9377-93d93b8270c9")
                         },
                         new
                         {
-                            Id = new Guid("d9352996-f5f8-44dc-9964-ed78800186ea"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4512),
+                            Id = new Guid("0c12e020-ac0e-48f5-963d-a7e75e8e3af3"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(3963),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 3 في دورة 9",
                             NameEn = "Lesson 3 in Section 3 in Course 9",
-                            SectionId = new Guid("395c042f-c57b-427b-9704-bd5f394cf91f")
+                            SectionId = new Guid("7cf98cf8-c262-4c4b-9377-93d93b8270c9")
                         },
                         new
                         {
-                            Id = new Guid("d80224ae-474b-460d-818f-409a6ccbbadf"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4683),
+                            Id = new Guid("924166d4-9243-45c6-8a84-fa9702cdb4bb"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(4189),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 1 في دورة 10",
                             NameEn = "Lesson 1 in Section 1 in Course 10",
-                            SectionId = new Guid("b7e4c27b-9d02-4d4a-a7d6-aa3b527b1902")
+                            SectionId = new Guid("3a40214d-5beb-400f-9350-4263a33b4008")
                         },
                         new
                         {
-                            Id = new Guid("3b507149-a283-4494-bff2-0eeb01e15617"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4690),
+                            Id = new Guid("e62bfb21-edd1-43bf-add2-972a72094eb4"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(4198),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 1 في دورة 10",
                             NameEn = "Lesson 2 in Section 1 in Course 10",
-                            SectionId = new Guid("b7e4c27b-9d02-4d4a-a7d6-aa3b527b1902")
+                            SectionId = new Guid("3a40214d-5beb-400f-9350-4263a33b4008")
                         },
                         new
                         {
-                            Id = new Guid("6b1a6aea-e609-4999-9b16-c5e851cfc880"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4695),
+                            Id = new Guid("b3b5f8f6-8d7f-4143-9d5d-88cdc3da95cb"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(4204),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 1 في دورة 10",
                             NameEn = "Lesson 3 in Section 1 in Course 10",
-                            SectionId = new Guid("b7e4c27b-9d02-4d4a-a7d6-aa3b527b1902")
+                            SectionId = new Guid("3a40214d-5beb-400f-9350-4263a33b4008")
                         },
                         new
                         {
-                            Id = new Guid("bc522689-1cd5-4779-930d-ac6edf5f2823"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4860),
+                            Id = new Guid("2d1889ab-612f-47a8-932c-71ba11313d77"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(4441),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 2 في دورة 10",
                             NameEn = "Lesson 1 in Section 2 in Course 10",
-                            SectionId = new Guid("7df77bb0-86ed-4cc0-947e-cd706c093d1f")
+                            SectionId = new Guid("f93a3833-6d01-4e16-aa8f-999726cc5e09")
                         },
                         new
                         {
-                            Id = new Guid("29fcaa8e-4c8c-4292-91f5-1abb9fc00c87"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4869),
+                            Id = new Guid("390f6d93-3dff-4b4e-bd30-b9b2c40f52e1"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(4450),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 2 في دورة 10",
                             NameEn = "Lesson 2 in Section 2 in Course 10",
-                            SectionId = new Guid("7df77bb0-86ed-4cc0-947e-cd706c093d1f")
+                            SectionId = new Guid("f93a3833-6d01-4e16-aa8f-999726cc5e09")
                         },
                         new
                         {
-                            Id = new Guid("f280ef64-a707-404b-af7f-9d44c1814ba6"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(4875),
+                            Id = new Guid("58acf21f-e03b-4336-9a94-f426080471d4"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(4457),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 2 في دورة 10",
                             NameEn = "Lesson 3 in Section 2 in Course 10",
-                            SectionId = new Guid("7df77bb0-86ed-4cc0-947e-cd706c093d1f")
+                            SectionId = new Guid("f93a3833-6d01-4e16-aa8f-999726cc5e09")
                         },
                         new
                         {
-                            Id = new Guid("c2bb8a93-30fa-42e0-91bd-59561ebe7c0a"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(5000),
+                            Id = new Guid("a5a909c4-a8b9-4356-aa0d-b139e9a26d74"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(4698),
                             DescriptionAr = "This is the description for Lesson 1.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 1 في الفصل 3 في دورة 10",
                             NameEn = "Lesson 1 in Section 3 in Course 10",
-                            SectionId = new Guid("4971725d-bf72-4d35-95b4-c692677094f7")
+                            SectionId = new Guid("7d963df4-c9aa-43f6-875d-f8724f102fc5")
                         },
                         new
                         {
-                            Id = new Guid("8ec01a8c-84fa-4c41-86b8-57cd1a913fd2"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(5047),
+                            Id = new Guid("ea9fd861-ee2a-4d71-868b-ea951624c337"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(4707),
                             DescriptionAr = "This is the description for Lesson 2.",
                             HasCodeEditor = true,
                             IsActive = false,
                             NameAr = "درس 2 في الفصل 3 في دورة 10",
                             NameEn = "Lesson 2 in Section 3 in Course 10",
-                            SectionId = new Guid("4971725d-bf72-4d35-95b4-c692677094f7")
+                            SectionId = new Guid("7d963df4-c9aa-43f6-875d-f8724f102fc5")
                         },
                         new
                         {
-                            Id = new Guid("36d34f3d-04ee-4292-8045-718bd1f67ada"),
-                            CreationDate = new DateTime(2024, 11, 20, 16, 41, 46, 70, DateTimeKind.Local).AddTicks(5053),
+                            Id = new Guid("c28fcf0f-cf21-4f39-8589-78b5ea59c97b"),
+                            CreationDate = new DateTime(2024, 11, 16, 21, 23, 59, 752, DateTimeKind.Local).AddTicks(4714),
                             DescriptionAr = "This is the description for Lesson 3.",
                             HasCodeEditor = false,
                             IsActive = false,
                             NameAr = "درس 3 في الفصل 3 في دورة 10",
                             NameEn = "Lesson 3 in Section 3 in Course 10",
-                            SectionId = new Guid("4971725d-bf72-4d35-95b4-c692677094f7")
+                            SectionId = new Guid("7d963df4-c9aa-43f6-875d-f8724f102fc5")
                         });
                 });
 
@@ -3603,7 +3603,7 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("cf0cf008-185d-43cf-9607-57cf24efdd8f"),
+                            Id = new Guid("ab1555ed-8965-4d30-a31f-621c69a7163d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3612,11 +3612,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 1 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("c180d68a-1306-4240-bb46-7c93b2da1b85")
+                            QuizId = new Guid("4ba73fc7-f0d4-43b3-9457-253184682bbc")
                         },
                         new
                         {
-                            Id = new Guid("76640009-93ac-4a93-a5b5-b416892a9c3b"),
+                            Id = new Guid("9f34aeb9-a277-4bb9-8937-869d4018a936"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3625,11 +3625,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 1 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("c180d68a-1306-4240-bb46-7c93b2da1b85")
+                            QuizId = new Guid("4ba73fc7-f0d4-43b3-9457-253184682bbc")
                         },
                         new
                         {
-                            Id = new Guid("9b99c69f-a677-4320-a19f-aaf77a10f094"),
+                            Id = new Guid("d5925704-0fdf-4bb6-a033-d6813c3addd7"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3638,11 +3638,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 1 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("c180d68a-1306-4240-bb46-7c93b2da1b85")
+                            QuizId = new Guid("4ba73fc7-f0d4-43b3-9457-253184682bbc")
                         },
                         new
                         {
-                            Id = new Guid("914bd6dc-a70a-41d4-8db5-47dde7244124"),
+                            Id = new Guid("105f47e6-bdfb-48a2-b327-867df21196bc"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3651,11 +3651,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 1 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("0844939b-87e4-4982-95c5-d101907a4542")
+                            QuizId = new Guid("5e4fcd39-4a37-4c78-ad47-078171b105a5")
                         },
                         new
                         {
-                            Id = new Guid("6367f807-9a6e-4aa3-a09b-6013d5f1d5c8"),
+                            Id = new Guid("89557a88-0d27-4e22-911a-e557f890a667"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3664,11 +3664,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 1 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("0844939b-87e4-4982-95c5-d101907a4542")
+                            QuizId = new Guid("5e4fcd39-4a37-4c78-ad47-078171b105a5")
                         },
                         new
                         {
-                            Id = new Guid("dd2de7b6-cd47-4ebe-bbfb-615b8f33be48"),
+                            Id = new Guid("ec170bc3-a176-4389-a6f9-eea190be4578"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3677,11 +3677,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 1 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("0844939b-87e4-4982-95c5-d101907a4542")
+                            QuizId = new Guid("5e4fcd39-4a37-4c78-ad47-078171b105a5")
                         },
                         new
                         {
-                            Id = new Guid("2c87b710-fdc9-45a3-a9d0-94a522c7418a"),
+                            Id = new Guid("92780bb1-f3e5-4245-aedf-876d1b1c3dea"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3690,11 +3690,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 2 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("c78f717f-0f8f-406c-a58b-f34b5a931f49")
+                            QuizId = new Guid("c1e76310-9fec-4550-9604-808f17ede9a1")
                         },
                         new
                         {
-                            Id = new Guid("e2772bfd-f46e-46ee-926f-3d504059eb6c"),
+                            Id = new Guid("ff1c61c4-bb8b-4092-a59c-66148c617676"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3703,11 +3703,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 2 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("c78f717f-0f8f-406c-a58b-f34b5a931f49")
+                            QuizId = new Guid("c1e76310-9fec-4550-9604-808f17ede9a1")
                         },
                         new
                         {
-                            Id = new Guid("1f41813e-b820-4cf1-a528-0f0996ac790f"),
+                            Id = new Guid("9e667e22-7dc7-4dfb-9ffe-db47528f0c9d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3716,11 +3716,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 2 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("c78f717f-0f8f-406c-a58b-f34b5a931f49")
+                            QuizId = new Guid("c1e76310-9fec-4550-9604-808f17ede9a1")
                         },
                         new
                         {
-                            Id = new Guid("d2106f5a-fc9e-4514-95b4-d5cdfc9db238"),
+                            Id = new Guid("9aec8552-c45a-42b9-8acc-beaa32220951"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3729,11 +3729,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 2 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("9cb27ca8-b768-4410-b7fb-9fdf700b6035")
+                            QuizId = new Guid("54e98546-323c-45c0-be96-afbe2233b1ce")
                         },
                         new
                         {
-                            Id = new Guid("59cec97b-8d2f-4a42-8dae-02299a2649f6"),
+                            Id = new Guid("7ea657ad-19e7-4141-b58f-2ddfb8d33812"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3742,11 +3742,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 2 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("9cb27ca8-b768-4410-b7fb-9fdf700b6035")
+                            QuizId = new Guid("54e98546-323c-45c0-be96-afbe2233b1ce")
                         },
                         new
                         {
-                            Id = new Guid("aee07ac0-7cb1-40d2-895c-3c2be8320970"),
+                            Id = new Guid("3234d80a-a6a6-47cb-84b7-e9189ecffea6"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3755,11 +3755,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 2 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("9cb27ca8-b768-4410-b7fb-9fdf700b6035")
+                            QuizId = new Guid("54e98546-323c-45c0-be96-afbe2233b1ce")
                         },
                         new
                         {
-                            Id = new Guid("222f4ace-c3ce-4772-9a34-2560c0b41150"),
+                            Id = new Guid("d49eb2c6-6040-4ea2-b021-033f5f4c8eb2"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3768,11 +3768,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 3 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("bf584167-5bb8-452a-96af-f33700516226")
+                            QuizId = new Guid("b4582728-3535-4b2b-947b-569aa91507f8")
                         },
                         new
                         {
-                            Id = new Guid("290e4f74-e9e5-463c-a631-7cdd32cdbdfc"),
+                            Id = new Guid("f94c2d3a-4075-481d-97cb-dfbbcc0028c6"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3781,11 +3781,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 3 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("bf584167-5bb8-452a-96af-f33700516226")
+                            QuizId = new Guid("b4582728-3535-4b2b-947b-569aa91507f8")
                         },
                         new
                         {
-                            Id = new Guid("9ab99ed6-c0b1-45b0-9b4f-27b7c5c439fd"),
+                            Id = new Guid("82c95454-171e-4552-9c2f-c52335440c36"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3794,11 +3794,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 3 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("bf584167-5bb8-452a-96af-f33700516226")
+                            QuizId = new Guid("b4582728-3535-4b2b-947b-569aa91507f8")
                         },
                         new
                         {
-                            Id = new Guid("3d068d28-b26d-4c25-ae95-298567f04e25"),
+                            Id = new Guid("e2df882c-7be1-4032-b46b-6640ed7031fb"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3807,11 +3807,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 3 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("d3a6039b-b47a-428d-bf54-bae0a4f41ff1")
+                            QuizId = new Guid("eabdcbc0-63c2-4258-a2f9-aa113cab84ea")
                         },
                         new
                         {
-                            Id = new Guid("c4f79446-a321-4f9c-a511-dcc134c2b1a2"),
+                            Id = new Guid("eb0594bf-29fd-4ac8-99ca-68ff6b4f1572"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3820,11 +3820,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 3 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("d3a6039b-b47a-428d-bf54-bae0a4f41ff1")
+                            QuizId = new Guid("eabdcbc0-63c2-4258-a2f9-aa113cab84ea")
                         },
                         new
                         {
-                            Id = new Guid("2e0bc79e-c715-42c7-89c9-a1c9bd127681"),
+                            Id = new Guid("0478c279-382c-4d16-b547-decae46df663"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3833,11 +3833,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 3 in Course 1",
                             QuestionType = 0,
-                            QuizId = new Guid("d3a6039b-b47a-428d-bf54-bae0a4f41ff1")
+                            QuizId = new Guid("eabdcbc0-63c2-4258-a2f9-aa113cab84ea")
                         },
                         new
                         {
-                            Id = new Guid("abb133b6-5a8a-4056-b336-63086d39d731"),
+                            Id = new Guid("8a5092c5-75e5-4ac2-bc6a-943c253e646d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3846,11 +3846,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 1 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("0a723220-439b-4909-a82d-e40d5bfa5336")
+                            QuizId = new Guid("a83d60e9-7efd-415b-be06-8c9f18fdcfb8")
                         },
                         new
                         {
-                            Id = new Guid("f0f92c72-f942-4763-a6ed-871dfef334e0"),
+                            Id = new Guid("37b5f03d-849e-4495-8ea0-29e129807e04"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3859,11 +3859,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 1 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("0a723220-439b-4909-a82d-e40d5bfa5336")
+                            QuizId = new Guid("a83d60e9-7efd-415b-be06-8c9f18fdcfb8")
                         },
                         new
                         {
-                            Id = new Guid("cdaf0dee-546a-44ee-a097-3da95ec3f691"),
+                            Id = new Guid("e6b2bea2-089a-4c78-a0db-1f4bc9c68d40"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3872,11 +3872,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 1 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("0a723220-439b-4909-a82d-e40d5bfa5336")
+                            QuizId = new Guid("a83d60e9-7efd-415b-be06-8c9f18fdcfb8")
                         },
                         new
                         {
-                            Id = new Guid("6c6b11c6-288f-4c34-baba-62a77ee6cbab"),
+                            Id = new Guid("16c1f23c-099e-4ede-921b-c9508526284d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3885,11 +3885,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 1 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("6c8a5363-71dc-4653-ba97-1126d313a5a8")
+                            QuizId = new Guid("0e476f55-dd13-40ca-a81c-fbb5e7c8c99c")
                         },
                         new
                         {
-                            Id = new Guid("2f37b43a-c6ea-4d33-94a4-997d1df3b006"),
+                            Id = new Guid("69196c42-4d83-4894-8ab0-97e643b8441d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3898,11 +3898,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 1 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("6c8a5363-71dc-4653-ba97-1126d313a5a8")
+                            QuizId = new Guid("0e476f55-dd13-40ca-a81c-fbb5e7c8c99c")
                         },
                         new
                         {
-                            Id = new Guid("afcdeed0-98e3-4f4a-ba04-da227b5afba7"),
+                            Id = new Guid("5883cc2a-c9ee-4659-abda-e388008a2a3d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3911,11 +3911,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 1 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("6c8a5363-71dc-4653-ba97-1126d313a5a8")
+                            QuizId = new Guid("0e476f55-dd13-40ca-a81c-fbb5e7c8c99c")
                         },
                         new
                         {
-                            Id = new Guid("93436282-7c66-4228-98bb-f83416ddb269"),
+                            Id = new Guid("9cf98d32-5445-4668-bb1c-2c7cb107dc87"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3924,11 +3924,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 2 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("7d472d7d-3b37-42d6-bf1c-19c01186899c")
+                            QuizId = new Guid("4fa36b5d-b0e3-47da-b44d-64f1128020c9")
                         },
                         new
                         {
-                            Id = new Guid("74d900b1-fc80-4ea5-a2d6-c48df25d2aa2"),
+                            Id = new Guid("143da920-1ff5-4e65-83f0-910e178aa700"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3937,11 +3937,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 2 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("7d472d7d-3b37-42d6-bf1c-19c01186899c")
+                            QuizId = new Guid("4fa36b5d-b0e3-47da-b44d-64f1128020c9")
                         },
                         new
                         {
-                            Id = new Guid("6538ab4a-c260-4eff-93fa-dff0efeaa57e"),
+                            Id = new Guid("a61592fe-bdc5-43a5-925d-11d312eeae88"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3950,11 +3950,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 2 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("7d472d7d-3b37-42d6-bf1c-19c01186899c")
+                            QuizId = new Guid("4fa36b5d-b0e3-47da-b44d-64f1128020c9")
                         },
                         new
                         {
-                            Id = new Guid("f6a99b7b-2fe9-4f37-8f4d-bdec556e314e"),
+                            Id = new Guid("e9952427-e91c-4a21-9a89-ec815d2e00d3"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3963,11 +3963,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 2 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("a18da225-0c7f-447c-850e-347b653fa693")
+                            QuizId = new Guid("cfc86a2c-99a3-4ca7-ac0e-3e07b11297e1")
                         },
                         new
                         {
-                            Id = new Guid("de412af7-e346-4196-992e-72b9e03307a9"),
+                            Id = new Guid("2e124a1e-0cd1-463b-9782-bff5d852d01c"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3976,11 +3976,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 2 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("a18da225-0c7f-447c-850e-347b653fa693")
+                            QuizId = new Guid("cfc86a2c-99a3-4ca7-ac0e-3e07b11297e1")
                         },
                         new
                         {
-                            Id = new Guid("70ec4eb6-a98a-442f-8b40-30c47f3d2a49"),
+                            Id = new Guid("118b3f1e-6cb5-4c9e-b9b6-00d2010181ed"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -3989,11 +3989,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 2 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("a18da225-0c7f-447c-850e-347b653fa693")
+                            QuizId = new Guid("cfc86a2c-99a3-4ca7-ac0e-3e07b11297e1")
                         },
                         new
                         {
-                            Id = new Guid("6828e548-384e-4c32-9872-0a03dfeb53e4"),
+                            Id = new Guid("bbbe3cb7-b2fd-4efc-838b-e0508c021ba5"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4002,11 +4002,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 3 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("bdd0379a-4429-45a5-88bf-f0d5817a1098")
+                            QuizId = new Guid("5d392f4a-9070-4404-b543-9097b42ab6ab")
                         },
                         new
                         {
-                            Id = new Guid("6dd440ea-7389-4cd6-8877-26d548bb675c"),
+                            Id = new Guid("06ca3669-c063-438b-b529-60f1458c8afa"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4015,11 +4015,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 3 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("bdd0379a-4429-45a5-88bf-f0d5817a1098")
+                            QuizId = new Guid("5d392f4a-9070-4404-b543-9097b42ab6ab")
                         },
                         new
                         {
-                            Id = new Guid("c115fa68-fc19-435a-a97a-67207a037e32"),
+                            Id = new Guid("009d4056-7a85-459e-ba9f-9945e1e51976"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4028,11 +4028,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 3 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("bdd0379a-4429-45a5-88bf-f0d5817a1098")
+                            QuizId = new Guid("5d392f4a-9070-4404-b543-9097b42ab6ab")
                         },
                         new
                         {
-                            Id = new Guid("779b9dd9-b769-40b2-9167-b157e7b28521"),
+                            Id = new Guid("7d7b23d3-db09-41f3-87d0-822309d3b40c"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4041,11 +4041,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 3 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("d3a9e00f-8f9a-4e04-94cc-51d0c9664dd9")
+                            QuizId = new Guid("fc69ed46-f740-41e9-a3b1-d95724be1b47")
                         },
                         new
                         {
-                            Id = new Guid("6e241c8b-90ee-4967-8cbd-813dc70875e0"),
+                            Id = new Guid("608b3de1-b492-463f-890a-13f040c662a7"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4054,11 +4054,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 3 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("d3a9e00f-8f9a-4e04-94cc-51d0c9664dd9")
+                            QuizId = new Guid("fc69ed46-f740-41e9-a3b1-d95724be1b47")
                         },
                         new
                         {
-                            Id = new Guid("b9be7ee3-b541-496f-bbd1-816fdc5b8a8a"),
+                            Id = new Guid("f51d1d0e-1a2d-44aa-92c6-a8bf5cdf192f"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4067,11 +4067,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 3 in Course 2",
                             QuestionType = 0,
-                            QuizId = new Guid("d3a9e00f-8f9a-4e04-94cc-51d0c9664dd9")
+                            QuizId = new Guid("fc69ed46-f740-41e9-a3b1-d95724be1b47")
                         },
                         new
                         {
-                            Id = new Guid("007b407f-637e-4535-bd69-4441b746ee4d"),
+                            Id = new Guid("98af7952-4d01-432e-9b2c-0b62408b702f"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4080,11 +4080,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 1 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("9fbc3c17-0a6f-4563-a14c-4b6398a0505c")
+                            QuizId = new Guid("2046baf1-3fad-4420-837c-78d497167add")
                         },
                         new
                         {
-                            Id = new Guid("6cee3d9b-3502-4e1f-80b1-1fb4085b9fbc"),
+                            Id = new Guid("0c02f006-6dc5-42c3-9255-a123336548ad"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4093,11 +4093,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 1 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("9fbc3c17-0a6f-4563-a14c-4b6398a0505c")
+                            QuizId = new Guid("2046baf1-3fad-4420-837c-78d497167add")
                         },
                         new
                         {
-                            Id = new Guid("6a2ef993-ab9c-44ab-bcb9-760efd2b951a"),
+                            Id = new Guid("50905797-0070-477d-b130-c4b66470513a"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4106,11 +4106,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 1 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("9fbc3c17-0a6f-4563-a14c-4b6398a0505c")
+                            QuizId = new Guid("2046baf1-3fad-4420-837c-78d497167add")
                         },
                         new
                         {
-                            Id = new Guid("32e452b6-35f5-48dc-84bb-2755f9f78884"),
+                            Id = new Guid("fda367c5-7fd5-4fb9-a23e-a23187277a26"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4119,11 +4119,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 1 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("50c99dac-4473-40c3-8fb8-1e595826d5b2")
+                            QuizId = new Guid("f46054d9-c232-474e-91ff-02705842030c")
                         },
                         new
                         {
-                            Id = new Guid("dff11058-5ea3-4e18-beca-b88306b6ed7c"),
+                            Id = new Guid("066f152a-58a1-4bd1-b37d-3a5691d92e2c"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4132,11 +4132,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 1 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("50c99dac-4473-40c3-8fb8-1e595826d5b2")
+                            QuizId = new Guid("f46054d9-c232-474e-91ff-02705842030c")
                         },
                         new
                         {
-                            Id = new Guid("82644960-96f4-43ba-9890-044fb04ca3e6"),
+                            Id = new Guid("be9646b2-8f56-4c69-a801-6244538d8680"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4145,11 +4145,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 1 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("50c99dac-4473-40c3-8fb8-1e595826d5b2")
+                            QuizId = new Guid("f46054d9-c232-474e-91ff-02705842030c")
                         },
                         new
                         {
-                            Id = new Guid("a05ca0f7-85b5-44f3-8d81-83724402ce59"),
+                            Id = new Guid("1fc3b66e-1f7e-46ff-9b67-3b24bacfd1ea"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4158,11 +4158,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 2 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("70ea2387-6ed6-40ef-9adc-66ac1a76ab62")
+                            QuizId = new Guid("57313398-6f47-468c-853a-97bd42cf4733")
                         },
                         new
                         {
-                            Id = new Guid("bd9564df-4bb9-4df3-862e-eaa30ad0ba44"),
+                            Id = new Guid("c4e4f8ff-c0a1-4317-a28a-10587c0e2f7e"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4171,11 +4171,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 2 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("70ea2387-6ed6-40ef-9adc-66ac1a76ab62")
+                            QuizId = new Guid("57313398-6f47-468c-853a-97bd42cf4733")
                         },
                         new
                         {
-                            Id = new Guid("b8b70a21-6efe-4fe5-ab4a-02dfbc05b635"),
+                            Id = new Guid("13e1418c-20f6-4735-b191-675c179abaea"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4184,11 +4184,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 2 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("70ea2387-6ed6-40ef-9adc-66ac1a76ab62")
+                            QuizId = new Guid("57313398-6f47-468c-853a-97bd42cf4733")
                         },
                         new
                         {
-                            Id = new Guid("96a40598-7ef6-47f9-b07c-324199803636"),
+                            Id = new Guid("8deeb3ca-a542-4c2c-afa0-e1503610729e"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4197,11 +4197,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 2 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("30d73c78-c26c-4ad5-b046-f35d3b6631de")
+                            QuizId = new Guid("d3246569-1cba-4dd6-b119-9989a94c8de5")
                         },
                         new
                         {
-                            Id = new Guid("25b4595e-d2c7-45fa-8f99-9391dfa2825b"),
+                            Id = new Guid("d5aba6d2-3599-434d-9c7f-80ac5ac32c97"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4210,11 +4210,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 2 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("30d73c78-c26c-4ad5-b046-f35d3b6631de")
+                            QuizId = new Guid("d3246569-1cba-4dd6-b119-9989a94c8de5")
                         },
                         new
                         {
-                            Id = new Guid("fe4c08e8-5e7f-4eb1-8e5b-b55746c876d2"),
+                            Id = new Guid("bf5012e6-8ccf-4f59-9045-438cc8d2da25"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4223,11 +4223,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 2 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("30d73c78-c26c-4ad5-b046-f35d3b6631de")
+                            QuizId = new Guid("d3246569-1cba-4dd6-b119-9989a94c8de5")
                         },
                         new
                         {
-                            Id = new Guid("97e774b5-c763-4b6e-8e6f-743ac91ea480"),
+                            Id = new Guid("9fe28986-e818-4c49-8752-8d893525d677"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4236,11 +4236,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 3 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("c8febd80-1d97-4529-8863-f3fc7d76c471")
+                            QuizId = new Guid("592cf29f-33b0-413b-acea-40b3e378d365")
                         },
                         new
                         {
-                            Id = new Guid("43e9810b-0f09-4ed8-a37d-b84a0a965288"),
+                            Id = new Guid("208548ef-2ba5-4352-a08f-2b0f469ac1aa"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4249,11 +4249,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 3 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("c8febd80-1d97-4529-8863-f3fc7d76c471")
+                            QuizId = new Guid("592cf29f-33b0-413b-acea-40b3e378d365")
                         },
                         new
                         {
-                            Id = new Guid("d53418cd-de86-43af-b30a-635af222e2b8"),
+                            Id = new Guid("27eff765-7760-4498-97c4-aa11a9a17692"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4262,11 +4262,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 3 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("c8febd80-1d97-4529-8863-f3fc7d76c471")
+                            QuizId = new Guid("592cf29f-33b0-413b-acea-40b3e378d365")
                         },
                         new
                         {
-                            Id = new Guid("420c0aa8-9689-49b4-a702-4f5372cb618f"),
+                            Id = new Guid("e8286b99-1d81-4730-badc-315ba2ec7534"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4275,11 +4275,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 3 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("59ea0e26-f45d-4220-b346-93675f590a07")
+                            QuizId = new Guid("59de334a-ccbc-4b00-8231-16c3b03220b3")
                         },
                         new
                         {
-                            Id = new Guid("f59a283d-4717-4567-9637-da2d5abcfdce"),
+                            Id = new Guid("cf890240-6b02-422f-821d-f5a7a783cb69"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4288,11 +4288,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 3 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("59ea0e26-f45d-4220-b346-93675f590a07")
+                            QuizId = new Guid("59de334a-ccbc-4b00-8231-16c3b03220b3")
                         },
                         new
                         {
-                            Id = new Guid("61a5c3bc-2f72-4de8-be1d-879d42e90992"),
+                            Id = new Guid("a066c7c6-6dea-45cc-8a61-e128159b6641"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4301,11 +4301,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 3 in Course 3",
                             QuestionType = 0,
-                            QuizId = new Guid("59ea0e26-f45d-4220-b346-93675f590a07")
+                            QuizId = new Guid("59de334a-ccbc-4b00-8231-16c3b03220b3")
                         },
                         new
                         {
-                            Id = new Guid("4ce5d359-cdc7-4874-90fe-a5c6cdfabe50"),
+                            Id = new Guid("d92ae932-d956-4d2b-b432-1efb21c96df5"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4314,11 +4314,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 1 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("f7dc9ddc-f59d-45d0-a7a4-376701f89a93")
+                            QuizId = new Guid("cf640771-035e-4126-87e3-9b972e8989f8")
                         },
                         new
                         {
-                            Id = new Guid("8349a45c-66f9-4e66-b2f5-d72cc5c490b5"),
+                            Id = new Guid("5997a7be-f357-4bf3-b611-e607f2595455"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4327,11 +4327,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 1 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("f7dc9ddc-f59d-45d0-a7a4-376701f89a93")
+                            QuizId = new Guid("cf640771-035e-4126-87e3-9b972e8989f8")
                         },
                         new
                         {
-                            Id = new Guid("cd6bf58f-5874-4787-9552-32e882858da1"),
+                            Id = new Guid("86a8d023-3c21-4302-80f2-b8815b0d9330"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4340,11 +4340,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 1 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("f7dc9ddc-f59d-45d0-a7a4-376701f89a93")
+                            QuizId = new Guid("cf640771-035e-4126-87e3-9b972e8989f8")
                         },
                         new
                         {
-                            Id = new Guid("1ef27fbf-9311-4751-94fc-c90812543d45"),
+                            Id = new Guid("3ee3033a-8932-4e43-90a7-8e1647f32e66"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4353,11 +4353,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 1 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("0b9b5004-ad5a-440a-abd3-99631ba83e50")
+                            QuizId = new Guid("29392d2a-0af6-42b3-af78-6fbeb3cd1164")
                         },
                         new
                         {
-                            Id = new Guid("bca2a332-d395-4b24-99b4-247897e4e8c2"),
+                            Id = new Guid("ed80c9bd-3363-461c-8297-4e40e4acaa59"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4366,11 +4366,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 1 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("0b9b5004-ad5a-440a-abd3-99631ba83e50")
+                            QuizId = new Guid("29392d2a-0af6-42b3-af78-6fbeb3cd1164")
                         },
                         new
                         {
-                            Id = new Guid("0f6e6974-6a2d-4ca3-a915-ec6b7f92408c"),
+                            Id = new Guid("68753e62-af9d-4565-a2d2-c35244c0c492"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4379,11 +4379,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 1 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("0b9b5004-ad5a-440a-abd3-99631ba83e50")
+                            QuizId = new Guid("29392d2a-0af6-42b3-af78-6fbeb3cd1164")
                         },
                         new
                         {
-                            Id = new Guid("072e3f5a-8ca2-4edb-bd99-22d622d28d73"),
+                            Id = new Guid("3b82c6f8-b350-464b-89b9-540d8090aad1"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4392,11 +4392,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 2 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("56dbef56-8fb7-4a05-9b8c-27a5b3a5a19b")
+                            QuizId = new Guid("b90091a3-62a8-40e2-8ced-89944f8e972e")
                         },
                         new
                         {
-                            Id = new Guid("0cc6d988-e9a0-40a1-97e3-ddce9b36a518"),
+                            Id = new Guid("5642491b-139b-4757-9bdd-bca9b7847cba"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4405,11 +4405,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 2 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("56dbef56-8fb7-4a05-9b8c-27a5b3a5a19b")
+                            QuizId = new Guid("b90091a3-62a8-40e2-8ced-89944f8e972e")
                         },
                         new
                         {
-                            Id = new Guid("c31f7116-a554-4e43-ad61-f806a724bc5c"),
+                            Id = new Guid("1eaa016f-8f89-42e7-b724-b477ec92896d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4418,11 +4418,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 2 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("56dbef56-8fb7-4a05-9b8c-27a5b3a5a19b")
+                            QuizId = new Guid("b90091a3-62a8-40e2-8ced-89944f8e972e")
                         },
                         new
                         {
-                            Id = new Guid("58990045-1121-4a0d-bc7c-12e23a451cac"),
+                            Id = new Guid("88c329b2-7e0d-444e-9117-a502b6ae9fa3"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4431,11 +4431,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 2 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("3fdbf32a-1280-4bd5-b69d-559791b5e6c2")
+                            QuizId = new Guid("662c56d5-0c1a-4370-ad55-33312520a416")
                         },
                         new
                         {
-                            Id = new Guid("e5a9cae7-21c1-46d9-9e3b-27b46cdff496"),
+                            Id = new Guid("ea26157b-9869-488f-992d-b7d27c7a16ee"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4444,11 +4444,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 2 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("3fdbf32a-1280-4bd5-b69d-559791b5e6c2")
+                            QuizId = new Guid("662c56d5-0c1a-4370-ad55-33312520a416")
                         },
                         new
                         {
-                            Id = new Guid("29a18d1f-0a6c-4f2b-b627-0ad728d2c8a1"),
+                            Id = new Guid("7124585f-1523-48e0-b913-10e41ff8cde4"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4457,11 +4457,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 2 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("3fdbf32a-1280-4bd5-b69d-559791b5e6c2")
+                            QuizId = new Guid("662c56d5-0c1a-4370-ad55-33312520a416")
                         },
                         new
                         {
-                            Id = new Guid("a9dab550-a0c8-410f-95a8-4a106ba3b016"),
+                            Id = new Guid("6892a2af-a41f-4f8c-b507-2913a05fc724"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4470,11 +4470,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 3 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("ed142f7b-079a-4d46-9820-1b009474755b")
+                            QuizId = new Guid("484b5251-ee7c-4ea6-9388-adb45616952a")
                         },
                         new
                         {
-                            Id = new Guid("24966a3f-5410-4b4e-8b41-378b594a105c"),
+                            Id = new Guid("1a77b061-42d7-4667-b57b-891ae0031598"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4483,11 +4483,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 3 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("ed142f7b-079a-4d46-9820-1b009474755b")
+                            QuizId = new Guid("484b5251-ee7c-4ea6-9388-adb45616952a")
                         },
                         new
                         {
-                            Id = new Guid("4712dc0d-f990-471e-8962-1cbadde3fdbc"),
+                            Id = new Guid("a00c36ff-5904-4441-8c36-0e86e78238a3"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4496,11 +4496,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 3 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("ed142f7b-079a-4d46-9820-1b009474755b")
+                            QuizId = new Guid("484b5251-ee7c-4ea6-9388-adb45616952a")
                         },
                         new
                         {
-                            Id = new Guid("f07758e5-e509-4466-9846-ba727395c07a"),
+                            Id = new Guid("c04e267f-8384-4328-9464-2592dd600251"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4509,11 +4509,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 3 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("91ba3464-f2de-462f-9511-b27e7fd4ae9e")
+                            QuizId = new Guid("194c0b70-3e53-4f29-b4b4-a40ccbac3fc7")
                         },
                         new
                         {
-                            Id = new Guid("ba21e612-19f6-4abf-902b-22a0f3199bc7"),
+                            Id = new Guid("2a02901f-c750-4af3-97a5-06fee65ef9ac"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4522,11 +4522,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 3 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("91ba3464-f2de-462f-9511-b27e7fd4ae9e")
+                            QuizId = new Guid("194c0b70-3e53-4f29-b4b4-a40ccbac3fc7")
                         },
                         new
                         {
-                            Id = new Guid("f6c12a98-bc8e-4752-84b9-dbf149ecf2fa"),
+                            Id = new Guid("8f292b9b-71ef-4710-880b-b09ef4f54675"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4535,11 +4535,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 3 in Course 4",
                             QuestionType = 0,
-                            QuizId = new Guid("91ba3464-f2de-462f-9511-b27e7fd4ae9e")
+                            QuizId = new Guid("194c0b70-3e53-4f29-b4b4-a40ccbac3fc7")
                         },
                         new
                         {
-                            Id = new Guid("8552012c-719a-4b35-b283-b0eee487cf20"),
+                            Id = new Guid("6414bd63-45a0-4208-b581-0fc89f851b4b"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4548,11 +4548,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 1 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("893b706a-1f72-4b6a-a54a-0c95ee8bb64e")
+                            QuizId = new Guid("91367d16-6c4d-4d24-a7fd-1724e78e1989")
                         },
                         new
                         {
-                            Id = new Guid("a57abc77-3657-4652-9fe5-e172096de113"),
+                            Id = new Guid("76ab8cd0-7f65-4677-865c-53d82f09cf60"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4561,11 +4561,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 1 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("893b706a-1f72-4b6a-a54a-0c95ee8bb64e")
+                            QuizId = new Guid("91367d16-6c4d-4d24-a7fd-1724e78e1989")
                         },
                         new
                         {
-                            Id = new Guid("bad16c83-c176-4a47-ad8d-8a50e4f7fb57"),
+                            Id = new Guid("50d8d979-af1b-4f33-baac-66525c7a426f"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4574,11 +4574,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 1 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("893b706a-1f72-4b6a-a54a-0c95ee8bb64e")
+                            QuizId = new Guid("91367d16-6c4d-4d24-a7fd-1724e78e1989")
                         },
                         new
                         {
-                            Id = new Guid("7e7a0de6-ba66-4a0b-8b1f-6d44fe19901d"),
+                            Id = new Guid("31aa2f5f-0a6c-4bb3-8ebd-9ea3c86f33d8"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4587,11 +4587,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 1 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("f6f9a4eb-06cf-42a0-ab01-67a7bae7ec00")
+                            QuizId = new Guid("b959f0cf-5f3a-4754-9ced-3846ed51f930")
                         },
                         new
                         {
-                            Id = new Guid("f249e784-a07c-4239-a7ba-909549503f3c"),
+                            Id = new Guid("362acab5-0b31-4c90-a9ed-13eb8b6e9a6e"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4600,11 +4600,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 1 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("f6f9a4eb-06cf-42a0-ab01-67a7bae7ec00")
+                            QuizId = new Guid("b959f0cf-5f3a-4754-9ced-3846ed51f930")
                         },
                         new
                         {
-                            Id = new Guid("dcb95d55-26c5-40fd-9f59-e597a8b7ce6f"),
+                            Id = new Guid("3254ec28-956b-4041-9928-9581d6bf793f"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4613,11 +4613,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 1 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("f6f9a4eb-06cf-42a0-ab01-67a7bae7ec00")
+                            QuizId = new Guid("b959f0cf-5f3a-4754-9ced-3846ed51f930")
                         },
                         new
                         {
-                            Id = new Guid("384fffc5-67df-4536-82cf-6053d173b299"),
+                            Id = new Guid("87577524-f765-47a4-8ee5-45653bebf3db"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4626,11 +4626,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 2 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("5efcabfe-5bf1-4dd0-9f87-9389175699b0")
+                            QuizId = new Guid("c89b0c61-117d-4f48-a805-6681e093e400")
                         },
                         new
                         {
-                            Id = new Guid("7a2e36ea-25b2-4cc5-96db-89dca1901c8b"),
+                            Id = new Guid("a44ef63d-8aab-4815-b3f7-01e773397527"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4639,11 +4639,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 2 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("5efcabfe-5bf1-4dd0-9f87-9389175699b0")
+                            QuizId = new Guid("c89b0c61-117d-4f48-a805-6681e093e400")
                         },
                         new
                         {
-                            Id = new Guid("470e79cb-da19-4f48-8228-ad5fb44fcc13"),
+                            Id = new Guid("e0230707-d223-4097-bb2d-412738ddeba8"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4652,11 +4652,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 2 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("5efcabfe-5bf1-4dd0-9f87-9389175699b0")
+                            QuizId = new Guid("c89b0c61-117d-4f48-a805-6681e093e400")
                         },
                         new
                         {
-                            Id = new Guid("2143fe06-0247-4bdb-9296-2360adc3737a"),
+                            Id = new Guid("eaff70b7-071f-4e6a-b757-71663db8d294"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4665,11 +4665,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 2 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("d0b7c64d-46e4-4e32-b29c-0740c1065501")
+                            QuizId = new Guid("bcd5b594-8d47-4bdf-89bf-b99517d3dc4d")
                         },
                         new
                         {
-                            Id = new Guid("08c127a9-62dd-4d8b-987a-7d4e4b94d815"),
+                            Id = new Guid("c0a85bd6-d38c-48e8-a937-40c78461c54e"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4678,11 +4678,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 2 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("d0b7c64d-46e4-4e32-b29c-0740c1065501")
+                            QuizId = new Guid("bcd5b594-8d47-4bdf-89bf-b99517d3dc4d")
                         },
                         new
                         {
-                            Id = new Guid("5aa83b8c-31cf-4640-985e-e576f13280e3"),
+                            Id = new Guid("a229c530-e2a1-49f1-8e43-93becb783be2"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4691,11 +4691,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 2 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("d0b7c64d-46e4-4e32-b29c-0740c1065501")
+                            QuizId = new Guid("bcd5b594-8d47-4bdf-89bf-b99517d3dc4d")
                         },
                         new
                         {
-                            Id = new Guid("f87b5982-6da3-447f-8782-ea3d3300940e"),
+                            Id = new Guid("ca60c19f-7715-417b-8357-1eab5bacef75"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4704,11 +4704,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 3 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("9a8f4060-2d8f-41a5-94a1-d4ee244cbf35")
+                            QuizId = new Guid("61f64eec-89db-47c2-8e80-a5a3fa48b1ce")
                         },
                         new
                         {
-                            Id = new Guid("81f817cf-7be3-436e-b22b-18a5494953bb"),
+                            Id = new Guid("000aebbd-8860-45b2-b8b1-eb6d98b6e66b"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4717,11 +4717,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 3 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("9a8f4060-2d8f-41a5-94a1-d4ee244cbf35")
+                            QuizId = new Guid("61f64eec-89db-47c2-8e80-a5a3fa48b1ce")
                         },
                         new
                         {
-                            Id = new Guid("395c4db3-b59e-452d-9ccc-96410071eb0e"),
+                            Id = new Guid("68db21d7-7fa6-4148-a9e9-8553555c3024"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4730,11 +4730,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 3 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("9a8f4060-2d8f-41a5-94a1-d4ee244cbf35")
+                            QuizId = new Guid("61f64eec-89db-47c2-8e80-a5a3fa48b1ce")
                         },
                         new
                         {
-                            Id = new Guid("bdf93bcc-382d-4364-a757-81d0a41e74ae"),
+                            Id = new Guid("f53d076e-f4b4-4a43-b09a-5c920b2e9c2e"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4743,11 +4743,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 3 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("644f1525-91b1-4def-bbd2-54fbb45bc9ba")
+                            QuizId = new Guid("61c8faa8-50bf-4652-96d1-65fae88a49d5")
                         },
                         new
                         {
-                            Id = new Guid("6a51052e-16dc-41a2-abde-e8e96eee569c"),
+                            Id = new Guid("43fe6d70-f0f2-422a-8e15-bcdca72c1d70"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4756,11 +4756,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 3 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("644f1525-91b1-4def-bbd2-54fbb45bc9ba")
+                            QuizId = new Guid("61c8faa8-50bf-4652-96d1-65fae88a49d5")
                         },
                         new
                         {
-                            Id = new Guid("fda77d92-e467-4c67-b106-89c724b63e15"),
+                            Id = new Guid("c5591c5e-987f-4576-9c87-9a7efba85653"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4769,11 +4769,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 3 in Course 5",
                             QuestionType = 0,
-                            QuizId = new Guid("644f1525-91b1-4def-bbd2-54fbb45bc9ba")
+                            QuizId = new Guid("61c8faa8-50bf-4652-96d1-65fae88a49d5")
                         },
                         new
                         {
-                            Id = new Guid("8a518833-a06d-486e-8e8a-0b33dafb0860"),
+                            Id = new Guid("b8db89ea-4db5-479b-a222-692f534b1b0b"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4782,11 +4782,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 1 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("5a531256-adcc-4469-b3b9-3b4105402169")
+                            QuizId = new Guid("6f306ce4-4318-4ec3-9aaa-e47e59d44018")
                         },
                         new
                         {
-                            Id = new Guid("5cf6686d-f920-421f-864a-7d367ca87623"),
+                            Id = new Guid("db682b2f-df5e-48ee-9373-a331f4a5e8a9"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4795,11 +4795,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 1 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("5a531256-adcc-4469-b3b9-3b4105402169")
+                            QuizId = new Guid("6f306ce4-4318-4ec3-9aaa-e47e59d44018")
                         },
                         new
                         {
-                            Id = new Guid("68684651-b8e6-443c-b625-0be0aea356e3"),
+                            Id = new Guid("6ee43024-b614-41c2-9d17-3f4654ab350d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4808,11 +4808,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 1 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("5a531256-adcc-4469-b3b9-3b4105402169")
+                            QuizId = new Guid("6f306ce4-4318-4ec3-9aaa-e47e59d44018")
                         },
                         new
                         {
-                            Id = new Guid("07b6c9d8-4997-489e-bf5f-6fd2e970b0cb"),
+                            Id = new Guid("11d488c7-b5a1-4d8f-a668-6dc4008eb4af"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4821,11 +4821,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 1 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("3864cea2-4ac2-410d-be61-ec52d8948d5e")
+                            QuizId = new Guid("04a28295-a9f5-4584-85bb-efa12ab4d3d9")
                         },
                         new
                         {
-                            Id = new Guid("acb03b89-3075-4b78-a736-16a5947ff75f"),
+                            Id = new Guid("731cf51c-46df-4721-a8bc-c2b74bcbfdfe"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4834,11 +4834,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 1 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("3864cea2-4ac2-410d-be61-ec52d8948d5e")
+                            QuizId = new Guid("04a28295-a9f5-4584-85bb-efa12ab4d3d9")
                         },
                         new
                         {
-                            Id = new Guid("5592063f-6944-4a2e-a4b0-6fafc9427d12"),
+                            Id = new Guid("7bbd4827-fa17-4020-8984-c607e1544598"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4847,11 +4847,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 1 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("3864cea2-4ac2-410d-be61-ec52d8948d5e")
+                            QuizId = new Guid("04a28295-a9f5-4584-85bb-efa12ab4d3d9")
                         },
                         new
                         {
-                            Id = new Guid("2124dac4-d39f-4d15-a407-dab8b3a8aa48"),
+                            Id = new Guid("b3644f83-c64b-4d70-8ba1-41d8c50cca72"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4860,11 +4860,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 2 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("7a974643-05f0-42cb-8303-26c37643eb64")
+                            QuizId = new Guid("89a82a1d-35f0-4005-a1c7-464c07cc13d2")
                         },
                         new
                         {
-                            Id = new Guid("3bf4df01-8e22-4972-a277-c2a5327bb57a"),
+                            Id = new Guid("82729068-78a4-43ab-958f-a58fd76dc634"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4873,11 +4873,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 2 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("7a974643-05f0-42cb-8303-26c37643eb64")
+                            QuizId = new Guid("89a82a1d-35f0-4005-a1c7-464c07cc13d2")
                         },
                         new
                         {
-                            Id = new Guid("77db5382-c1e5-4603-af01-6a75dd948c58"),
+                            Id = new Guid("91b5b8d5-8223-4549-9f16-3aadb00e9236"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4886,11 +4886,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 2 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("7a974643-05f0-42cb-8303-26c37643eb64")
+                            QuizId = new Guid("89a82a1d-35f0-4005-a1c7-464c07cc13d2")
                         },
                         new
                         {
-                            Id = new Guid("c11bade4-fc34-4fa5-8b9c-368eb20d4905"),
+                            Id = new Guid("f112e128-0931-4440-b2eb-b75b9efb4c71"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4899,11 +4899,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 2 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("cc750fc2-418a-4ef5-a4da-2606ae67e8f6")
+                            QuizId = new Guid("e144e772-807e-4e71-a607-ba4df546dfb2")
                         },
                         new
                         {
-                            Id = new Guid("87d40ca7-8171-46ec-be8a-190620731d8e"),
+                            Id = new Guid("2cb6c465-a0a1-45be-b86b-d1e9e3598595"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4912,11 +4912,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 2 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("cc750fc2-418a-4ef5-a4da-2606ae67e8f6")
+                            QuizId = new Guid("e144e772-807e-4e71-a607-ba4df546dfb2")
                         },
                         new
                         {
-                            Id = new Guid("7dca59d0-582e-4d68-8932-8e3ecf9d7bec"),
+                            Id = new Guid("d1d0c439-431f-4120-b0e7-2904515f99f2"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4925,11 +4925,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 2 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("cc750fc2-418a-4ef5-a4da-2606ae67e8f6")
+                            QuizId = new Guid("e144e772-807e-4e71-a607-ba4df546dfb2")
                         },
                         new
                         {
-                            Id = new Guid("cf0f188d-ab12-4885-8c80-857297329324"),
+                            Id = new Guid("819f8ac3-3208-45df-964e-fa22f16eee3c"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4938,11 +4938,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 3 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("c621c39f-7a4f-41c7-820d-62b4b7920944")
+                            QuizId = new Guid("035a9cb1-d172-4e8d-b28f-37ed1628962f")
                         },
                         new
                         {
-                            Id = new Guid("f7636700-633f-4a05-bd1c-b43967f487e7"),
+                            Id = new Guid("8e029a37-9922-4aff-ae41-2d4c7660229c"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4951,11 +4951,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 3 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("c621c39f-7a4f-41c7-820d-62b4b7920944")
+                            QuizId = new Guid("035a9cb1-d172-4e8d-b28f-37ed1628962f")
                         },
                         new
                         {
-                            Id = new Guid("bc46f809-b24a-4a57-a6f8-24821c31b49b"),
+                            Id = new Guid("21f51d80-85fc-48bb-9766-02bbcd0fc61b"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4964,11 +4964,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 3 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("c621c39f-7a4f-41c7-820d-62b4b7920944")
+                            QuizId = new Guid("035a9cb1-d172-4e8d-b28f-37ed1628962f")
                         },
                         new
                         {
-                            Id = new Guid("4a653f60-401d-4a53-87dc-657c87c819e8"),
+                            Id = new Guid("ad92d173-e437-42a6-9e95-f0c702deb58d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4977,11 +4977,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 3 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("f808f265-9dee-403b-8205-29ddec09a633")
+                            QuizId = new Guid("86635615-6d1b-4a85-973c-173fb0cab366")
                         },
                         new
                         {
-                            Id = new Guid("afc20e60-fdec-4591-ba99-bc4d288b46f0"),
+                            Id = new Guid("856bae32-1e6c-4956-8b7c-bb2dd3661056"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -4990,11 +4990,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 3 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("f808f265-9dee-403b-8205-29ddec09a633")
+                            QuizId = new Guid("86635615-6d1b-4a85-973c-173fb0cab366")
                         },
                         new
                         {
-                            Id = new Guid("34a98a12-91db-4ed5-a09b-2b3f820c8da1"),
+                            Id = new Guid("6de3a839-6411-4898-ab13-a3ff1c3c0666"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5003,11 +5003,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 3 in Course 6",
                             QuestionType = 0,
-                            QuizId = new Guid("f808f265-9dee-403b-8205-29ddec09a633")
+                            QuizId = new Guid("86635615-6d1b-4a85-973c-173fb0cab366")
                         },
                         new
                         {
-                            Id = new Guid("e1d860c5-87b2-4a0a-8760-22fd9a56fb51"),
+                            Id = new Guid("0f4ca0c3-8e4e-4963-8981-6749583b7cea"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5016,11 +5016,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 1 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("38008b08-00aa-4176-9a45-ebf6e771d358")
+                            QuizId = new Guid("044774ee-a8a5-4e01-a908-6e7720ed6289")
                         },
                         new
                         {
-                            Id = new Guid("2522ebb1-d4e7-4687-bf71-f348f0348787"),
+                            Id = new Guid("81a0fe79-36af-424e-908f-2d49e80ff5b1"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5029,11 +5029,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 1 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("38008b08-00aa-4176-9a45-ebf6e771d358")
+                            QuizId = new Guid("044774ee-a8a5-4e01-a908-6e7720ed6289")
                         },
                         new
                         {
-                            Id = new Guid("786dda77-44ec-4a40-897c-2ce7413efb47"),
+                            Id = new Guid("5cd6cfe9-ccc7-4017-b977-7c029798c1ec"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5042,11 +5042,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 1 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("38008b08-00aa-4176-9a45-ebf6e771d358")
+                            QuizId = new Guid("044774ee-a8a5-4e01-a908-6e7720ed6289")
                         },
                         new
                         {
-                            Id = new Guid("1b092379-08a2-4e01-8818-95d64d0bd6a4"),
+                            Id = new Guid("45869491-8a3a-4eef-b7ff-c927c504711c"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5055,11 +5055,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 1 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("be15065c-822e-4048-8422-93451727c528")
+                            QuizId = new Guid("4129a40a-d01d-4312-b95e-6298d3d1bcd1")
                         },
                         new
                         {
-                            Id = new Guid("3854ca0a-be66-49d8-998d-486689566f65"),
+                            Id = new Guid("8697cf91-5b1d-42f6-8f46-27f8ad8d2161"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5068,11 +5068,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 1 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("be15065c-822e-4048-8422-93451727c528")
+                            QuizId = new Guid("4129a40a-d01d-4312-b95e-6298d3d1bcd1")
                         },
                         new
                         {
-                            Id = new Guid("29707d8d-e342-456c-9a4e-efae253afee2"),
+                            Id = new Guid("fd79c579-ff04-488c-ad53-d0cc3bba8c8b"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5081,11 +5081,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 1 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("be15065c-822e-4048-8422-93451727c528")
+                            QuizId = new Guid("4129a40a-d01d-4312-b95e-6298d3d1bcd1")
                         },
                         new
                         {
-                            Id = new Guid("4815c6ca-f8bb-4f56-8cde-6da748d7066b"),
+                            Id = new Guid("0ca0bc9d-7814-4a00-8c7a-d2a514bd1e8e"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5094,11 +5094,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 2 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("433afcbb-8925-4187-b516-ce971c850325")
+                            QuizId = new Guid("77c0ec88-d21f-4724-b499-9d9389bdd769")
                         },
                         new
                         {
-                            Id = new Guid("db4038b1-d69a-43b0-89f1-c3f01c594fe3"),
+                            Id = new Guid("d5aae2ca-0355-4c21-80be-cf290048fe6d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5107,11 +5107,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 2 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("433afcbb-8925-4187-b516-ce971c850325")
+                            QuizId = new Guid("77c0ec88-d21f-4724-b499-9d9389bdd769")
                         },
                         new
                         {
-                            Id = new Guid("65f9908c-2acb-453d-a428-cb8101425271"),
+                            Id = new Guid("52728dbb-b929-4e2e-8819-75fe7cf09acb"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5120,11 +5120,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 2 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("433afcbb-8925-4187-b516-ce971c850325")
+                            QuizId = new Guid("77c0ec88-d21f-4724-b499-9d9389bdd769")
                         },
                         new
                         {
-                            Id = new Guid("e057bb9d-c9cb-4725-b23a-6acf02616ecd"),
+                            Id = new Guid("b16ba0d7-fe2f-4bc5-8b48-7c1c0f8c7c1e"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5133,11 +5133,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 2 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("3a8d21d3-1527-4f10-ac78-17692fed12b2")
+                            QuizId = new Guid("9be73bf4-fd0b-41d0-b5ff-207223ac74e8")
                         },
                         new
                         {
-                            Id = new Guid("2634d06f-aff4-447d-b331-5376fa3dd0cd"),
+                            Id = new Guid("1edeffb3-a7cc-4cad-9f2d-8d114e041234"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5146,11 +5146,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 2 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("3a8d21d3-1527-4f10-ac78-17692fed12b2")
+                            QuizId = new Guid("9be73bf4-fd0b-41d0-b5ff-207223ac74e8")
                         },
                         new
                         {
-                            Id = new Guid("ea6410d5-2548-4dbd-8ba9-0e2ef94cd96a"),
+                            Id = new Guid("a9acd9df-c889-48a2-9f51-bf19f74ee369"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5159,11 +5159,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 2 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("3a8d21d3-1527-4f10-ac78-17692fed12b2")
+                            QuizId = new Guid("9be73bf4-fd0b-41d0-b5ff-207223ac74e8")
                         },
                         new
                         {
-                            Id = new Guid("7e26ae49-24ef-4ddd-a8b3-189882f7ca8e"),
+                            Id = new Guid("715a595f-11f2-484e-95e0-76a7d44bb86a"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5172,11 +5172,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 3 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("7a796cbe-c868-405f-998c-69d8137e5f5d")
+                            QuizId = new Guid("26c897c1-367e-41a5-a58a-9cda759ce5ba")
                         },
                         new
                         {
-                            Id = new Guid("895123ff-43cb-4fa2-b8a9-49a118734671"),
+                            Id = new Guid("41a3d81e-ee84-46f6-a6aa-94427c713bb3"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5185,11 +5185,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 3 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("7a796cbe-c868-405f-998c-69d8137e5f5d")
+                            QuizId = new Guid("26c897c1-367e-41a5-a58a-9cda759ce5ba")
                         },
                         new
                         {
-                            Id = new Guid("28aa318e-d9c2-400a-bc51-b514cd681908"),
+                            Id = new Guid("f5468138-1d8b-47cd-b8d1-72905089fcc7"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5198,11 +5198,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 3 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("7a796cbe-c868-405f-998c-69d8137e5f5d")
+                            QuizId = new Guid("26c897c1-367e-41a5-a58a-9cda759ce5ba")
                         },
                         new
                         {
-                            Id = new Guid("32c77c22-52eb-43a6-aecc-98158e9da898"),
+                            Id = new Guid("6b1f0f7b-de24-494f-9efc-0d170a461cbc"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5211,11 +5211,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 3 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("468c74f3-7177-4a46-bf72-cdd183fb363a")
+                            QuizId = new Guid("86f1dc2a-e568-41fc-82a3-38812b28a63d")
                         },
                         new
                         {
-                            Id = new Guid("1e8f7e03-9607-4733-8f38-db1d41b398d1"),
+                            Id = new Guid("313837a3-b1d7-48a8-ae5c-8a3d013b5401"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5224,11 +5224,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 3 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("468c74f3-7177-4a46-bf72-cdd183fb363a")
+                            QuizId = new Guid("86f1dc2a-e568-41fc-82a3-38812b28a63d")
                         },
                         new
                         {
-                            Id = new Guid("f452004a-7c73-499d-aed8-004e8f9c4eff"),
+                            Id = new Guid("418d5aa5-2f24-4818-9fdf-f58be2e030d0"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5237,11 +5237,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 3 in Course 7",
                             QuestionType = 0,
-                            QuizId = new Guid("468c74f3-7177-4a46-bf72-cdd183fb363a")
+                            QuizId = new Guid("86f1dc2a-e568-41fc-82a3-38812b28a63d")
                         },
                         new
                         {
-                            Id = new Guid("c54350fb-1c77-4946-84be-e100aad1a8f0"),
+                            Id = new Guid("7def4bca-3387-4aa6-b1d1-0a9bfd0b8684"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5250,11 +5250,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 1 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("86db52e4-4c18-4048-8b30-e661d8e0ec8b")
+                            QuizId = new Guid("0839f0cd-5a82-4ad0-8767-95496b222d86")
                         },
                         new
                         {
-                            Id = new Guid("0b2afe6f-426b-460e-8a18-d2b52e095355"),
+                            Id = new Guid("3c7fe492-67b5-43ea-bce8-297b8d28457c"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5263,11 +5263,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 1 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("86db52e4-4c18-4048-8b30-e661d8e0ec8b")
+                            QuizId = new Guid("0839f0cd-5a82-4ad0-8767-95496b222d86")
                         },
                         new
                         {
-                            Id = new Guid("81509a76-88ae-427b-86fb-5ec0f00cfc43"),
+                            Id = new Guid("b4b438ed-70d5-49f0-b07f-7921aac6ff55"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5276,11 +5276,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 1 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("86db52e4-4c18-4048-8b30-e661d8e0ec8b")
+                            QuizId = new Guid("0839f0cd-5a82-4ad0-8767-95496b222d86")
                         },
                         new
                         {
-                            Id = new Guid("56b673db-909a-48da-8eae-dacdee341436"),
+                            Id = new Guid("8362394d-b0d1-489e-9beb-d13937985b09"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5289,11 +5289,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 1 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("8c583205-7179-464d-a3e6-e39c94eaef15")
+                            QuizId = new Guid("bc1bd275-311e-448b-a8d6-cc3e170381fe")
                         },
                         new
                         {
-                            Id = new Guid("44466fcf-14fd-4380-b266-b3697e1f7f56"),
+                            Id = new Guid("1522eba1-62be-42e6-a0d6-7a457f84bd93"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5302,11 +5302,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 1 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("8c583205-7179-464d-a3e6-e39c94eaef15")
+                            QuizId = new Guid("bc1bd275-311e-448b-a8d6-cc3e170381fe")
                         },
                         new
                         {
-                            Id = new Guid("9ce7e22b-4fad-4707-9e5e-1e4e5bfbf1eb"),
+                            Id = new Guid("2147ccb5-4f8f-4e3c-ae42-1fe18ae52fa5"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5315,11 +5315,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 1 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("8c583205-7179-464d-a3e6-e39c94eaef15")
+                            QuizId = new Guid("bc1bd275-311e-448b-a8d6-cc3e170381fe")
                         },
                         new
                         {
-                            Id = new Guid("cf4b5345-1d4e-4ebf-8877-2e4d71285247"),
+                            Id = new Guid("ec76b770-3edf-4b76-a0e0-d2f33dcf705b"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5328,11 +5328,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 2 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("eddfb3b3-1e6d-4c6a-ae26-0f4bb1d586c1")
+                            QuizId = new Guid("99c536c6-0eff-4b0c-85b2-2cc0807846c5")
                         },
                         new
                         {
-                            Id = new Guid("de7dcc28-1b98-4af9-9271-4054b75a1888"),
+                            Id = new Guid("acfb26d8-d285-4c83-b701-68648b4705ba"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5341,11 +5341,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 2 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("eddfb3b3-1e6d-4c6a-ae26-0f4bb1d586c1")
+                            QuizId = new Guid("99c536c6-0eff-4b0c-85b2-2cc0807846c5")
                         },
                         new
                         {
-                            Id = new Guid("e9a7acb9-115f-4080-b13b-1af5209a7775"),
+                            Id = new Guid("34bc5257-ba45-40d1-8b18-baf19c9c86c0"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5354,11 +5354,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 2 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("eddfb3b3-1e6d-4c6a-ae26-0f4bb1d586c1")
+                            QuizId = new Guid("99c536c6-0eff-4b0c-85b2-2cc0807846c5")
                         },
                         new
                         {
-                            Id = new Guid("1ce3cd3a-aedd-4753-b755-d4431a511e8d"),
+                            Id = new Guid("92249646-6f70-4791-97c9-c82f150e62f4"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5367,11 +5367,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 2 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("57d578a9-0ee1-4138-a060-bff69d1a132a")
+                            QuizId = new Guid("aa4f175a-63b2-45d2-994e-89b8b9eae755")
                         },
                         new
                         {
-                            Id = new Guid("caad08bd-f701-4758-9e77-31bb4da1a5d1"),
+                            Id = new Guid("641575d1-a3af-405f-86e0-638d5908d5be"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5380,11 +5380,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 2 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("57d578a9-0ee1-4138-a060-bff69d1a132a")
+                            QuizId = new Guid("aa4f175a-63b2-45d2-994e-89b8b9eae755")
                         },
                         new
                         {
-                            Id = new Guid("1e75fe48-f2af-446b-b83b-ddba5004e04d"),
+                            Id = new Guid("a58428cd-6706-4737-be4b-22203575b82d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5393,11 +5393,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 2 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("57d578a9-0ee1-4138-a060-bff69d1a132a")
+                            QuizId = new Guid("aa4f175a-63b2-45d2-994e-89b8b9eae755")
                         },
                         new
                         {
-                            Id = new Guid("d2ee3c38-12ff-4db4-8419-10ebc5033157"),
+                            Id = new Guid("28642692-9ec7-477b-b0a1-a7d33efc7133"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5406,11 +5406,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 3 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("c43c1686-1691-4b50-a748-4e3f2bc25588")
+                            QuizId = new Guid("25d2a4a9-f736-4cd7-954d-1a9bd572d3ff")
                         },
                         new
                         {
-                            Id = new Guid("9bc938fe-cb0a-4e20-b884-e1c3f0a0f64a"),
+                            Id = new Guid("e1fce16d-4642-469a-a7a6-9ddac4013230"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5419,11 +5419,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 3 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("c43c1686-1691-4b50-a748-4e3f2bc25588")
+                            QuizId = new Guid("25d2a4a9-f736-4cd7-954d-1a9bd572d3ff")
                         },
                         new
                         {
-                            Id = new Guid("f5246a68-d2c5-4845-b2ba-940a727a534c"),
+                            Id = new Guid("c1f96daa-3319-4dcb-a9c1-663756561ab2"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5432,11 +5432,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 3 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("c43c1686-1691-4b50-a748-4e3f2bc25588")
+                            QuizId = new Guid("25d2a4a9-f736-4cd7-954d-1a9bd572d3ff")
                         },
                         new
                         {
-                            Id = new Guid("55be335c-c4c9-4ecf-8a6e-4920d12f21fe"),
+                            Id = new Guid("4e831e53-d33e-4a5b-b7a7-9b1bd8861492"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5445,11 +5445,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 3 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("5670024b-6924-49ee-b09c-3bcc85833a07")
+                            QuizId = new Guid("99ebf135-f08b-40d5-8f61-fb0f44622e36")
                         },
                         new
                         {
-                            Id = new Guid("828107e7-db4f-4e47-8eef-79eb9f833e09"),
+                            Id = new Guid("dd1e78e7-15ae-4b69-a8fa-10e3a8cedc36"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5458,11 +5458,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 3 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("5670024b-6924-49ee-b09c-3bcc85833a07")
+                            QuizId = new Guid("99ebf135-f08b-40d5-8f61-fb0f44622e36")
                         },
                         new
                         {
-                            Id = new Guid("51340ed1-49ca-4749-a35b-c9d8bb2d2cb5"),
+                            Id = new Guid("a6e72565-5689-4054-9370-9ac364337ac7"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5471,11 +5471,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 3 in Course 8",
                             QuestionType = 0,
-                            QuizId = new Guid("5670024b-6924-49ee-b09c-3bcc85833a07")
+                            QuizId = new Guid("99ebf135-f08b-40d5-8f61-fb0f44622e36")
                         },
                         new
                         {
-                            Id = new Guid("b7ab4dd8-c83d-45f8-8570-97fd72ea529c"),
+                            Id = new Guid("3ec38b0a-2eca-4640-a195-50adba00e92d"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5484,11 +5484,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 1 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("4bb487c9-516d-4d22-951a-5f6ff383ad00")
+                            QuizId = new Guid("efefd7b3-4998-4ac2-9579-4602353fffeb")
                         },
                         new
                         {
-                            Id = new Guid("794fae67-bf16-47c5-ac52-112683752e51"),
+                            Id = new Guid("00541190-79f4-4cd0-9f06-39ef16124c03"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5497,11 +5497,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 1 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("4bb487c9-516d-4d22-951a-5f6ff383ad00")
+                            QuizId = new Guid("efefd7b3-4998-4ac2-9579-4602353fffeb")
                         },
                         new
                         {
-                            Id = new Guid("11c178c2-0aca-428f-96c3-816f8051a4b4"),
+                            Id = new Guid("ad594107-6ed7-4a1b-8063-d84d020e191f"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5510,11 +5510,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 1 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("4bb487c9-516d-4d22-951a-5f6ff383ad00")
+                            QuizId = new Guid("efefd7b3-4998-4ac2-9579-4602353fffeb")
                         },
                         new
                         {
-                            Id = new Guid("477f4387-e383-4669-8eba-568b74c88399"),
+                            Id = new Guid("68098831-4f9e-4205-b0ec-ca58c9fcc25a"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5523,11 +5523,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 1 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("52508fdf-7d5d-4290-afbb-2fddaf2e6756")
+                            QuizId = new Guid("d3a47e38-0027-4688-9fe5-92bfe73f54e2")
                         },
                         new
                         {
-                            Id = new Guid("eff89076-3bf1-4c32-94e4-8ac5b549c794"),
+                            Id = new Guid("f2cc06f2-f478-490a-bcf2-0703d00710c7"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5536,11 +5536,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 1 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("52508fdf-7d5d-4290-afbb-2fddaf2e6756")
+                            QuizId = new Guid("d3a47e38-0027-4688-9fe5-92bfe73f54e2")
                         },
                         new
                         {
-                            Id = new Guid("29a872dc-7975-40d5-b422-b1360a3b2721"),
+                            Id = new Guid("5acc3dc3-64b9-4710-bade-1a2b09ee16f3"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5549,11 +5549,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 1 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("52508fdf-7d5d-4290-afbb-2fddaf2e6756")
+                            QuizId = new Guid("d3a47e38-0027-4688-9fe5-92bfe73f54e2")
                         },
                         new
                         {
-                            Id = new Guid("0ba0ff9f-a5d7-462f-bad2-bbf6adac81bf"),
+                            Id = new Guid("7139bb4f-c6c3-4085-a87e-94ee1f089512"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5562,11 +5562,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 2 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("8a775a72-bae6-4fbe-a020-824c5c3c2082")
+                            QuizId = new Guid("70490626-7626-408f-be3c-cfaef42669f4")
                         },
                         new
                         {
-                            Id = new Guid("17f59e6f-5646-449e-b3d6-7ec8e4e15edc"),
+                            Id = new Guid("5e60abc6-8d7b-4f6f-8cd2-23d834307997"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5575,11 +5575,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 2 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("8a775a72-bae6-4fbe-a020-824c5c3c2082")
+                            QuizId = new Guid("70490626-7626-408f-be3c-cfaef42669f4")
                         },
                         new
                         {
-                            Id = new Guid("d1388d92-caf7-4bbf-bd0b-811c7d144ec2"),
+                            Id = new Guid("8e24409e-2044-4c56-b145-1ad56a2d62c1"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5588,11 +5588,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 2 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("8a775a72-bae6-4fbe-a020-824c5c3c2082")
+                            QuizId = new Guid("70490626-7626-408f-be3c-cfaef42669f4")
                         },
                         new
                         {
-                            Id = new Guid("a54fd59e-b512-43d5-8ce3-94f4db5bbd9d"),
+                            Id = new Guid("65dbecdb-8ebc-4c5a-8e53-980ac4316013"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5601,11 +5601,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 2 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("eee7b325-04dc-4241-a2af-64773a7edd60")
+                            QuizId = new Guid("d80db636-60a1-425c-9546-544b9cb7ee50")
                         },
                         new
                         {
-                            Id = new Guid("9271b3dc-bc29-4385-9369-f0e25c5653f0"),
+                            Id = new Guid("166ef0a8-c5ca-4f86-9d07-059f021f820f"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5614,11 +5614,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 2 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("eee7b325-04dc-4241-a2af-64773a7edd60")
+                            QuizId = new Guid("d80db636-60a1-425c-9546-544b9cb7ee50")
                         },
                         new
                         {
-                            Id = new Guid("631f9b5f-e9a8-41a1-8624-d4321a00529b"),
+                            Id = new Guid("72de2a21-a0cf-4e01-9fb9-53e016c008e0"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5627,11 +5627,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 2 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("eee7b325-04dc-4241-a2af-64773a7edd60")
+                            QuizId = new Guid("d80db636-60a1-425c-9546-544b9cb7ee50")
                         },
                         new
                         {
-                            Id = new Guid("6e36086a-828b-4fb7-a645-b3192e61c883"),
+                            Id = new Guid("c7c2a7da-1183-463f-b221-bec89f2c4ec3"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5640,11 +5640,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 3 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("a12fe5e0-7c97-43d6-bf49-f6601c605814")
+                            QuizId = new Guid("e01cf050-3fe0-4c36-bd8b-98be019595e4")
                         },
                         new
                         {
-                            Id = new Guid("f5612cda-7f88-4cba-9123-f7a99caaa3ba"),
+                            Id = new Guid("dab4f8a6-3ae7-42b2-8f70-addf5f7cc4eb"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5653,11 +5653,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 3 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("a12fe5e0-7c97-43d6-bf49-f6601c605814")
+                            QuizId = new Guid("e01cf050-3fe0-4c36-bd8b-98be019595e4")
                         },
                         new
                         {
-                            Id = new Guid("b9410478-7100-441b-8a35-55cbe260ce11"),
+                            Id = new Guid("8ea120dd-7f67-41c1-aec5-c07bfdbc0db3"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5666,11 +5666,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 3 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("a12fe5e0-7c97-43d6-bf49-f6601c605814")
+                            QuizId = new Guid("e01cf050-3fe0-4c36-bd8b-98be019595e4")
                         },
                         new
                         {
-                            Id = new Guid("dd0ff16c-8f4e-4e9d-aa0a-0d61ee45ec95"),
+                            Id = new Guid("d673675f-967d-47d3-84fc-f1e1748e304f"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5679,11 +5679,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 3 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("29005fea-2c01-42f7-b2d9-c7d937d5b218")
+                            QuizId = new Guid("cc55139a-fa0a-4ec5-a1cc-70ac5bb5bb23")
                         },
                         new
                         {
-                            Id = new Guid("009fcd5f-695b-4300-a3d0-b8f21b4f4c2a"),
+                            Id = new Guid("f56a22e3-042a-4bd9-8028-f383fc257395"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5692,11 +5692,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 3 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("29005fea-2c01-42f7-b2d9-c7d937d5b218")
+                            QuizId = new Guid("cc55139a-fa0a-4ec5-a1cc-70ac5bb5bb23")
                         },
                         new
                         {
-                            Id = new Guid("69cda6b1-865e-4391-ad9b-8cdf635d57c5"),
+                            Id = new Guid("4e7818bd-a629-4337-874d-fd95edcec4bc"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5705,11 +5705,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 3 in Course 9",
                             QuestionType = 0,
-                            QuizId = new Guid("29005fea-2c01-42f7-b2d9-c7d937d5b218")
+                            QuizId = new Guid("cc55139a-fa0a-4ec5-a1cc-70ac5bb5bb23")
                         },
                         new
                         {
-                            Id = new Guid("31e7b7ac-3b33-4592-9508-d1bb5260f395"),
+                            Id = new Guid("166b53cc-e7f1-4ea2-bc0b-2b3f4379f948"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5718,11 +5718,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 1 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("198046a0-69d0-4052-8e37-c1d8bdd598fc")
+                            QuizId = new Guid("cec24847-9a86-4e9c-bd11-83697d4b8861")
                         },
                         new
                         {
-                            Id = new Guid("dde3712c-1bea-46bd-9452-caea39878513"),
+                            Id = new Guid("e683f11f-c54d-4e2b-9ae2-4e7bbf64c5ab"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5731,11 +5731,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 1 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("198046a0-69d0-4052-8e37-c1d8bdd598fc")
+                            QuizId = new Guid("cec24847-9a86-4e9c-bd11-83697d4b8861")
                         },
                         new
                         {
-                            Id = new Guid("594c6b6a-3a7a-4844-8585-b92161f3f0c9"),
+                            Id = new Guid("4586895d-135c-4629-967b-2a3f008d6756"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5744,11 +5744,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 1 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("198046a0-69d0-4052-8e37-c1d8bdd598fc")
+                            QuizId = new Guid("cec24847-9a86-4e9c-bd11-83697d4b8861")
                         },
                         new
                         {
-                            Id = new Guid("ee054b7f-3a54-4a99-881c-32a9f16cfa1a"),
+                            Id = new Guid("1e643dd1-bdd1-483e-a42a-9069b23b2bbc"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5757,11 +5757,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 1 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("4058c788-a627-4824-b28c-25ab2fbaaa42")
+                            QuizId = new Guid("0a99492b-91b5-407a-9c9b-d9d6fab39695")
                         },
                         new
                         {
-                            Id = new Guid("f9b54487-1137-4c25-8dea-0e0a49742ba8"),
+                            Id = new Guid("1d147627-63d6-4a57-bfbc-d2736534cfb4"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5770,11 +5770,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 1 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("4058c788-a627-4824-b28c-25ab2fbaaa42")
+                            QuizId = new Guid("0a99492b-91b5-407a-9c9b-d9d6fab39695")
                         },
                         new
                         {
-                            Id = new Guid("5d51357d-bba0-484e-8e6b-b042b93f1370"),
+                            Id = new Guid("3a55d664-9ad5-4416-bc2c-54e05de22b99"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5783,11 +5783,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 1 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("4058c788-a627-4824-b28c-25ab2fbaaa42")
+                            QuizId = new Guid("0a99492b-91b5-407a-9c9b-d9d6fab39695")
                         },
                         new
                         {
-                            Id = new Guid("b7fbfcf3-0797-4927-a17c-2f354b0fc342"),
+                            Id = new Guid("91ed63f6-b375-454d-b635-1bdf066272f8"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5796,11 +5796,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 2 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("1d1c9f1a-03cf-4188-bdc6-9232388c1395")
+                            QuizId = new Guid("c2851c54-7fdb-46fe-be22-4576f9135403")
                         },
                         new
                         {
-                            Id = new Guid("04886cf2-aab6-4302-a532-a128ca526350"),
+                            Id = new Guid("dda87d91-1ae5-4d47-a49b-81bb05f660d8"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5809,11 +5809,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 2 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("1d1c9f1a-03cf-4188-bdc6-9232388c1395")
+                            QuizId = new Guid("c2851c54-7fdb-46fe-be22-4576f9135403")
                         },
                         new
                         {
-                            Id = new Guid("b782dc3e-1b74-47fd-ac02-f09446b22a29"),
+                            Id = new Guid("766485af-485e-463d-80e8-b2a7654a5fb0"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5822,11 +5822,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 2 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("1d1c9f1a-03cf-4188-bdc6-9232388c1395")
+                            QuizId = new Guid("c2851c54-7fdb-46fe-be22-4576f9135403")
                         },
                         new
                         {
-                            Id = new Guid("cef57848-8ea0-4997-82a2-9799cfad423c"),
+                            Id = new Guid("3ba53073-053f-4bf4-a538-54e0599d73e0"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5835,11 +5835,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 2 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("9ede59f0-be75-4c13-aad1-5553ac9596b2")
+                            QuizId = new Guid("344f93c9-c643-4b8a-90b4-5edc1e79ad60")
                         },
                         new
                         {
-                            Id = new Guid("e51f5dde-faa5-4df7-b02f-690cdd7e9291"),
+                            Id = new Guid("297260f0-2253-4b7f-b3cd-4d77ac58bbfe"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5848,11 +5848,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 2 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("9ede59f0-be75-4c13-aad1-5553ac9596b2")
+                            QuizId = new Guid("344f93c9-c643-4b8a-90b4-5edc1e79ad60")
                         },
                         new
                         {
-                            Id = new Guid("db931fc3-5be3-4bab-8ab1-a3eec9130b9d"),
+                            Id = new Guid("499a0a86-929f-4d07-81a8-827324fa65bb"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5861,11 +5861,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 2 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("9ede59f0-be75-4c13-aad1-5553ac9596b2")
+                            QuizId = new Guid("344f93c9-c643-4b8a-90b4-5edc1e79ad60")
                         },
                         new
                         {
-                            Id = new Guid("a2da49f9-ed73-4e79-bd5b-ce37d0aa4171"),
+                            Id = new Guid("514e7221-cb75-4738-952e-591c59cbbabe"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5874,11 +5874,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 1 for Section 3 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("ebb284dc-ea2d-4324-82e2-1f9069a84d30")
+                            QuizId = new Guid("daab59b1-3652-47a4-925a-7b15867ceb67")
                         },
                         new
                         {
-                            Id = new Guid("5904d186-7fcf-49f3-aa89-004ee65d94a5"),
+                            Id = new Guid("2fbb8609-60b0-4a21-aeff-3e200e00b7a0"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5887,11 +5887,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 1 for Section 3 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("ebb284dc-ea2d-4324-82e2-1f9069a84d30")
+                            QuizId = new Guid("daab59b1-3652-47a4-925a-7b15867ceb67")
                         },
                         new
                         {
-                            Id = new Guid("c5490cb0-61a3-48ea-9b9e-5eb51fd99be4"),
+                            Id = new Guid("aa438d26-80bf-4c2c-9a72-305a6b468369"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5900,11 +5900,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 1 for Section 3 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("ebb284dc-ea2d-4324-82e2-1f9069a84d30")
+                            QuizId = new Guid("daab59b1-3652-47a4-925a-7b15867ceb67")
                         },
                         new
                         {
-                            Id = new Guid("0b5b15ac-0d13-4d61-8eec-89d2abc96959"),
+                            Id = new Guid("a17dab2e-064e-4b40-b5d8-4f1581a711d1"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5913,11 +5913,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 1 for Quiz 2 for Section 3 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("065c75ad-d7bf-4b22-80ac-1950520e9ea2")
+                            QuizId = new Guid("0bef1ca2-850e-459d-9620-ad776c6bbe2b")
                         },
                         new
                         {
-                            Id = new Guid("9b7019c1-0cbf-43e6-b835-efabe43f445d"),
+                            Id = new Guid("ee25d958-2017-420f-8196-0bd17dfc23e7"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5926,11 +5926,11 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 2 for Quiz 2 for Section 3 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("065c75ad-d7bf-4b22-80ac-1950520e9ea2")
+                            QuizId = new Guid("0bef1ca2-850e-459d-9620-ad776c6bbe2b")
                         },
                         new
                         {
-                            Id = new Guid("167e877c-faf8-434c-a317-08355c23bb58"),
+                            Id = new Guid("bd02c0e2-1d29-4e06-9ae5-6fd7dd4389c8"),
                             CorrectAnswers = "[\"Option 1\",\"Option 2\"]",
                             CorrectAnswersJson = "[\"Option 1\",\"Option 2\"]",
                             IsActive = false,
@@ -5939,7 +5939,7 @@ namespace FlexBook.Infrastructure.Migrations
                             OptionsJson = "[\"Option 1\",\"Option 2\",\"Option 3\",\"Option 4\"]",
                             QuestionText = "Question 3 for Quiz 2 for Section 3 in Course 10",
                             QuestionType = 0,
-                            QuizId = new Guid("065c75ad-d7bf-4b22-80ac-1950520e9ea2")
+                            QuizId = new Guid("0bef1ca2-850e-459d-9620-ad776c6bbe2b")
                         });
                 });
 
@@ -5977,483 +5977,483 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("c180d68a-1306-4240-bb46-7c93b2da1b85"),
+                            Id = new Guid("4ba73fc7-f0d4-43b3-9457-253184682bbc"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 1 in Course 1",
                             QuizType = 0,
-                            SectionId = new Guid("fe29bc8b-b5a1-4ce7-b7a8-ab4ae5f221dd")
+                            SectionId = new Guid("1f2e46af-e866-40e1-98c7-e6652e7d322e")
                         },
                         new
                         {
-                            Id = new Guid("0844939b-87e4-4982-95c5-d101907a4542"),
+                            Id = new Guid("5e4fcd39-4a37-4c78-ad47-078171b105a5"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 1 in Course 1",
                             QuizType = 0,
-                            SectionId = new Guid("fe29bc8b-b5a1-4ce7-b7a8-ab4ae5f221dd")
+                            SectionId = new Guid("1f2e46af-e866-40e1-98c7-e6652e7d322e")
                         },
                         new
                         {
-                            Id = new Guid("c78f717f-0f8f-406c-a58b-f34b5a931f49"),
+                            Id = new Guid("c1e76310-9fec-4550-9604-808f17ede9a1"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 2 in Course 1",
                             QuizType = 0,
-                            SectionId = new Guid("a89ced5c-73ab-4b18-a4fd-a1cf11e37503")
+                            SectionId = new Guid("9d18e37d-af34-407a-b23f-a5e6596b7c42")
                         },
                         new
                         {
-                            Id = new Guid("9cb27ca8-b768-4410-b7fb-9fdf700b6035"),
+                            Id = new Guid("54e98546-323c-45c0-be96-afbe2233b1ce"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 2 in Course 1",
                             QuizType = 0,
-                            SectionId = new Guid("a89ced5c-73ab-4b18-a4fd-a1cf11e37503")
+                            SectionId = new Guid("9d18e37d-af34-407a-b23f-a5e6596b7c42")
                         },
                         new
                         {
-                            Id = new Guid("bf584167-5bb8-452a-96af-f33700516226"),
+                            Id = new Guid("b4582728-3535-4b2b-947b-569aa91507f8"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 3 in Course 1",
                             QuizType = 0,
-                            SectionId = new Guid("3a9390bf-fed5-4b1e-b31f-e13508551535")
+                            SectionId = new Guid("7897cc14-3bae-47b0-bfe3-a05fb846fafb")
                         },
                         new
                         {
-                            Id = new Guid("d3a6039b-b47a-428d-bf54-bae0a4f41ff1"),
+                            Id = new Guid("eabdcbc0-63c2-4258-a2f9-aa113cab84ea"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 3 in Course 1",
                             QuizType = 0,
-                            SectionId = new Guid("3a9390bf-fed5-4b1e-b31f-e13508551535")
+                            SectionId = new Guid("7897cc14-3bae-47b0-bfe3-a05fb846fafb")
                         },
                         new
                         {
-                            Id = new Guid("0a723220-439b-4909-a82d-e40d5bfa5336"),
+                            Id = new Guid("a83d60e9-7efd-415b-be06-8c9f18fdcfb8"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 1 in Course 2",
                             QuizType = 0,
-                            SectionId = new Guid("1a99201e-35fe-4dda-a10e-b67373abca77")
+                            SectionId = new Guid("ca8490cb-7ea8-40b5-b4f6-1fe240337a87")
                         },
                         new
                         {
-                            Id = new Guid("6c8a5363-71dc-4653-ba97-1126d313a5a8"),
+                            Id = new Guid("0e476f55-dd13-40ca-a81c-fbb5e7c8c99c"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 1 in Course 2",
                             QuizType = 0,
-                            SectionId = new Guid("1a99201e-35fe-4dda-a10e-b67373abca77")
+                            SectionId = new Guid("ca8490cb-7ea8-40b5-b4f6-1fe240337a87")
                         },
                         new
                         {
-                            Id = new Guid("7d472d7d-3b37-42d6-bf1c-19c01186899c"),
+                            Id = new Guid("4fa36b5d-b0e3-47da-b44d-64f1128020c9"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 2 in Course 2",
                             QuizType = 0,
-                            SectionId = new Guid("56ca78f5-e21c-484d-984e-1da68257a45d")
+                            SectionId = new Guid("15557eee-7a91-4da6-9a15-2869250cf1bf")
                         },
                         new
                         {
-                            Id = new Guid("a18da225-0c7f-447c-850e-347b653fa693"),
+                            Id = new Guid("cfc86a2c-99a3-4ca7-ac0e-3e07b11297e1"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 2 in Course 2",
                             QuizType = 0,
-                            SectionId = new Guid("56ca78f5-e21c-484d-984e-1da68257a45d")
+                            SectionId = new Guid("15557eee-7a91-4da6-9a15-2869250cf1bf")
                         },
                         new
                         {
-                            Id = new Guid("bdd0379a-4429-45a5-88bf-f0d5817a1098"),
+                            Id = new Guid("5d392f4a-9070-4404-b543-9097b42ab6ab"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 3 in Course 2",
                             QuizType = 0,
-                            SectionId = new Guid("c1efe640-42dc-483a-beac-9edcbdddbd67")
+                            SectionId = new Guid("ee2ce80b-2648-423b-924f-6822350fa30d")
                         },
                         new
                         {
-                            Id = new Guid("d3a9e00f-8f9a-4e04-94cc-51d0c9664dd9"),
+                            Id = new Guid("fc69ed46-f740-41e9-a3b1-d95724be1b47"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 3 in Course 2",
                             QuizType = 0,
-                            SectionId = new Guid("c1efe640-42dc-483a-beac-9edcbdddbd67")
+                            SectionId = new Guid("ee2ce80b-2648-423b-924f-6822350fa30d")
                         },
                         new
                         {
-                            Id = new Guid("9fbc3c17-0a6f-4563-a14c-4b6398a0505c"),
+                            Id = new Guid("2046baf1-3fad-4420-837c-78d497167add"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 1 in Course 3",
                             QuizType = 0,
-                            SectionId = new Guid("9ed14ada-e20b-4a79-8f28-8a299bf9b1ca")
+                            SectionId = new Guid("19363869-8cbb-4e78-a14f-5d973aeaab0b")
                         },
                         new
                         {
-                            Id = new Guid("50c99dac-4473-40c3-8fb8-1e595826d5b2"),
+                            Id = new Guid("f46054d9-c232-474e-91ff-02705842030c"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 1 in Course 3",
                             QuizType = 0,
-                            SectionId = new Guid("9ed14ada-e20b-4a79-8f28-8a299bf9b1ca")
+                            SectionId = new Guid("19363869-8cbb-4e78-a14f-5d973aeaab0b")
                         },
                         new
                         {
-                            Id = new Guid("70ea2387-6ed6-40ef-9adc-66ac1a76ab62"),
+                            Id = new Guid("57313398-6f47-468c-853a-97bd42cf4733"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 2 in Course 3",
                             QuizType = 0,
-                            SectionId = new Guid("816b8d43-be29-476c-88c7-778e265093c6")
+                            SectionId = new Guid("3e0a87a3-9b5a-422d-bf2c-d6b35cd59d7c")
                         },
                         new
                         {
-                            Id = new Guid("30d73c78-c26c-4ad5-b046-f35d3b6631de"),
+                            Id = new Guid("d3246569-1cba-4dd6-b119-9989a94c8de5"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 2 in Course 3",
                             QuizType = 0,
-                            SectionId = new Guid("816b8d43-be29-476c-88c7-778e265093c6")
+                            SectionId = new Guid("3e0a87a3-9b5a-422d-bf2c-d6b35cd59d7c")
                         },
                         new
                         {
-                            Id = new Guid("c8febd80-1d97-4529-8863-f3fc7d76c471"),
+                            Id = new Guid("592cf29f-33b0-413b-acea-40b3e378d365"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 3 in Course 3",
                             QuizType = 0,
-                            SectionId = new Guid("ae9959dc-c4b4-4562-b844-43d5d6d112f6")
+                            SectionId = new Guid("fe4a8dc4-5349-4e2b-ab8f-b7131339183d")
                         },
                         new
                         {
-                            Id = new Guid("59ea0e26-f45d-4220-b346-93675f590a07"),
+                            Id = new Guid("59de334a-ccbc-4b00-8231-16c3b03220b3"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 3 in Course 3",
                             QuizType = 0,
-                            SectionId = new Guid("ae9959dc-c4b4-4562-b844-43d5d6d112f6")
+                            SectionId = new Guid("fe4a8dc4-5349-4e2b-ab8f-b7131339183d")
                         },
                         new
                         {
-                            Id = new Guid("f7dc9ddc-f59d-45d0-a7a4-376701f89a93"),
+                            Id = new Guid("cf640771-035e-4126-87e3-9b972e8989f8"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 1 in Course 4",
                             QuizType = 0,
-                            SectionId = new Guid("aae8552d-7eb5-4200-b1da-7d022abbc0a7")
+                            SectionId = new Guid("c6a88465-bb5b-4b05-a799-2fcba3ada87a")
                         },
                         new
                         {
-                            Id = new Guid("0b9b5004-ad5a-440a-abd3-99631ba83e50"),
+                            Id = new Guid("29392d2a-0af6-42b3-af78-6fbeb3cd1164"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 1 in Course 4",
                             QuizType = 0,
-                            SectionId = new Guid("aae8552d-7eb5-4200-b1da-7d022abbc0a7")
+                            SectionId = new Guid("c6a88465-bb5b-4b05-a799-2fcba3ada87a")
                         },
                         new
                         {
-                            Id = new Guid("56dbef56-8fb7-4a05-9b8c-27a5b3a5a19b"),
+                            Id = new Guid("b90091a3-62a8-40e2-8ced-89944f8e972e"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 2 in Course 4",
                             QuizType = 0,
-                            SectionId = new Guid("bf12ebab-c723-4873-bcd1-c73f21e0db2e")
+                            SectionId = new Guid("a00c5d20-74db-49ca-9df3-7da895e34aee")
                         },
                         new
                         {
-                            Id = new Guid("3fdbf32a-1280-4bd5-b69d-559791b5e6c2"),
+                            Id = new Guid("662c56d5-0c1a-4370-ad55-33312520a416"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 2 in Course 4",
                             QuizType = 0,
-                            SectionId = new Guid("bf12ebab-c723-4873-bcd1-c73f21e0db2e")
+                            SectionId = new Guid("a00c5d20-74db-49ca-9df3-7da895e34aee")
                         },
                         new
                         {
-                            Id = new Guid("ed142f7b-079a-4d46-9820-1b009474755b"),
+                            Id = new Guid("484b5251-ee7c-4ea6-9388-adb45616952a"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 3 in Course 4",
                             QuizType = 0,
-                            SectionId = new Guid("29b76f14-dd5d-48c9-a24f-56882208da6c")
+                            SectionId = new Guid("e26769f7-32ce-4157-909c-2d354e23e35d")
                         },
                         new
                         {
-                            Id = new Guid("91ba3464-f2de-462f-9511-b27e7fd4ae9e"),
+                            Id = new Guid("194c0b70-3e53-4f29-b4b4-a40ccbac3fc7"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 3 in Course 4",
                             QuizType = 0,
-                            SectionId = new Guid("29b76f14-dd5d-48c9-a24f-56882208da6c")
+                            SectionId = new Guid("e26769f7-32ce-4157-909c-2d354e23e35d")
                         },
                         new
                         {
-                            Id = new Guid("893b706a-1f72-4b6a-a54a-0c95ee8bb64e"),
+                            Id = new Guid("91367d16-6c4d-4d24-a7fd-1724e78e1989"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 1 in Course 5",
                             QuizType = 0,
-                            SectionId = new Guid("d44077c7-4c39-4e4e-a758-4dd4bda4e08c")
+                            SectionId = new Guid("6836b6fd-8d40-4afc-a9fc-9734a78f8879")
                         },
                         new
                         {
-                            Id = new Guid("f6f9a4eb-06cf-42a0-ab01-67a7bae7ec00"),
+                            Id = new Guid("b959f0cf-5f3a-4754-9ced-3846ed51f930"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 1 in Course 5",
                             QuizType = 0,
-                            SectionId = new Guid("d44077c7-4c39-4e4e-a758-4dd4bda4e08c")
+                            SectionId = new Guid("6836b6fd-8d40-4afc-a9fc-9734a78f8879")
                         },
                         new
                         {
-                            Id = new Guid("5efcabfe-5bf1-4dd0-9f87-9389175699b0"),
+                            Id = new Guid("c89b0c61-117d-4f48-a805-6681e093e400"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 2 in Course 5",
                             QuizType = 0,
-                            SectionId = new Guid("4d0c8db7-0501-45b6-8a3c-e0268275d01c")
+                            SectionId = new Guid("b34f2986-e8fe-401f-8b62-3aa86aed425e")
                         },
                         new
                         {
-                            Id = new Guid("d0b7c64d-46e4-4e32-b29c-0740c1065501"),
+                            Id = new Guid("bcd5b594-8d47-4bdf-89bf-b99517d3dc4d"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 2 in Course 5",
                             QuizType = 0,
-                            SectionId = new Guid("4d0c8db7-0501-45b6-8a3c-e0268275d01c")
+                            SectionId = new Guid("b34f2986-e8fe-401f-8b62-3aa86aed425e")
                         },
                         new
                         {
-                            Id = new Guid("9a8f4060-2d8f-41a5-94a1-d4ee244cbf35"),
+                            Id = new Guid("61f64eec-89db-47c2-8e80-a5a3fa48b1ce"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 3 in Course 5",
                             QuizType = 0,
-                            SectionId = new Guid("f8d34ccf-3408-4454-bc70-faf3010b320e")
+                            SectionId = new Guid("d9bc35f4-15cf-42cb-ae23-cdb94e6cb3fc")
                         },
                         new
                         {
-                            Id = new Guid("644f1525-91b1-4def-bbd2-54fbb45bc9ba"),
+                            Id = new Guid("61c8faa8-50bf-4652-96d1-65fae88a49d5"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 3 in Course 5",
                             QuizType = 0,
-                            SectionId = new Guid("f8d34ccf-3408-4454-bc70-faf3010b320e")
+                            SectionId = new Guid("d9bc35f4-15cf-42cb-ae23-cdb94e6cb3fc")
                         },
                         new
                         {
-                            Id = new Guid("5a531256-adcc-4469-b3b9-3b4105402169"),
+                            Id = new Guid("6f306ce4-4318-4ec3-9aaa-e47e59d44018"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 1 in Course 6",
                             QuizType = 0,
-                            SectionId = new Guid("66a4610e-fd3c-430e-8128-56d44a38c2d6")
+                            SectionId = new Guid("c0623883-001b-47f9-bdb7-430c0489e32c")
                         },
                         new
                         {
-                            Id = new Guid("3864cea2-4ac2-410d-be61-ec52d8948d5e"),
+                            Id = new Guid("04a28295-a9f5-4584-85bb-efa12ab4d3d9"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 1 in Course 6",
                             QuizType = 0,
-                            SectionId = new Guid("66a4610e-fd3c-430e-8128-56d44a38c2d6")
+                            SectionId = new Guid("c0623883-001b-47f9-bdb7-430c0489e32c")
                         },
                         new
                         {
-                            Id = new Guid("7a974643-05f0-42cb-8303-26c37643eb64"),
+                            Id = new Guid("89a82a1d-35f0-4005-a1c7-464c07cc13d2"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 2 in Course 6",
                             QuizType = 0,
-                            SectionId = new Guid("d111d1cb-4cc4-4eda-8c17-09e82fbbff7f")
+                            SectionId = new Guid("fa154793-59de-4882-9cfb-3ae017b84b4a")
                         },
                         new
                         {
-                            Id = new Guid("cc750fc2-418a-4ef5-a4da-2606ae67e8f6"),
+                            Id = new Guid("e144e772-807e-4e71-a607-ba4df546dfb2"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 2 in Course 6",
                             QuizType = 0,
-                            SectionId = new Guid("d111d1cb-4cc4-4eda-8c17-09e82fbbff7f")
+                            SectionId = new Guid("fa154793-59de-4882-9cfb-3ae017b84b4a")
                         },
                         new
                         {
-                            Id = new Guid("c621c39f-7a4f-41c7-820d-62b4b7920944"),
+                            Id = new Guid("035a9cb1-d172-4e8d-b28f-37ed1628962f"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 3 in Course 6",
                             QuizType = 0,
-                            SectionId = new Guid("42bc4fdb-169e-41ad-b1fa-237aef67f7e1")
+                            SectionId = new Guid("b17b486c-aa0a-4631-b00f-6c70e3b285b4")
                         },
                         new
                         {
-                            Id = new Guid("f808f265-9dee-403b-8205-29ddec09a633"),
+                            Id = new Guid("86635615-6d1b-4a85-973c-173fb0cab366"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 3 in Course 6",
                             QuizType = 0,
-                            SectionId = new Guid("42bc4fdb-169e-41ad-b1fa-237aef67f7e1")
+                            SectionId = new Guid("b17b486c-aa0a-4631-b00f-6c70e3b285b4")
                         },
                         new
                         {
-                            Id = new Guid("38008b08-00aa-4176-9a45-ebf6e771d358"),
+                            Id = new Guid("044774ee-a8a5-4e01-a908-6e7720ed6289"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 1 in Course 7",
                             QuizType = 0,
-                            SectionId = new Guid("02d373b8-741d-4045-8f6d-dc7b8b7a606a")
+                            SectionId = new Guid("b856a07c-c505-46ae-a90a-b45afaec41fa")
                         },
                         new
                         {
-                            Id = new Guid("be15065c-822e-4048-8422-93451727c528"),
+                            Id = new Guid("4129a40a-d01d-4312-b95e-6298d3d1bcd1"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 1 in Course 7",
                             QuizType = 0,
-                            SectionId = new Guid("02d373b8-741d-4045-8f6d-dc7b8b7a606a")
+                            SectionId = new Guid("b856a07c-c505-46ae-a90a-b45afaec41fa")
                         },
                         new
                         {
-                            Id = new Guid("433afcbb-8925-4187-b516-ce971c850325"),
+                            Id = new Guid("77c0ec88-d21f-4724-b499-9d9389bdd769"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 2 in Course 7",
                             QuizType = 0,
-                            SectionId = new Guid("77181389-bdd4-4424-aa34-c312d1f86582")
+                            SectionId = new Guid("6f374a98-11d0-4fd9-bf0d-85da58facaae")
                         },
                         new
                         {
-                            Id = new Guid("3a8d21d3-1527-4f10-ac78-17692fed12b2"),
+                            Id = new Guid("9be73bf4-fd0b-41d0-b5ff-207223ac74e8"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 2 in Course 7",
                             QuizType = 0,
-                            SectionId = new Guid("77181389-bdd4-4424-aa34-c312d1f86582")
+                            SectionId = new Guid("6f374a98-11d0-4fd9-bf0d-85da58facaae")
                         },
                         new
                         {
-                            Id = new Guid("7a796cbe-c868-405f-998c-69d8137e5f5d"),
+                            Id = new Guid("26c897c1-367e-41a5-a58a-9cda759ce5ba"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 3 in Course 7",
                             QuizType = 0,
-                            SectionId = new Guid("4908263b-6175-4fcf-9655-8457dd27ea46")
+                            SectionId = new Guid("1a52192b-73a8-4da5-a5dc-3d08c0c0076c")
                         },
                         new
                         {
-                            Id = new Guid("468c74f3-7177-4a46-bf72-cdd183fb363a"),
+                            Id = new Guid("86f1dc2a-e568-41fc-82a3-38812b28a63d"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 3 in Course 7",
                             QuizType = 0,
-                            SectionId = new Guid("4908263b-6175-4fcf-9655-8457dd27ea46")
+                            SectionId = new Guid("1a52192b-73a8-4da5-a5dc-3d08c0c0076c")
                         },
                         new
                         {
-                            Id = new Guid("86db52e4-4c18-4048-8b30-e661d8e0ec8b"),
+                            Id = new Guid("0839f0cd-5a82-4ad0-8767-95496b222d86"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 1 in Course 8",
                             QuizType = 0,
-                            SectionId = new Guid("a69f3cf2-8ed1-4c8c-b4bb-a1200b287b09")
+                            SectionId = new Guid("6b024e23-d463-4aa6-b2a1-d0698ca5b6b7")
                         },
                         new
                         {
-                            Id = new Guid("8c583205-7179-464d-a3e6-e39c94eaef15"),
+                            Id = new Guid("bc1bd275-311e-448b-a8d6-cc3e170381fe"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 1 in Course 8",
                             QuizType = 0,
-                            SectionId = new Guid("a69f3cf2-8ed1-4c8c-b4bb-a1200b287b09")
+                            SectionId = new Guid("6b024e23-d463-4aa6-b2a1-d0698ca5b6b7")
                         },
                         new
                         {
-                            Id = new Guid("eddfb3b3-1e6d-4c6a-ae26-0f4bb1d586c1"),
+                            Id = new Guid("99c536c6-0eff-4b0c-85b2-2cc0807846c5"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 2 in Course 8",
                             QuizType = 0,
-                            SectionId = new Guid("e36efc1f-26ca-4e9b-88df-f3a0b9fb571f")
+                            SectionId = new Guid("a91b2b1f-5fdf-4ad9-aa0b-8662b660d88d")
                         },
                         new
                         {
-                            Id = new Guid("57d578a9-0ee1-4138-a060-bff69d1a132a"),
+                            Id = new Guid("aa4f175a-63b2-45d2-994e-89b8b9eae755"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 2 in Course 8",
                             QuizType = 0,
-                            SectionId = new Guid("e36efc1f-26ca-4e9b-88df-f3a0b9fb571f")
+                            SectionId = new Guid("a91b2b1f-5fdf-4ad9-aa0b-8662b660d88d")
                         },
                         new
                         {
-                            Id = new Guid("c43c1686-1691-4b50-a748-4e3f2bc25588"),
+                            Id = new Guid("25d2a4a9-f736-4cd7-954d-1a9bd572d3ff"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 3 in Course 8",
                             QuizType = 0,
-                            SectionId = new Guid("4e6e96c5-c121-4b8e-a4b9-750884009e6f")
+                            SectionId = new Guid("6f7963bc-fe8f-4558-9477-48092627b0c4")
                         },
                         new
                         {
-                            Id = new Guid("5670024b-6924-49ee-b09c-3bcc85833a07"),
+                            Id = new Guid("99ebf135-f08b-40d5-8f61-fb0f44622e36"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 3 in Course 8",
                             QuizType = 0,
-                            SectionId = new Guid("4e6e96c5-c121-4b8e-a4b9-750884009e6f")
+                            SectionId = new Guid("6f7963bc-fe8f-4558-9477-48092627b0c4")
                         },
                         new
                         {
-                            Id = new Guid("4bb487c9-516d-4d22-951a-5f6ff383ad00"),
+                            Id = new Guid("efefd7b3-4998-4ac2-9579-4602353fffeb"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 1 in Course 9",
                             QuizType = 0,
-                            SectionId = new Guid("fb726ff2-716a-4540-8225-64dd0b8ef8b1")
+                            SectionId = new Guid("2a51d0b6-0117-4652-ae3e-178df82ffa42")
                         },
                         new
                         {
-                            Id = new Guid("52508fdf-7d5d-4290-afbb-2fddaf2e6756"),
+                            Id = new Guid("d3a47e38-0027-4688-9fe5-92bfe73f54e2"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 1 in Course 9",
                             QuizType = 0,
-                            SectionId = new Guid("fb726ff2-716a-4540-8225-64dd0b8ef8b1")
+                            SectionId = new Guid("2a51d0b6-0117-4652-ae3e-178df82ffa42")
                         },
                         new
                         {
-                            Id = new Guid("8a775a72-bae6-4fbe-a020-824c5c3c2082"),
+                            Id = new Guid("70490626-7626-408f-be3c-cfaef42669f4"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 2 in Course 9",
                             QuizType = 0,
-                            SectionId = new Guid("4631e5f5-94d1-4065-a5a1-37b824adfe47")
+                            SectionId = new Guid("34630889-9a9d-4936-9c01-b14d9762adda")
                         },
                         new
                         {
-                            Id = new Guid("eee7b325-04dc-4241-a2af-64773a7edd60"),
+                            Id = new Guid("d80db636-60a1-425c-9546-544b9cb7ee50"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 2 in Course 9",
                             QuizType = 0,
-                            SectionId = new Guid("4631e5f5-94d1-4065-a5a1-37b824adfe47")
+                            SectionId = new Guid("34630889-9a9d-4936-9c01-b14d9762adda")
                         },
                         new
                         {
-                            Id = new Guid("a12fe5e0-7c97-43d6-bf49-f6601c605814"),
+                            Id = new Guid("e01cf050-3fe0-4c36-bd8b-98be019595e4"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 3 in Course 9",
                             QuizType = 0,
-                            SectionId = new Guid("395c042f-c57b-427b-9704-bd5f394cf91f")
+                            SectionId = new Guid("7cf98cf8-c262-4c4b-9377-93d93b8270c9")
                         },
                         new
                         {
-                            Id = new Guid("29005fea-2c01-42f7-b2d9-c7d937d5b218"),
+                            Id = new Guid("cc55139a-fa0a-4ec5-a1cc-70ac5bb5bb23"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 3 in Course 9",
                             QuizType = 0,
-                            SectionId = new Guid("395c042f-c57b-427b-9704-bd5f394cf91f")
+                            SectionId = new Guid("7cf98cf8-c262-4c4b-9377-93d93b8270c9")
                         },
                         new
                         {
-                            Id = new Guid("198046a0-69d0-4052-8e37-c1d8bdd598fc"),
+                            Id = new Guid("cec24847-9a86-4e9c-bd11-83697d4b8861"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 1 in Course 10",
                             QuizType = 0,
-                            SectionId = new Guid("b7e4c27b-9d02-4d4a-a7d6-aa3b527b1902")
+                            SectionId = new Guid("3a40214d-5beb-400f-9350-4263a33b4008")
                         },
                         new
                         {
-                            Id = new Guid("4058c788-a627-4824-b28c-25ab2fbaaa42"),
+                            Id = new Guid("0a99492b-91b5-407a-9c9b-d9d6fab39695"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 1 in Course 10",
                             QuizType = 0,
-                            SectionId = new Guid("b7e4c27b-9d02-4d4a-a7d6-aa3b527b1902")
+                            SectionId = new Guid("3a40214d-5beb-400f-9350-4263a33b4008")
                         },
                         new
                         {
-                            Id = new Guid("1d1c9f1a-03cf-4188-bdc6-9232388c1395"),
+                            Id = new Guid("c2851c54-7fdb-46fe-be22-4576f9135403"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 2 in Course 10",
                             QuizType = 0,
-                            SectionId = new Guid("7df77bb0-86ed-4cc0-947e-cd706c093d1f")
+                            SectionId = new Guid("f93a3833-6d01-4e16-aa8f-999726cc5e09")
                         },
                         new
                         {
-                            Id = new Guid("9ede59f0-be75-4c13-aad1-5553ac9596b2"),
+                            Id = new Guid("344f93c9-c643-4b8a-90b4-5edc1e79ad60"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 2 in Course 10",
                             QuizType = 0,
-                            SectionId = new Guid("7df77bb0-86ed-4cc0-947e-cd706c093d1f")
+                            SectionId = new Guid("f93a3833-6d01-4e16-aa8f-999726cc5e09")
                         },
                         new
                         {
-                            Id = new Guid("ebb284dc-ea2d-4324-82e2-1f9069a84d30"),
+                            Id = new Guid("daab59b1-3652-47a4-925a-7b15867ceb67"),
                             IsActive = false,
                             Name = "Quiz 1 for Section 3 in Course 10",
                             QuizType = 0,
-                            SectionId = new Guid("4971725d-bf72-4d35-95b4-c692677094f7")
+                            SectionId = new Guid("7d963df4-c9aa-43f6-875d-f8724f102fc5")
                         },
                         new
                         {
-                            Id = new Guid("065c75ad-d7bf-4b22-80ac-1950520e9ea2"),
+                            Id = new Guid("0bef1ca2-850e-459d-9620-ad776c6bbe2b"),
                             IsActive = false,
                             Name = "Quiz 2 for Section 3 in Course 10",
                             QuizType = 0,
-                            SectionId = new Guid("4971725d-bf72-4d35-95b4-c692677094f7")
+                            SectionId = new Guid("7d963df4-c9aa-43f6-875d-f8724f102fc5")
                         });
                 });
 
@@ -6488,240 +6488,240 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("fe29bc8b-b5a1-4ce7-b7a8-ab4ae5f221dd"),
-                            CourseId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
+                            Id = new Guid("1f2e46af-e866-40e1-98c7-e6652e7d322e"),
+                            CourseId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
                             IsActive = false,
                             TitleAr = "الفصل 1 في دورة 1",
                             TitleEn = "Section 1 in Course 1"
                         },
                         new
                         {
-                            Id = new Guid("a89ced5c-73ab-4b18-a4fd-a1cf11e37503"),
-                            CourseId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
+                            Id = new Guid("9d18e37d-af34-407a-b23f-a5e6596b7c42"),
+                            CourseId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
                             IsActive = false,
                             TitleAr = "الفصل 2 في دورة 1",
                             TitleEn = "Section 2 in Course 1"
                         },
                         new
                         {
-                            Id = new Guid("3a9390bf-fed5-4b1e-b31f-e13508551535"),
-                            CourseId = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
+                            Id = new Guid("7897cc14-3bae-47b0-bfe3-a05fb846fafb"),
+                            CourseId = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
                             IsActive = false,
                             TitleAr = "الفصل 3 في دورة 1",
                             TitleEn = "Section 3 in Course 1"
                         },
                         new
                         {
-                            Id = new Guid("1a99201e-35fe-4dda-a10e-b67373abca77"),
-                            CourseId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
+                            Id = new Guid("ca8490cb-7ea8-40b5-b4f6-1fe240337a87"),
+                            CourseId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
                             IsActive = false,
                             TitleAr = "الفصل 1 في دورة 2",
                             TitleEn = "Section 1 in Course 2"
                         },
                         new
                         {
-                            Id = new Guid("56ca78f5-e21c-484d-984e-1da68257a45d"),
-                            CourseId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
+                            Id = new Guid("15557eee-7a91-4da6-9a15-2869250cf1bf"),
+                            CourseId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
                             IsActive = false,
                             TitleAr = "الفصل 2 في دورة 2",
                             TitleEn = "Section 2 in Course 2"
                         },
                         new
                         {
-                            Id = new Guid("c1efe640-42dc-483a-beac-9edcbdddbd67"),
-                            CourseId = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
+                            Id = new Guid("ee2ce80b-2648-423b-924f-6822350fa30d"),
+                            CourseId = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
                             IsActive = false,
                             TitleAr = "الفصل 3 في دورة 2",
                             TitleEn = "Section 3 in Course 2"
                         },
                         new
                         {
-                            Id = new Guid("9ed14ada-e20b-4a79-8f28-8a299bf9b1ca"),
-                            CourseId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
+                            Id = new Guid("19363869-8cbb-4e78-a14f-5d973aeaab0b"),
+                            CourseId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
                             IsActive = false,
                             TitleAr = "الفصل 1 في دورة 3",
                             TitleEn = "Section 1 in Course 3"
                         },
                         new
                         {
-                            Id = new Guid("816b8d43-be29-476c-88c7-778e265093c6"),
-                            CourseId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
+                            Id = new Guid("3e0a87a3-9b5a-422d-bf2c-d6b35cd59d7c"),
+                            CourseId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
                             IsActive = false,
                             TitleAr = "الفصل 2 في دورة 3",
                             TitleEn = "Section 2 in Course 3"
                         },
                         new
                         {
-                            Id = new Guid("ae9959dc-c4b4-4562-b844-43d5d6d112f6"),
-                            CourseId = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
+                            Id = new Guid("fe4a8dc4-5349-4e2b-ab8f-b7131339183d"),
+                            CourseId = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
                             IsActive = false,
                             TitleAr = "الفصل 3 في دورة 3",
                             TitleEn = "Section 3 in Course 3"
                         },
                         new
                         {
-                            Id = new Guid("aae8552d-7eb5-4200-b1da-7d022abbc0a7"),
-                            CourseId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
+                            Id = new Guid("c6a88465-bb5b-4b05-a799-2fcba3ada87a"),
+                            CourseId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
                             IsActive = false,
                             TitleAr = "الفصل 1 في دورة 4",
                             TitleEn = "Section 1 in Course 4"
                         },
                         new
                         {
-                            Id = new Guid("bf12ebab-c723-4873-bcd1-c73f21e0db2e"),
-                            CourseId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
+                            Id = new Guid("a00c5d20-74db-49ca-9df3-7da895e34aee"),
+                            CourseId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
                             IsActive = false,
                             TitleAr = "الفصل 2 في دورة 4",
                             TitleEn = "Section 2 in Course 4"
                         },
                         new
                         {
-                            Id = new Guid("29b76f14-dd5d-48c9-a24f-56882208da6c"),
-                            CourseId = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
+                            Id = new Guid("e26769f7-32ce-4157-909c-2d354e23e35d"),
+                            CourseId = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
                             IsActive = false,
                             TitleAr = "الفصل 3 في دورة 4",
                             TitleEn = "Section 3 in Course 4"
                         },
                         new
                         {
-                            Id = new Guid("d44077c7-4c39-4e4e-a758-4dd4bda4e08c"),
-                            CourseId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
+                            Id = new Guid("6836b6fd-8d40-4afc-a9fc-9734a78f8879"),
+                            CourseId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
                             IsActive = false,
                             TitleAr = "الفصل 1 في دورة 5",
                             TitleEn = "Section 1 in Course 5"
                         },
                         new
                         {
-                            Id = new Guid("4d0c8db7-0501-45b6-8a3c-e0268275d01c"),
-                            CourseId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
+                            Id = new Guid("b34f2986-e8fe-401f-8b62-3aa86aed425e"),
+                            CourseId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
                             IsActive = false,
                             TitleAr = "الفصل 2 في دورة 5",
                             TitleEn = "Section 2 in Course 5"
                         },
                         new
                         {
-                            Id = new Guid("f8d34ccf-3408-4454-bc70-faf3010b320e"),
-                            CourseId = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
+                            Id = new Guid("d9bc35f4-15cf-42cb-ae23-cdb94e6cb3fc"),
+                            CourseId = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
                             IsActive = false,
                             TitleAr = "الفصل 3 في دورة 5",
                             TitleEn = "Section 3 in Course 5"
                         },
                         new
                         {
-                            Id = new Guid("66a4610e-fd3c-430e-8128-56d44a38c2d6"),
-                            CourseId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
+                            Id = new Guid("c0623883-001b-47f9-bdb7-430c0489e32c"),
+                            CourseId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
                             IsActive = false,
                             TitleAr = "الفصل 1 في دورة 6",
                             TitleEn = "Section 1 in Course 6"
                         },
                         new
                         {
-                            Id = new Guid("d111d1cb-4cc4-4eda-8c17-09e82fbbff7f"),
-                            CourseId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
+                            Id = new Guid("fa154793-59de-4882-9cfb-3ae017b84b4a"),
+                            CourseId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
                             IsActive = false,
                             TitleAr = "الفصل 2 في دورة 6",
                             TitleEn = "Section 2 in Course 6"
                         },
                         new
                         {
-                            Id = new Guid("42bc4fdb-169e-41ad-b1fa-237aef67f7e1"),
-                            CourseId = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
+                            Id = new Guid("b17b486c-aa0a-4631-b00f-6c70e3b285b4"),
+                            CourseId = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
                             IsActive = false,
                             TitleAr = "الفصل 3 في دورة 6",
                             TitleEn = "Section 3 in Course 6"
                         },
                         new
                         {
-                            Id = new Guid("02d373b8-741d-4045-8f6d-dc7b8b7a606a"),
-                            CourseId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
+                            Id = new Guid("b856a07c-c505-46ae-a90a-b45afaec41fa"),
+                            CourseId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
                             IsActive = false,
                             TitleAr = "الفصل 1 في دورة 7",
                             TitleEn = "Section 1 in Course 7"
                         },
                         new
                         {
-                            Id = new Guid("77181389-bdd4-4424-aa34-c312d1f86582"),
-                            CourseId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
+                            Id = new Guid("6f374a98-11d0-4fd9-bf0d-85da58facaae"),
+                            CourseId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
                             IsActive = false,
                             TitleAr = "الفصل 2 في دورة 7",
                             TitleEn = "Section 2 in Course 7"
                         },
                         new
                         {
-                            Id = new Guid("4908263b-6175-4fcf-9655-8457dd27ea46"),
-                            CourseId = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
+                            Id = new Guid("1a52192b-73a8-4da5-a5dc-3d08c0c0076c"),
+                            CourseId = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
                             IsActive = false,
                             TitleAr = "الفصل 3 في دورة 7",
                             TitleEn = "Section 3 in Course 7"
                         },
                         new
                         {
-                            Id = new Guid("a69f3cf2-8ed1-4c8c-b4bb-a1200b287b09"),
-                            CourseId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
+                            Id = new Guid("6b024e23-d463-4aa6-b2a1-d0698ca5b6b7"),
+                            CourseId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
                             IsActive = false,
                             TitleAr = "الفصل 1 في دورة 8",
                             TitleEn = "Section 1 in Course 8"
                         },
                         new
                         {
-                            Id = new Guid("e36efc1f-26ca-4e9b-88df-f3a0b9fb571f"),
-                            CourseId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
+                            Id = new Guid("a91b2b1f-5fdf-4ad9-aa0b-8662b660d88d"),
+                            CourseId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
                             IsActive = false,
                             TitleAr = "الفصل 2 في دورة 8",
                             TitleEn = "Section 2 in Course 8"
                         },
                         new
                         {
-                            Id = new Guid("4e6e96c5-c121-4b8e-a4b9-750884009e6f"),
-                            CourseId = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
+                            Id = new Guid("6f7963bc-fe8f-4558-9477-48092627b0c4"),
+                            CourseId = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
                             IsActive = false,
                             TitleAr = "الفصل 3 في دورة 8",
                             TitleEn = "Section 3 in Course 8"
                         },
                         new
                         {
-                            Id = new Guid("fb726ff2-716a-4540-8225-64dd0b8ef8b1"),
-                            CourseId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
+                            Id = new Guid("2a51d0b6-0117-4652-ae3e-178df82ffa42"),
+                            CourseId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
                             IsActive = false,
                             TitleAr = "الفصل 1 في دورة 9",
                             TitleEn = "Section 1 in Course 9"
                         },
                         new
                         {
-                            Id = new Guid("4631e5f5-94d1-4065-a5a1-37b824adfe47"),
-                            CourseId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
+                            Id = new Guid("34630889-9a9d-4936-9c01-b14d9762adda"),
+                            CourseId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
                             IsActive = false,
                             TitleAr = "الفصل 2 في دورة 9",
                             TitleEn = "Section 2 in Course 9"
                         },
                         new
                         {
-                            Id = new Guid("395c042f-c57b-427b-9704-bd5f394cf91f"),
-                            CourseId = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
+                            Id = new Guid("7cf98cf8-c262-4c4b-9377-93d93b8270c9"),
+                            CourseId = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
                             IsActive = false,
                             TitleAr = "الفصل 3 في دورة 9",
                             TitleEn = "Section 3 in Course 9"
                         },
                         new
                         {
-                            Id = new Guid("b7e4c27b-9d02-4d4a-a7d6-aa3b527b1902"),
-                            CourseId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
+                            Id = new Guid("3a40214d-5beb-400f-9350-4263a33b4008"),
+                            CourseId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
                             IsActive = false,
                             TitleAr = "الفصل 1 في دورة 10",
                             TitleEn = "Section 1 in Course 10"
                         },
                         new
                         {
-                            Id = new Guid("7df77bb0-86ed-4cc0-947e-cd706c093d1f"),
-                            CourseId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
+                            Id = new Guid("f93a3833-6d01-4e16-aa8f-999726cc5e09"),
+                            CourseId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
                             IsActive = false,
                             TitleAr = "الفصل 2 في دورة 10",
                             TitleEn = "Section 2 in Course 10"
                         },
                         new
                         {
-                            Id = new Guid("4971725d-bf72-4d35-95b4-c692677094f7"),
-                            CourseId = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
+                            Id = new Guid("7d963df4-c9aa-43f6-875d-f8724f102fc5"),
+                            CourseId = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
                             IsActive = false,
                             TitleAr = "الفصل 3 في دورة 10",
                             TitleEn = "Section 3 in Course 10"
@@ -6754,35 +6754,35 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("101831e0-cef1-4d35-8202-2441fbb01a7e"),
+                            Id = new Guid("949fdc1e-a9dc-4b66-aecf-9dc9821142a8"),
                             IsActive = false,
                             NameAr = "البرمجة",
                             NameEn = "Programming"
                         },
                         new
                         {
-                            Id = new Guid("2c040ccf-637d-4733-9cb7-4603691366c6"),
+                            Id = new Guid("3e03ff9b-4582-4589-b66c-ffaef037e651"),
                             IsActive = false,
                             NameAr = "تحليل البيانات",
                             NameEn = "Data Analysis"
                         },
                         new
                         {
-                            Id = new Guid("cf761fb2-6d0a-4a98-a452-1fde6b00d80e"),
+                            Id = new Guid("5efa86c0-a08f-43a4-9d07-c0b5dcadae8d"),
                             IsActive = false,
                             NameAr = "الذكاء الاصطناعي",
                             NameEn = "Artificial Intelligence"
                         },
                         new
                         {
-                            Id = new Guid("cf4f8f8b-9813-4303-a5e6-3167c13c08c7"),
+                            Id = new Guid("b51afab2-338c-4eaf-b76b-ac4b500e8809"),
                             IsActive = false,
                             NameAr = "أمن المعلومات",
                             NameEn = "Information Security"
                         },
                         new
                         {
-                            Id = new Guid("0eccd409-3094-4c07-a8a3-db45fe8bef2d"),
+                            Id = new Guid("bdc1dc36-7717-4b21-a202-4f1a39aec838"),
                             IsActive = false,
                             NameAr = "هندسة البرمجيات",
                             NameEn = "Software Engineering"
@@ -7085,123 +7085,123 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("110d4ea0-2ecd-4183-acf0-231c170610f7"),
-                            CategoryId = new Guid("2de18ca2-46f0-4ce4-9cc0-b3bb042c77c9"),
+                            Id = new Guid("4b8dffbb-8e15-4225-8a14-a18f58410b16"),
+                            CategoryId = new Guid("11b89670-4836-4a3f-aeaf-b548d423b657"),
                             CoverPhoto = "https://localhost:7030/images/course6.jpg",
                             DiscriptionAr = "دورة 1 لتعليم الموضوع",
                             DiscriptionEn = "Course 1 for learning the subject",
                             IsActive = false,
                             NameAr = "دورة 1",
                             NameEn = "Course 1",
-                            TopicId = new Guid("2c040ccf-637d-4733-9cb7-4603691366c6")
+                            TopicId = new Guid("3e03ff9b-4582-4589-b66c-ffaef037e651")
                         },
                         new
                         {
-                            Id = new Guid("0ca87174-8e17-480b-bc62-8ae35cacdb24"),
-                            CategoryId = new Guid("ad574fdd-1013-4ce3-a201-a396f30eeb48"),
+                            Id = new Guid("911877f4-2a18-4669-b116-245f7ea38507"),
+                            CategoryId = new Guid("5e16047a-0fda-44bd-bdad-78c62777e283"),
                             CoverPhoto = "https://localhost:7030/images/course6.jpg",
                             DiscriptionAr = "دورة 2 لتعليم الموضوع",
                             DiscriptionEn = "Course 2 for learning the subject",
                             IsActive = false,
                             NameAr = "دورة 2",
                             NameEn = "Course 2",
-                            TopicId = new Guid("cf761fb2-6d0a-4a98-a452-1fde6b00d80e")
+                            TopicId = new Guid("5efa86c0-a08f-43a4-9d07-c0b5dcadae8d")
                         },
                         new
                         {
-                            Id = new Guid("e216bb3c-9ff0-4cac-9cc7-a72753cbc588"),
-                            CategoryId = new Guid("549ea9a1-7ba1-42c2-91e0-40188035909c"),
+                            Id = new Guid("8db24f65-918f-4ea2-b484-3df8d3e523d0"),
+                            CategoryId = new Guid("170553dd-d7ba-48ae-b1d4-73cbaafd0906"),
                             CoverPhoto = "https://localhost:7030/images/course6.jpg",
                             DiscriptionAr = "دورة 3 لتعليم الموضوع",
                             DiscriptionEn = "Course 3 for learning the subject",
                             IsActive = false,
                             NameAr = "دورة 3",
                             NameEn = "Course 3",
-                            TopicId = new Guid("cf4f8f8b-9813-4303-a5e6-3167c13c08c7")
+                            TopicId = new Guid("b51afab2-338c-4eaf-b76b-ac4b500e8809")
                         },
                         new
                         {
-                            Id = new Guid("9b310fcc-c015-4e8a-af56-7f389018411f"),
-                            CategoryId = new Guid("3f460378-116d-42ea-b25f-20fd9ff83ca5"),
+                            Id = new Guid("44557cea-dd5c-4b8a-a066-667815740df8"),
+                            CategoryId = new Guid("ff5bd01c-bb39-49a6-98e2-30bc8d530d4b"),
                             CoverPhoto = "https://localhost:7030/images/course6.jpg",
                             DiscriptionAr = "دورة 4 لتعليم الموضوع",
                             DiscriptionEn = "Course 4 for learning the subject",
                             IsActive = false,
                             NameAr = "دورة 4",
                             NameEn = "Course 4",
-                            TopicId = new Guid("0eccd409-3094-4c07-a8a3-db45fe8bef2d")
+                            TopicId = new Guid("bdc1dc36-7717-4b21-a202-4f1a39aec838")
                         },
                         new
                         {
-                            Id = new Guid("6ad6b3c7-a92d-4c99-b6de-ad88401773ca"),
-                            CategoryId = new Guid("379e01c3-91c6-4ac7-93b7-385d3fc8b0c5"),
+                            Id = new Guid("df9321b4-de74-4c61-ae08-ce85b0687ac1"),
+                            CategoryId = new Guid("ebb9f5d1-4ccd-41a5-b6f6-add08ebfd4df"),
                             CoverPhoto = "https://localhost:7030/images/course6.jpg",
                             DiscriptionAr = "دورة 5 لتعليم الموضوع",
                             DiscriptionEn = "Course 5 for learning the subject",
                             IsActive = false,
                             NameAr = "دورة 5",
                             NameEn = "Course 5",
-                            TopicId = new Guid("101831e0-cef1-4d35-8202-2441fbb01a7e")
+                            TopicId = new Guid("949fdc1e-a9dc-4b66-aecf-9dc9821142a8")
                         },
                         new
                         {
-                            Id = new Guid("6efe7941-1ed0-497e-81f6-fc4751c22420"),
-                            CategoryId = new Guid("b09566b9-2076-445e-b7fc-2ed81b3fdbd3"),
+                            Id = new Guid("9f7cff91-8bf8-4d0a-8a9e-34473f865f33"),
+                            CategoryId = new Guid("dbc46e43-e917-4354-82a1-0c5bddbd92c8"),
                             CoverPhoto = "https://localhost:7030/images/course6.jpg",
                             DiscriptionAr = "دورة 6 لتعليم الموضوع",
                             DiscriptionEn = "Course 6 for learning the subject",
                             IsActive = false,
                             NameAr = "دورة 6",
                             NameEn = "Course 6",
-                            TopicId = new Guid("2c040ccf-637d-4733-9cb7-4603691366c6")
+                            TopicId = new Guid("3e03ff9b-4582-4589-b66c-ffaef037e651")
                         },
                         new
                         {
-                            Id = new Guid("b08c2450-ea1d-4f35-be5e-d3c0915ff92a"),
-                            CategoryId = new Guid("2d8e1569-523a-4694-bfbb-ae0da6aeae9d"),
+                            Id = new Guid("b1af46f9-e10f-4f3c-9a18-34d0a2676500"),
+                            CategoryId = new Guid("7a41dd5d-864a-4fb0-a43a-168e478eb80f"),
                             CoverPhoto = "https://localhost:7030/images/course6.jpg",
                             DiscriptionAr = "دورة 7 لتعليم الموضوع",
                             DiscriptionEn = "Course 7 for learning the subject",
                             IsActive = false,
                             NameAr = "دورة 7",
                             NameEn = "Course 7",
-                            TopicId = new Guid("cf761fb2-6d0a-4a98-a452-1fde6b00d80e")
+                            TopicId = new Guid("5efa86c0-a08f-43a4-9d07-c0b5dcadae8d")
                         },
                         new
                         {
-                            Id = new Guid("21450fc1-2dbd-4064-afd4-2d7551da9ebe"),
-                            CategoryId = new Guid("0c76b7d3-15ed-40c1-a862-e5619cbd4565"),
+                            Id = new Guid("bf7fa89f-b41b-4f88-a67a-fcaad187f9ed"),
+                            CategoryId = new Guid("a59af3b6-bb81-473f-b5c9-e210b7706332"),
                             CoverPhoto = "https://localhost:7030/images/course6.jpg",
                             DiscriptionAr = "دورة 8 لتعليم الموضوع",
                             DiscriptionEn = "Course 8 for learning the subject",
                             IsActive = false,
                             NameAr = "دورة 8",
                             NameEn = "Course 8",
-                            TopicId = new Guid("cf4f8f8b-9813-4303-a5e6-3167c13c08c7")
+                            TopicId = new Guid("b51afab2-338c-4eaf-b76b-ac4b500e8809")
                         },
                         new
                         {
-                            Id = new Guid("5fc4e88c-b4d1-4340-aaa9-557b62c9b213"),
-                            CategoryId = new Guid("86518196-917c-47fc-b594-38d899ad2c62"),
+                            Id = new Guid("669dcf33-4d36-46be-b033-47a172e9e4c1"),
+                            CategoryId = new Guid("80e69fd0-8144-4371-a06a-37765af3b4a0"),
                             CoverPhoto = "https://localhost:7030/images/course6.jpg",
                             DiscriptionAr = "دورة 9 لتعليم الموضوع",
                             DiscriptionEn = "Course 9 for learning the subject",
                             IsActive = false,
                             NameAr = "دورة 9",
                             NameEn = "Course 9",
-                            TopicId = new Guid("0eccd409-3094-4c07-a8a3-db45fe8bef2d")
+                            TopicId = new Guid("bdc1dc36-7717-4b21-a202-4f1a39aec838")
                         },
                         new
                         {
-                            Id = new Guid("f592431c-9057-45e7-872e-d81d347046f7"),
-                            CategoryId = new Guid("f32f5204-3dbb-45b5-a449-10511090e2a9"),
+                            Id = new Guid("61b910cb-b364-4b6e-9f47-9fada8dfdb40"),
+                            CategoryId = new Guid("12b68668-36a5-4309-a421-530ef299388a"),
                             CoverPhoto = "https://localhost:7030/images/course6.jpg",
                             DiscriptionAr = "دورة 10 لتعليم الموضوع",
                             DiscriptionEn = "Course 10 for learning the subject",
                             IsActive = false,
                             NameAr = "دورة 10",
                             NameEn = "Course 10",
-                            TopicId = new Guid("101831e0-cef1-4d35-8202-2441fbb01a7e")
+                            TopicId = new Guid("949fdc1e-a9dc-4b66-aecf-9dc9821142a8")
                         });
                 });
 
@@ -7239,8 +7239,8 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb"),
-                            FacultyId = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459"),
+                            Id = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3"),
+                            FacultyId = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "قسم الحاسوب 1",
@@ -7248,8 +7248,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37"),
-                            FacultyId = new Guid("a3e71022-3255-4454-88a7-031080443bce"),
+                            Id = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d"),
+                            FacultyId = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "قسم الحاسوب 2",
@@ -7257,8 +7257,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4"),
-                            FacultyId = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d"),
+                            Id = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e"),
+                            FacultyId = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "قسم الحاسوب 3",
@@ -7266,8 +7266,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c"),
-                            FacultyId = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b"),
+                            Id = new Guid("8858ac6a-7589-49a4-9667-f950a896f404"),
+                            FacultyId = new Guid("26449528-5dd1-4737-abce-05080ec7e3de"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "قسم الحاسوب 4",
@@ -7275,8 +7275,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d"),
-                            FacultyId = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a"),
+                            Id = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa"),
+                            FacultyId = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "قسم الحاسوب 5",
@@ -7284,8 +7284,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08"),
-                            FacultyId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721"),
+                            Id = new Guid("01232744-0258-4b6d-9d28-adaa962a0272"),
+                            FacultyId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "قسم الحاسوب 6",
@@ -7293,8 +7293,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617"),
-                            FacultyId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757"),
+                            Id = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046"),
+                            FacultyId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "قسم الحاسوب 7",
@@ -7302,8 +7302,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5"),
-                            FacultyId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e"),
+                            Id = new Guid("db436808-095c-4325-a51c-3deb6534f9e2"),
+                            FacultyId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "قسم الحاسوب 8",
@@ -7311,8 +7311,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6"),
-                            FacultyId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115"),
+                            Id = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75"),
+                            FacultyId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "قسم الحاسوب 9",
@@ -7320,8 +7320,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("560aa660-0449-4ae0-9269-1424d1415aac"),
-                            FacultyId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73"),
+                            Id = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6"),
+                            FacultyId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "قسم الحاسوب 10",
@@ -7359,93 +7359,93 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("a52e1528-b1a2-40ab-9aaf-402304732459"),
+                            Id = new Guid("6ceb42d0-93c0-4aed-9d14-1e8311396c7a"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "كلية الهندسة 1",
                             NameEn = "Engineering Faculty 1",
-                            UniversityId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1")
+                            UniversityId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038")
                         },
                         new
                         {
-                            Id = new Guid("a3e71022-3255-4454-88a7-031080443bce"),
+                            Id = new Guid("3ebe7042-90b4-4800-97c7-3a9db194fcd3"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "كلية الهندسة 2",
                             NameEn = "Engineering Faculty 2",
-                            UniversityId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183")
+                            UniversityId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a")
                         },
                         new
                         {
-                            Id = new Guid("28302e7c-ed10-4fdd-af11-c36ec293521d"),
+                            Id = new Guid("34986c27-82ab-42ad-8d0a-8c6f1a544697"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "كلية الهندسة 3",
                             NameEn = "Engineering Faculty 3",
-                            UniversityId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331")
+                            UniversityId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea")
                         },
                         new
                         {
-                            Id = new Guid("1ae7fd16-cf44-471e-9310-309d8a3aec5b"),
+                            Id = new Guid("26449528-5dd1-4737-abce-05080ec7e3de"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "كلية الهندسة 4",
                             NameEn = "Engineering Faculty 4",
-                            UniversityId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a")
+                            UniversityId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b")
                         },
                         new
                         {
-                            Id = new Guid("66c645b3-1d1b-4a3c-97d8-8f9e64dfeb5a"),
+                            Id = new Guid("69f4e7a3-f3fd-4c89-a4eb-985b6584670c"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "كلية الهندسة 5",
                             NameEn = "Engineering Faculty 5",
-                            UniversityId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0")
+                            UniversityId = new Guid("1601442e-2040-4d30-ac5c-353917f65349")
                         },
                         new
                         {
-                            Id = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721"),
+                            Id = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "كلية الهندسة 6",
                             NameEn = "Engineering Faculty 6",
-                            UniversityId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae")
+                            UniversityId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201")
                         },
                         new
                         {
-                            Id = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757"),
+                            Id = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "كلية الهندسة 7",
                             NameEn = "Engineering Faculty 7",
-                            UniversityId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a")
+                            UniversityId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053")
                         },
                         new
                         {
-                            Id = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e"),
+                            Id = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "كلية الهندسة 8",
                             NameEn = "Engineering Faculty 8",
-                            UniversityId = new Guid("af224645-999c-43a4-acc3-a125e04590ea")
+                            UniversityId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8")
                         },
                         new
                         {
-                            Id = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115"),
+                            Id = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "كلية الهندسة 9",
                             NameEn = "Engineering Faculty 9",
-                            UniversityId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66")
+                            UniversityId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d")
                         },
                         new
                         {
-                            Id = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73"),
+                            Id = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "كلية الهندسة 10",
                             NameEn = "Engineering Faculty 10",
-                            UniversityId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb")
+                            UniversityId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131")
                         });
                 });
 
@@ -7505,8 +7505,8 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("63a1aaa1-0302-42f5-8e25-c2a5baf12250"),
-                            DepartmentId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb"),
+                            Id = new Guid("84f575a1-51c0-4bfe-b0b8-b5ee0a6a7ddb"),
+                            DepartmentId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "تخصص الذكاء الاصطناعي 1",
@@ -7514,8 +7514,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("10567111-ee5f-4e75-a4e0-4b3d03d62ce9"),
-                            DepartmentId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37"),
+                            Id = new Guid("ac9d9806-09a7-4cd2-b9ba-be130c26faa8"),
+                            DepartmentId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "تخصص الذكاء الاصطناعي 2",
@@ -7523,8 +7523,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("85b5daf3-7626-484b-9c72-fa7d01c66985"),
-                            DepartmentId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4"),
+                            Id = new Guid("cb39d935-c3f5-4042-840b-996ae0cefe86"),
+                            DepartmentId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "تخصص الذكاء الاصطناعي 3",
@@ -7532,8 +7532,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c5d5a551-e86e-4fc8-903c-ccd1f5c34216"),
-                            DepartmentId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c"),
+                            Id = new Guid("925c00f4-5812-43a1-af36-7dccf80f2dab"),
+                            DepartmentId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "تخصص الذكاء الاصطناعي 4",
@@ -7541,8 +7541,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("2ed05007-5998-4e09-a139-19ffa7fce1bb"),
-                            DepartmentId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d"),
+                            Id = new Guid("347369a5-c01d-4fdb-b1ab-aa5129794639"),
+                            DepartmentId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "تخصص الذكاء الاصطناعي 5",
@@ -7550,8 +7550,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81"),
-                            DepartmentId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08"),
+                            Id = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2"),
+                            DepartmentId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "تخصص الذكاء الاصطناعي 6",
@@ -7559,8 +7559,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9"),
-                            DepartmentId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617"),
+                            Id = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2"),
+                            DepartmentId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "تخصص الذكاء الاصطناعي 7",
@@ -7568,8 +7568,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31"),
-                            DepartmentId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5"),
+                            Id = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0"),
+                            DepartmentId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "تخصص الذكاء الاصطناعي 8",
@@ -7577,8 +7577,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191"),
-                            DepartmentId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6"),
+                            Id = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1"),
+                            DepartmentId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "تخصص الذكاء الاصطناعي 9",
@@ -7586,8 +7586,8 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673"),
-                            DepartmentId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac"),
+                            Id = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466"),
+                            DepartmentId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6"),
                             IsActive = false,
                             LookUpStatus = 2,
                             NameAr = "تخصص الذكاء الاصطناعي 10",
@@ -7629,7 +7629,7 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1"),
+                            Id = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038"),
                             CountryId = 1,
                             IsActive = false,
                             LookUpStatus = 2,
@@ -7638,7 +7638,7 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183"),
+                            Id = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a"),
                             CountryId = 2,
                             IsActive = false,
                             LookUpStatus = 2,
@@ -7647,7 +7647,7 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331"),
+                            Id = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea"),
                             CountryId = 3,
                             IsActive = false,
                             LookUpStatus = 2,
@@ -7656,7 +7656,7 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a"),
+                            Id = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b"),
                             CountryId = 4,
                             IsActive = false,
                             LookUpStatus = 2,
@@ -7665,7 +7665,7 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0"),
+                            Id = new Guid("1601442e-2040-4d30-ac5c-353917f65349"),
                             CountryId = 5,
                             IsActive = false,
                             LookUpStatus = 2,
@@ -7674,7 +7674,7 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae"),
+                            Id = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201"),
                             CountryId = 6,
                             IsActive = false,
                             LookUpStatus = 2,
@@ -7683,7 +7683,7 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a"),
+                            Id = new Guid("2df39f14-634a-456c-af25-9c8d2a237053"),
                             CountryId = 7,
                             IsActive = false,
                             LookUpStatus = 2,
@@ -7692,7 +7692,7 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("af224645-999c-43a4-acc3-a125e04590ea"),
+                            Id = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8"),
                             CountryId = 8,
                             IsActive = false,
                             LookUpStatus = 2,
@@ -7701,7 +7701,7 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66"),
+                            Id = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d"),
                             CountryId = 9,
                             IsActive = false,
                             LookUpStatus = 2,
@@ -7710,7 +7710,7 @@ namespace FlexBook.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb"),
+                            Id = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131"),
                             CountryId = 10,
                             IsActive = false,
                             LookUpStatus = 2,
@@ -7737,71 +7737,24 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("efa4df83-5507-4874-968e-decefcb037d6"),
+                            Id = new Guid("467be47a-cd5a-46b9-94ab-6fa2ee4e9745"),
                             Name = "Admin"
                         },
                         new
                         {
-                            Id = new Guid("4dac6d1f-e5c7-47ef-80a8-4466a3e71d1b"),
+                            Id = new Guid("a19767ba-9892-413a-9ec7-56b530b41722"),
                             Name = "Instructor"
                         },
                         new
                         {
-                            Id = new Guid("0840c49f-cbf1-412c-a613-c2a7d6a283aa"),
+                            Id = new Guid("65072a9b-f637-4665-a81d-0a23223c2bd0"),
                             Name = "Student"
                         },
                         new
                         {
-                            Id = new Guid("326de8ac-dd85-4aa2-8576-960fdfcf6740"),
+                            Id = new Guid("dc5fc5f1-d7bc-42a6-85b8-d606db13ec5a"),
                             Name = "DashboardUser"
                         });
-                });
-
-            modelBuilder.Entity("FlexBook.Domain.Entities.StaticPages.AcademicIntegrity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("DescriptionAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("DescriptionEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HeaderDescriptionAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HeaderDescriptionEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HeaderTitleAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HeaderTitleEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("LastUpdated")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("TitleAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TitleEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("AcademicIntegrities");
                 });
 
             modelBuilder.Entity("FlexBook.Domain.Entities.StaticPages.AuthorizingTeamMember", b =>
@@ -8063,501 +8016,501 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("9aea080b-3a54-4e0b-9a90-ba135389f009"),
+                            Id = new Guid("c8878513-54e5-4416-8920-e429ea50bf15"),
                             CountryId = 1,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5578),
-                            DepartmentId = new Guid("3acced16-6bcb-4f77-9bca-09676e14a8bb"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1698),
+                            DepartmentId = new Guid("7ade8739-ee5b-44d1-8f36-d211d8c9abe3"),
                             Email = "instructor_univ_dept1@example.com",
                             FirstName = "InstructorFirstName1",
                             IsSuperAdmin = false,
                             LastName = "InstructorLastName1",
                             MobileNumber = "1234567891",
                             Password = "password1",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5504), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1586), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
-                            UniversityId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1"),
+                            UniversityId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038"),
                             UserType = 2
                         },
                         new
                         {
-                            Id = new Guid("3bccfcb6-2a5b-4712-a00d-68f80e19b710"),
+                            Id = new Guid("084d14c8-59c6-4c03-aac4-23202bfc052c"),
                             CountryId = 2,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5601),
-                            DepartmentId = new Guid("89f5bb51-b477-4e1c-b9b9-7a2f1ab99a37"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1726),
+                            DepartmentId = new Guid("52405a9b-dd1c-442a-b2cd-3db31d62db2d"),
                             Email = "instructor_univ_dept2@example.com",
                             FirstName = "InstructorFirstName2",
                             IsSuperAdmin = false,
                             LastName = "InstructorLastName2",
                             MobileNumber = "1234567892",
                             Password = "password2",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5595), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1719), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
-                            UniversityId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183"),
+                            UniversityId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a"),
                             UserType = 2
                         },
                         new
                         {
-                            Id = new Guid("655a2acd-3b41-4a77-85eb-40bd42ba31f1"),
+                            Id = new Guid("461f4c98-b315-44ff-a6ba-44d86a793222"),
                             CountryId = 3,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5615),
-                            DepartmentId = new Guid("4e247a36-cc55-4791-b12e-4fefbc5f46f4"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1738),
+                            DepartmentId = new Guid("fb1b215b-27e4-44b7-9b6e-bc01ddd6d42e"),
                             Email = "instructor_univ_dept3@example.com",
                             FirstName = "InstructorFirstName3",
                             IsSuperAdmin = false,
                             LastName = "InstructorLastName3",
                             MobileNumber = "1234567893",
                             Password = "password3",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5611), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1733), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
-                            UniversityId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331"),
+                            UniversityId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea"),
                             UserType = 2
                         },
                         new
                         {
-                            Id = new Guid("8ad38ab7-6587-4fae-9df0-e67c24c26342"),
+                            Id = new Guid("389efd8d-6927-4b58-9201-5ce1f90803b8"),
                             CountryId = 4,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5627),
-                            DepartmentId = new Guid("80ce34b2-63af-47fb-b30f-a71e6c9e3f5c"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1750),
+                            DepartmentId = new Guid("8858ac6a-7589-49a4-9667-f950a896f404"),
                             Email = "instructor_univ_dept4@example.com",
                             FirstName = "InstructorFirstName4",
                             IsSuperAdmin = false,
                             LastName = "InstructorLastName4",
                             MobileNumber = "1234567894",
                             Password = "password4",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5621), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1745), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
-                            UniversityId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a"),
+                            UniversityId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b"),
                             UserType = 2
                         },
                         new
                         {
-                            Id = new Guid("41f13c7a-56ae-405a-b2f1-bb5e925c8622"),
+                            Id = new Guid("80725f89-10d9-4047-b88b-93bd6d1b000c"),
                             CountryId = 5,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5638),
-                            DepartmentId = new Guid("99b7ac48-8ff4-4275-84e9-876f62a9f78d"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1761),
+                            DepartmentId = new Guid("9ca02cb3-b151-444d-85db-cb9fd196edaa"),
                             Email = "instructor_univ_dept5@example.com",
                             FirstName = "InstructorFirstName5",
                             IsSuperAdmin = false,
                             LastName = "InstructorLastName5",
                             MobileNumber = "1234567895",
                             Password = "password5",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5633), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1756), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
-                            UniversityId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0"),
+                            UniversityId = new Guid("1601442e-2040-4d30-ac5c-353917f65349"),
                             UserType = 2
                         },
                         new
                         {
-                            Id = new Guid("4538fb2c-ab35-457f-88d0-199b71c51104"),
+                            Id = new Guid("56613be6-54a1-437f-b9e6-081a62cf8af3"),
                             CountryId = 6,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5655),
-                            DepartmentId = new Guid("90fbad11-1087-41e4-9564-6aaf09780c08"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1827),
+                            DepartmentId = new Guid("01232744-0258-4b6d-9d28-adaa962a0272"),
                             Email = "instructor_full6@example.com",
-                            FacultyId = new Guid("89297dc6-4f80-4661-9667-8e28f6b13721"),
+                            FacultyId = new Guid("450b9a6f-f05e-4369-bf79-3adcd38c7662"),
                             FirstName = "InstructorFirstName6",
                             IsSuperAdmin = false,
                             LastName = "InstructorLastName6",
                             MobileNumber = "1234567896",
                             Password = "password6",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5648), new TimeSpan(0, 2, 0, 0, 0)),
-                            SpecializationId = new Guid("dfb4b875-6234-473e-bf02-be1230c08a81"),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1776), new TimeSpan(0, 2, 0, 0, 0)),
+                            SpecializationId = new Guid("751c3c12-33a0-4b7e-aa90-56b41b1d55c2"),
                             Status = 2,
-                            UniversityId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae"),
+                            UniversityId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201"),
                             UserType = 2
                         },
                         new
                         {
-                            Id = new Guid("19261c7e-a908-4cf2-a376-acafad6d727d"),
+                            Id = new Guid("d3157749-7101-4582-9d07-7d3492612a2c"),
                             CountryId = 7,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5731),
-                            DepartmentId = new Guid("6d59db3f-5b17-43cb-89c7-318bf731b617"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1843),
+                            DepartmentId = new Guid("eb69bb49-44ef-48ad-8950-7288f1e72046"),
                             Email = "instructor_full7@example.com",
-                            FacultyId = new Guid("fefd7e0e-e4e8-4582-b86f-74be276b7757"),
+                            FacultyId = new Guid("dae0906a-27d9-4965-9b7d-23b9c67a567d"),
                             FirstName = "InstructorFirstName7",
                             IsSuperAdmin = false,
                             LastName = "InstructorLastName7",
                             MobileNumber = "1234567897",
                             Password = "password7",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5724), new TimeSpan(0, 2, 0, 0, 0)),
-                            SpecializationId = new Guid("93dc8936-6cdd-4ca1-b833-7c925010f3e9"),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1836), new TimeSpan(0, 2, 0, 0, 0)),
+                            SpecializationId = new Guid("e9f32973-437e-41f9-a63d-c2cbdcc586b2"),
                             Status = 2,
-                            UniversityId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a"),
+                            UniversityId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053"),
                             UserType = 2
                         },
                         new
                         {
-                            Id = new Guid("82b4b58d-3338-472a-be92-28b1b0b1b765"),
+                            Id = new Guid("86f4eb55-5f3a-42f7-9245-ea87f41a04b1"),
                             CountryId = 8,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5742),
-                            DepartmentId = new Guid("d5b53d3a-070f-4838-a7ee-1b98b8c30fc5"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1884),
+                            DepartmentId = new Guid("db436808-095c-4325-a51c-3deb6534f9e2"),
                             Email = "instructor_full8@example.com",
-                            FacultyId = new Guid("9f6a7612-93fe-48d8-8aa9-fc984ae04a4e"),
+                            FacultyId = new Guid("7600e081-d8a1-4fd3-a88c-7c0c1f7efc2e"),
                             FirstName = "InstructorFirstName8",
                             IsSuperAdmin = false,
                             LastName = "InstructorLastName8",
                             MobileNumber = "1234567898",
                             Password = "password8",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5737), new TimeSpan(0, 2, 0, 0, 0)),
-                            SpecializationId = new Guid("c9c0d5c8-1f57-4598-a255-f1df99825f31"),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1874), new TimeSpan(0, 2, 0, 0, 0)),
+                            SpecializationId = new Guid("819aa5b7-91f0-4f4a-9f3c-4bfe1cffd8f0"),
                             Status = 2,
-                            UniversityId = new Guid("af224645-999c-43a4-acc3-a125e04590ea"),
+                            UniversityId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8"),
                             UserType = 2
                         },
                         new
                         {
-                            Id = new Guid("9ee4620e-f6ec-41a3-8210-f75a3c9f643b"),
+                            Id = new Guid("48cc5633-ff34-4e4e-96a1-4100ea266581"),
                             CountryId = 9,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5752),
-                            DepartmentId = new Guid("3b28fdf9-c45c-40d3-94cd-06ca4efa17c6"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1895),
+                            DepartmentId = new Guid("2616cd81-1ea5-421a-9c46-bcfa683c8d75"),
                             Email = "instructor_full9@example.com",
-                            FacultyId = new Guid("9b548bc6-5a59-43dc-8608-6d98651ac115"),
+                            FacultyId = new Guid("3b4afb52-2f39-428e-a35f-a2650fd880b9"),
                             FirstName = "InstructorFirstName9",
                             IsSuperAdmin = false,
                             LastName = "InstructorLastName9",
                             MobileNumber = "1234567899",
                             Password = "password9",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5748), new TimeSpan(0, 2, 0, 0, 0)),
-                            SpecializationId = new Guid("60943e28-b15a-4e29-a84c-aa15222a2191"),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1890), new TimeSpan(0, 2, 0, 0, 0)),
+                            SpecializationId = new Guid("06ba9504-2d22-4d80-a1e2-70b82403b9a1"),
                             Status = 2,
-                            UniversityId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66"),
+                            UniversityId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d"),
                             UserType = 2
                         },
                         new
                         {
-                            Id = new Guid("4cb92ab9-bd2e-4585-a87a-07198a2bd8d9"),
+                            Id = new Guid("e0af4df1-98f0-41de-b21a-6ac7d70068a8"),
                             CountryId = 10,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5765),
-                            DepartmentId = new Guid("560aa660-0449-4ae0-9269-1424d1415aac"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1912),
+                            DepartmentId = new Guid("5948b064-c187-4d32-9e02-75d7c94f96e6"),
                             Email = "instructor_full10@example.com",
-                            FacultyId = new Guid("7c2dec47-8b56-4021-81f4-a64d69273c73"),
+                            FacultyId = new Guid("469b0f70-5037-48df-8dd5-66e08d5e79ac"),
                             FirstName = "InstructorFirstName10",
                             IsSuperAdmin = false,
                             LastName = "InstructorLastName10",
                             MobileNumber = "12345678910",
                             Password = "password10",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5760), new TimeSpan(0, 2, 0, 0, 0)),
-                            SpecializationId = new Guid("f3abc891-caa7-46b9-97dc-6da9f3ad2673"),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1906), new TimeSpan(0, 2, 0, 0, 0)),
+                            SpecializationId = new Guid("04c42333-3c06-4dbc-a5a2-15c5bb867466"),
                             Status = 2,
-                            UniversityId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb"),
+                            UniversityId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131"),
                             UserType = 2
                         },
                         new
                         {
-                            Id = new Guid("7a9c9716-c31c-4152-9ff2-744b53fe9cb9"),
+                            Id = new Guid("3436cefd-d7ae-4245-9443-610f6a72cb4d"),
                             AcademicYear = "Year 1",
                             CountryId = 1,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5782),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1929),
                             Email = "student1@example.com",
                             FirstName = "StudentFirstName1",
                             IsSuperAdmin = false,
                             LastName = "StudentLastName1",
                             MobileNumber = "12345678911",
                             Password = "password11",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5776), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1922), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             StudyLevel = "Level 1",
-                            UniversityId = new Guid("8fc71da3-a69b-49ee-a879-a2632c2a7bb1"),
+                            UniversityId = new Guid("b7ce0ae6-0a8a-49ec-bc78-615d19899038"),
                             UserType = 1
                         },
                         new
                         {
-                            Id = new Guid("4af3593f-44ce-40af-a81f-9a6b433cc16b"),
+                            Id = new Guid("698121d8-a3fc-4b27-ad85-0303b6089790"),
                             AcademicYear = "Year 2",
                             CountryId = 2,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5795),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1945),
                             Email = "student2@example.com",
                             FirstName = "StudentFirstName2",
                             IsSuperAdmin = false,
                             LastName = "StudentLastName2",
                             MobileNumber = "12345678912",
                             Password = "password12",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5791), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1940), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             StudyLevel = "Level 2",
-                            UniversityId = new Guid("6988b8cc-0f16-4f6a-9895-d4b1f96d0183"),
+                            UniversityId = new Guid("af7d777f-686e-4fb7-be27-e88377e49c1a"),
                             UserType = 1
                         },
                         new
                         {
-                            Id = new Guid("3d054e0a-7e77-44ef-a5af-95794dc88daa"),
+                            Id = new Guid("5474777d-a17f-4ea1-8913-e0af957e33f9"),
                             AcademicYear = "Year 3",
                             CountryId = 3,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5806),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1958),
                             Email = "student3@example.com",
                             FirstName = "StudentFirstName3",
                             IsSuperAdmin = false,
                             LastName = "StudentLastName3",
                             MobileNumber = "12345678913",
                             Password = "password13",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5802), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1953), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             StudyLevel = "Level 3",
-                            UniversityId = new Guid("806598a3-b2f5-4781-b5b8-41d1db2e2331"),
+                            UniversityId = new Guid("4f25d6e4-c3c4-41eb-aee6-519bab949aea"),
                             UserType = 1
                         },
                         new
                         {
-                            Id = new Guid("d4dfa26e-b7ce-4cd8-b67a-c9363a446bc3"),
+                            Id = new Guid("a19ea8d2-1bbc-4e6c-9f88-3b4c59714c5d"),
                             AcademicYear = "Year 4",
                             CountryId = 4,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5817),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1970),
                             Email = "student4@example.com",
                             FirstName = "StudentFirstName4",
                             IsSuperAdmin = false,
                             LastName = "StudentLastName4",
                             MobileNumber = "12345678914",
                             Password = "password14",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5813), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1965), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             StudyLevel = "Level 4",
-                            UniversityId = new Guid("53ee465c-d532-49f5-8625-32c906fbe83a"),
+                            UniversityId = new Guid("40f0fa08-30b8-4c00-b3c3-56fd8bb9b38b"),
                             UserType = 1
                         },
                         new
                         {
-                            Id = new Guid("658a7a23-caaf-4d4e-a6ee-fe65c80ccdb7"),
+                            Id = new Guid("81384a86-b6d0-47ff-a54c-b044a0f6f749"),
                             AcademicYear = "Year 5",
                             CountryId = 5,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5828),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(1984),
                             Email = "student5@example.com",
                             FirstName = "StudentFirstName5",
                             IsSuperAdmin = false,
                             LastName = "StudentLastName5",
                             MobileNumber = "12345678915",
                             Password = "password15",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5824), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(1978), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             StudyLevel = "Level 5",
-                            UniversityId = new Guid("0ead7e77-d608-4222-ac22-b0c2c46bdac0"),
+                            UniversityId = new Guid("1601442e-2040-4d30-ac5c-353917f65349"),
                             UserType = 1
                         },
                         new
                         {
-                            Id = new Guid("a3842b52-7160-4a0f-a0dc-787213ec76e1"),
+                            Id = new Guid("9913ab6f-400e-42f6-b33d-bd1d3520201e"),
                             AcademicYear = "Year 6",
                             CountryId = 6,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5888),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2039),
                             Email = "student6@example.com",
                             FirstName = "StudentFirstName6",
                             IsSuperAdmin = false,
                             LastName = "StudentLastName6",
                             MobileNumber = "12345678916",
                             Password = "password16",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5834), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2031), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             StudyLevel = "Level 6",
-                            UniversityId = new Guid("9356b94f-26a8-4126-9ae1-bc01a114daae"),
+                            UniversityId = new Guid("731c5938-342e-4dda-b99f-fdc3adcc0201"),
                             UserType = 1
                         },
                         new
                         {
-                            Id = new Guid("10fdc47a-7c95-43fd-97aa-4dcf0db51011"),
+                            Id = new Guid("7706652f-4ea6-41b5-9a51-d86fda519992"),
                             AcademicYear = "Year 7",
                             CountryId = 7,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5900),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2052),
                             Email = "student7@example.com",
                             FirstName = "StudentFirstName7",
                             IsSuperAdmin = false,
                             LastName = "StudentLastName7",
                             MobileNumber = "12345678917",
                             Password = "password17",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5896), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2047), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             StudyLevel = "Level 7",
-                            UniversityId = new Guid("9b109cbd-764b-4f71-b310-15211af3b68a"),
+                            UniversityId = new Guid("2df39f14-634a-456c-af25-9c8d2a237053"),
                             UserType = 1
                         },
                         new
                         {
-                            Id = new Guid("f625d2ab-9346-4151-856b-82072c7d3797"),
+                            Id = new Guid("33a45881-245b-462f-ab28-4837f02b82e3"),
                             AcademicYear = "Year 8",
                             CountryId = 8,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5913),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2078),
                             Email = "student8@example.com",
                             FirstName = "StudentFirstName8",
                             IsSuperAdmin = false,
                             LastName = "StudentLastName8",
                             MobileNumber = "12345678918",
                             Password = "password18",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5909), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2064), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             StudyLevel = "Level 8",
-                            UniversityId = new Guid("af224645-999c-43a4-acc3-a125e04590ea"),
+                            UniversityId = new Guid("d9fd5008-3b12-4f2b-b0aa-7bfbdd5f2cd8"),
                             UserType = 1
                         },
                         new
                         {
-                            Id = new Guid("6921b69c-febf-453e-a2fb-60c634bb631c"),
+                            Id = new Guid("7fb21c03-2fb2-4c5b-a5c5-7d067169b1e3"),
                             AcademicYear = "Year 9",
                             CountryId = 9,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5927),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2100),
                             Email = "student9@example.com",
                             FirstName = "StudentFirstName9",
                             IsSuperAdmin = false,
                             LastName = "StudentLastName9",
                             MobileNumber = "12345678919",
                             Password = "password19",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5922), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2094), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             StudyLevel = "Level 9",
-                            UniversityId = new Guid("0e583556-3a3d-4052-9756-bb09a8f90e66"),
+                            UniversityId = new Guid("4c86b5ed-b8ba-48e1-9f3d-060881adaa5d"),
                             UserType = 1
                         },
                         new
                         {
-                            Id = new Guid("fcc3c3b1-a37a-4dbe-8017-5824618bf8cf"),
+                            Id = new Guid("af5fad31-b6d2-48da-931e-65a7fda5ccd9"),
                             AcademicYear = "Year 10",
                             CountryId = 10,
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5938),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2113),
                             Email = "student10@example.com",
                             FirstName = "StudentFirstName10",
                             IsSuperAdmin = false,
                             LastName = "StudentLastName10",
                             MobileNumber = "12345678920",
                             Password = "password20",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5934), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2108), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             StudyLevel = "Level 10",
-                            UniversityId = new Guid("742fbb4c-b4e0-44d7-b32c-e939b94a01cb"),
+                            UniversityId = new Guid("51964f1b-4a9c-45c8-aee0-bad4a29bd131"),
                             UserType = 1
                         },
                         new
                         {
-                            Id = new Guid("66a5a5a1-db81-49d4-bbe6-43fe95b3ec5e"),
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5953),
+                            Id = new Guid("86f10dda-e897-4330-aeab-b202e4a3dc18"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2131),
                             Email = "dashboarduser1@example.com",
                             FirstName = "DashBoardUserFirstName1",
                             IsSuperAdmin = false,
                             LastName = "DashBoardUserLastName1",
                             MobileNumber = "12345678921",
                             Password = "password21",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5948), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2125), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             UserType = 3
                         },
                         new
                         {
-                            Id = new Guid("3303d430-0d8a-42e2-87fa-ad5419d6aa9e"),
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5963),
+                            Id = new Guid("0d4c22bf-025e-45ce-a915-b53502cf0c42"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2142),
                             Email = "dashboarduser2@example.com",
                             FirstName = "DashBoardUserFirstName2",
                             IsSuperAdmin = false,
                             LastName = "DashBoardUserLastName2",
                             MobileNumber = "12345678922",
                             Password = "password22",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5959), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2137), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             UserType = 3
                         },
                         new
                         {
-                            Id = new Guid("b7d0fffa-2f54-4be9-bd40-c409e18af749"),
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5972),
+                            Id = new Guid("f7cb2b9f-a127-492e-99cf-b4f1a5e45f59"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2153),
                             Email = "dashboarduser3@example.com",
                             FirstName = "DashBoardUserFirstName3",
                             IsSuperAdmin = false,
                             LastName = "DashBoardUserLastName3",
                             MobileNumber = "12345678923",
                             Password = "password23",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5968), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2149), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             UserType = 3
                         },
                         new
                         {
-                            Id = new Guid("99118280-50e8-4ce9-a633-b5134dd49719"),
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(5981),
+                            Id = new Guid("e4f8790e-98ed-4fde-87df-c2ae941164d3"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2165),
                             Email = "dashboarduser4@example.com",
                             FirstName = "DashBoardUserFirstName4",
                             IsSuperAdmin = false,
                             LastName = "DashBoardUserLastName4",
                             MobileNumber = "12345678924",
                             Password = "password24",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5977), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2160), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             UserType = 3
                         },
                         new
                         {
-                            Id = new Guid("9a79d410-33b8-419c-9b81-855e0a29e1e5"),
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(6034),
+                            Id = new Guid("7fa8f12b-8cdc-43ee-a9bb-029a027b9681"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2216),
                             Email = "dashboarduser5@example.com",
                             FirstName = "DashBoardUserFirstName5",
                             IsSuperAdmin = false,
                             LastName = "DashBoardUserLastName5",
                             MobileNumber = "12345678925",
                             Password = "password25",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(5987), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2210), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             UserType = 3
                         },
                         new
                         {
-                            Id = new Guid("cc261130-57fe-4a5c-84cc-be5184cced51"),
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(6044),
+                            Id = new Guid("5ff8f0b9-dd7a-4deb-ba7b-d5b678ac1f14"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2262),
                             Email = "dashboarduser6@example.com",
                             FirstName = "DashBoardUserFirstName6",
                             IsSuperAdmin = false,
                             LastName = "DashBoardUserLastName6",
                             MobileNumber = "12345678926",
                             Password = "password26",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(6040), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2233), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             UserType = 3
                         },
                         new
                         {
-                            Id = new Guid("cde5d825-fe22-4479-bcaa-86c84a631c5b"),
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(6056),
+                            Id = new Guid("8eefadae-89bb-4aec-affe-0a7144522f8f"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2274),
                             Email = "dashboarduser7@example.com",
                             FirstName = "DashBoardUserFirstName7",
                             IsSuperAdmin = false,
                             LastName = "DashBoardUserLastName7",
                             MobileNumber = "12345678927",
                             Password = "password27",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(6052), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2269), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             UserType = 3
                         },
                         new
                         {
-                            Id = new Guid("8b33fc71-eb96-4d45-be10-cba68cef09d8"),
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(6065),
+                            Id = new Guid("60a17dbd-6edf-42fb-b675-cf09af551dd0"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2285),
                             Email = "dashboarduser8@example.com",
                             FirstName = "DashBoardUserFirstName8",
                             IsSuperAdmin = false,
                             LastName = "DashBoardUserLastName8",
                             MobileNumber = "12345678928",
                             Password = "password28",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(6061), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2280), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             UserType = 3
                         },
                         new
                         {
-                            Id = new Guid("dcc4737f-5dec-4d77-8518-c1613134af46"),
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(6074),
+                            Id = new Guid("5f54d727-0bd2-495f-ae8d-e2bf6d46c8d8"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2296),
                             Email = "dashboarduser9@example.com",
                             FirstName = "DashBoardUserFirstName9",
                             IsSuperAdmin = false,
                             LastName = "DashBoardUserLastName9",
                             MobileNumber = "12345678929",
                             Password = "password29",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(6070), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2291), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             UserType = 3
                         },
                         new
                         {
-                            Id = new Guid("eb5e603a-8860-4d9b-863b-f4c53795d1b9"),
-                            Created = new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Local).AddTicks(6084),
+                            Id = new Guid("0b7ccfa0-649a-4d53-804b-02dbaec48f7e"),
+                            Created = new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Local).AddTicks(2339),
                             Email = "dashboarduser10@example.com",
                             FirstName = "DashBoardUserFirstName10",
                             IsSuperAdmin = false,
                             LastName = "DashBoardUserLastName10",
                             MobileNumber = "12345678930",
                             Password = "password30",
-                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 20, 16, 41, 46, 69, DateTimeKind.Unspecified).AddTicks(6080), new TimeSpan(0, 2, 0, 0, 0)),
+                            RegisterAt = new DateTimeOffset(new DateTime(2024, 11, 16, 21, 23, 59, 751, DateTimeKind.Unspecified).AddTicks(2303), new TimeSpan(0, 2, 0, 0, 0)),
                             Status = 2,
                             UserType = 3
                         });
@@ -8602,72 +8555,72 @@ namespace FlexBook.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CategoryId = new Guid("966f702e-7938-4585-b496-1342b90bbf52"),
+                            CategoryId = new Guid("c8878120-472b-477f-8166-2f9b9fffb022"),
                             IsActive = false,
-                            UserId = new Guid("9aea080b-3a54-4e0b-9a90-ba135389f009")
+                            UserId = new Guid("c8878513-54e5-4416-8920-e429ea50bf15")
                         },
                         new
                         {
                             Id = 2,
-                            CategoryId = new Guid("2de18ca2-46f0-4ce4-9cc0-b3bb042c77c9"),
+                            CategoryId = new Guid("11b89670-4836-4a3f-aeaf-b548d423b657"),
                             IsActive = false,
-                            UserId = new Guid("3bccfcb6-2a5b-4712-a00d-68f80e19b710")
+                            UserId = new Guid("084d14c8-59c6-4c03-aac4-23202bfc052c")
                         },
                         new
                         {
                             Id = 3,
-                            CategoryId = new Guid("ad574fdd-1013-4ce3-a201-a396f30eeb48"),
+                            CategoryId = new Guid("5e16047a-0fda-44bd-bdad-78c62777e283"),
                             IsActive = false,
-                            UserId = new Guid("655a2acd-3b41-4a77-85eb-40bd42ba31f1")
+                            UserId = new Guid("461f4c98-b315-44ff-a6ba-44d86a793222")
                         },
                         new
                         {
                             Id = 4,
-                            CategoryId = new Guid("549ea9a1-7ba1-42c2-91e0-40188035909c"),
+                            CategoryId = new Guid("170553dd-d7ba-48ae-b1d4-73cbaafd0906"),
                             IsActive = false,
-                            UserId = new Guid("8ad38ab7-6587-4fae-9df0-e67c24c26342")
+                            UserId = new Guid("389efd8d-6927-4b58-9201-5ce1f90803b8")
                         },
                         new
                         {
                             Id = 5,
-                            CategoryId = new Guid("3f460378-116d-42ea-b25f-20fd9ff83ca5"),
+                            CategoryId = new Guid("ff5bd01c-bb39-49a6-98e2-30bc8d530d4b"),
                             IsActive = false,
-                            UserId = new Guid("41f13c7a-56ae-405a-b2f1-bb5e925c8622")
+                            UserId = new Guid("80725f89-10d9-4047-b88b-93bd6d1b000c")
                         },
                         new
                         {
                             Id = 6,
-                            CategoryId = new Guid("379e01c3-91c6-4ac7-93b7-385d3fc8b0c5"),
+                            CategoryId = new Guid("ebb9f5d1-4ccd-41a5-b6f6-add08ebfd4df"),
                             IsActive = false,
-                            UserId = new Guid("4538fb2c-ab35-457f-88d0-199b71c51104")
+                            UserId = new Guid("56613be6-54a1-437f-b9e6-081a62cf8af3")
                         },
                         new
                         {
                             Id = 7,
-                            CategoryId = new Guid("b09566b9-2076-445e-b7fc-2ed81b3fdbd3"),
+                            CategoryId = new Guid("dbc46e43-e917-4354-82a1-0c5bddbd92c8"),
                             IsActive = false,
-                            UserId = new Guid("19261c7e-a908-4cf2-a376-acafad6d727d")
+                            UserId = new Guid("d3157749-7101-4582-9d07-7d3492612a2c")
                         },
                         new
                         {
                             Id = 8,
-                            CategoryId = new Guid("2d8e1569-523a-4694-bfbb-ae0da6aeae9d"),
+                            CategoryId = new Guid("7a41dd5d-864a-4fb0-a43a-168e478eb80f"),
                             IsActive = false,
-                            UserId = new Guid("82b4b58d-3338-472a-be92-28b1b0b1b765")
+                            UserId = new Guid("86f4eb55-5f3a-42f7-9245-ea87f41a04b1")
                         },
                         new
                         {
                             Id = 9,
-                            CategoryId = new Guid("0c76b7d3-15ed-40c1-a862-e5619cbd4565"),
+                            CategoryId = new Guid("a59af3b6-bb81-473f-b5c9-e210b7706332"),
                             IsActive = false,
-                            UserId = new Guid("9ee4620e-f6ec-41a3-8210-f75a3c9f643b")
+                            UserId = new Guid("48cc5633-ff34-4e4e-96a1-4100ea266581")
                         },
                         new
                         {
                             Id = 10,
-                            CategoryId = new Guid("86518196-917c-47fc-b594-38d899ad2c62"),
+                            CategoryId = new Guid("80e69fd0-8144-4371-a06a-37765af3b4a0"),
                             IsActive = false,
-                            UserId = new Guid("4cb92ab9-bd2e-4585-a87a-07198a2bd8d9")
+                            UserId = new Guid("e0af4df1-98f0-41de-b21a-6ac7d70068a8")
                         });
                 });
 

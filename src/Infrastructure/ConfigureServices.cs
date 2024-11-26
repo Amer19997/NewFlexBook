@@ -73,7 +73,7 @@ public static class ConfigureServices
         services.AddScoped<ILessonRepository, LessonRepository>();
         services.AddScoped<IQuizRepository, QuizRepository>();
         services.AddScoped<IQuestionRepository, QuestionRepository>();
-        //services.AddScoped<IVideoStorageService, LocalVideoStorageService>();
+        services.AddScoped<IVideoStorageService, LocalVideoStorageService>();
         services.AddScoped<IQuizEvaluationService, QuizEvaluationService>();
         services.AddScoped<IClassRepository, ClassRepository>();
         services.AddScoped<IInstructorCourseOverrideRepository, InstructorCourseOverrideRepository>();
@@ -94,7 +94,7 @@ public static class ConfigureServices
         services.AddScoped<IInstructorSuccessStoryRepository, InstructorSuccessStoryRepository>();
         services.AddScoped<IAboutUsSectionRepository,AboutUsSectionRepository>();
         services.AddScoped<ITestimonialRepository, TestimonialRepository>();
-
+        services.AddScoped<IHomePageSectionRepository, HomePageSectionRepository>();
         //services.AddScoped<ITopicRepository, TopicRepository>();
         services.AddScoped<ITopicRepository, TopicRepository>();
         services.AddScoped<RoleRepositoryInterface, MyRoleRepository>();  // Register your repositories properly

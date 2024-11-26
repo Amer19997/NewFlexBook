@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Http;
 namespace FlexBook.Infrastructure.Services;
 public class FileUploadService : IFileUploadService
 {
-    private readonly string _contentFileDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "contentfiles");
+    private readonly string _contentFileDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
 
     public async Task<string> UploadFileAsync(IFormFile contentFile)
     {
@@ -26,6 +26,8 @@ public class FileUploadService : IFileUploadService
             await contentFile.CopyToAsync(stream);
         }
 
-        return $"/contentfiles/{fileName}";
-    }
+        //return $"/contentfiles/{fileName}";
+        return $"https://hudaebrahim-001-site1.jtempurl.com//images/{fileName}";
+
+     }
 }

@@ -8,13 +8,15 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FlexBook.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class first : Migration
+    public partial class researchentries : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+           
+
             migrationBuilder.CreateTable(
-                name: "AcademicIntegrities",
+                name: "ResearchEntries",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -22,71 +24,22 @@ namespace FlexBook.Infrastructure.Migrations
                     TitleEn = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DescriptionAr = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DescriptionEn = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    HeaderTitleAr = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    HeaderTitleEn = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    HeaderDescriptionAr = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    HeaderDescriptionEn = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    LastUpdated = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false)
+                    ChartImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastUpdated = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AcademicIntegrities", x => x.Id);
+                    table.PrimaryKey("PK_ResearchEntries", x => x.Id);
                 });
 
+           
 
-            migrationBuilder.CreateTable(
-                name: "AuthorizingTeamMembers",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    FirstNameAr = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    FirstNameEn = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    LastNameAr = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    LastNameEn = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    DescriptionAr = table.Column<string>(type: "nvarchar(2000)", maxLength: 2000, nullable: false),
-                    DescriptionEn = table.Column<string>(type: "nvarchar(2000)", maxLength: 2000, nullable: false),
-                    PhotoUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()"),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AuthorizingTeamMembers", x => x.Id);
-                });
-
-
-
-            migrationBuilder.CreateTable(
-                name: "StudentSuccessStories",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    NameAr = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    NameEn = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    UniversityNameAr = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    UniversityNameEn = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    DescriptionAr = table.Column<string>(type: "nvarchar(2000)", maxLength: 2000, nullable: false),
-                    DescriptionEn = table.Column<string>(type: "nvarchar(2000)", maxLength: 2000, nullable: false),
-                    VideoUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    LastUpdated = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "GETUTCDATE()"),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_StudentSuccessStories", x => x.Id);
-                });
-
+          
         }
+
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "AcademicIntegrities");
-
             migrationBuilder.DropTable(
                 name: "AccessCodes");
 

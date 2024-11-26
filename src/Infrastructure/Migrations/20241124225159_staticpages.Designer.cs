@@ -4,6 +4,7 @@ using FlexBook.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlexBook.Infrastructure.Migrations
 {
     [DbContext(typeof(FlexBookDbContext))]
-    partial class FlexBookDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241124225159_staticpages")]
+    partial class staticpages
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -650,9 +653,6 @@ namespace FlexBook.Infrastructure.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<Guid?>("HomePageSectionId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
@@ -676,8 +676,6 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasIndex("Code")
                         .IsUnique()
                         .HasFilter("[Code] IS NOT NULL");
-
-                    b.HasIndex("HomePageSectionId");
 
                     b.HasIndex("TopicId");
 
@@ -1008,101 +1006,6 @@ namespace FlexBook.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("EvaluatingAdoptingArticles");
-                });
-
-            modelBuilder.Entity("FlexBook.Domain.Entities.StaticPages.HomePageSection", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("BooksDescriptionAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("BooksDescriptionEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("BooksTitleAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("BooksTitleEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FeaturedImage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstFeatureDescriptionAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstFeatureDescriptionEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstFeatureTitleAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstFeatureTitleEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("GrowthDescriptionAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("GrowthDescriptionEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("GrowthImage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("GrowthTitleAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("GrowthTitleEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HighlightedBooksDescriptionAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HighlightedBooksDescriptionEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HighlightedBooksTitleAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HighlightedBooksTitleEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("SeconedFeatureDescriptionAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SeconedFeatureDescriptionEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SeconedFeatureTitleAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SeconedFeatureTitleEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("VideoDescriptionAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("VideoDescriptionEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("VideoTitleAr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("VideoTitleEn")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("VideoUrl")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("HomePageSections");
                 });
 
             modelBuilder.Entity("FlexBook.Domain.Entities.StaticPages.InstructorCommunityEntry", b =>
@@ -1783,10 +1686,6 @@ namespace FlexBook.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("FlexBook.Domain.Entities.StaticPages.HomePageSection", null)
-                        .WithMany("HighlightedCourses")
-                        .HasForeignKey("HomePageSectionId");
-
                     b.HasOne("FlexBook.Domain.Entities.Catalog.Topic", "Topic")
                         .WithMany("Courses")
                         .HasForeignKey("TopicId")
@@ -2034,11 +1933,6 @@ namespace FlexBook.Infrastructure.Migrations
             modelBuilder.Entity("FlexBook.Domain.Entities.StaticPages.AboutUsSection", b =>
                 {
                     b.Navigation("Testimonials");
-                });
-
-            modelBuilder.Entity("FlexBook.Domain.Entities.StaticPages.HomePageSection", b =>
-                {
-                    b.Navigation("HighlightedCourses");
                 });
 
             modelBuilder.Entity("FlexBook.Domain.Entities.UsersAggregate.User", b =>

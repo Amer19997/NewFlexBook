@@ -73,8 +73,9 @@ public class FlexBookDbContext : DbContext
     public DbSet<InstructorCommunityEntry> InstructorCommunityEntries { get; set; } = default!;
     public DbSet<AboutUsSection> AboutUsSections { get; set; } = default!;
     public DbSet<Testimonial> Testimonials { get; set; } = default!;
+    public DbSet<HomePageSection> HomePageSections { get; set; } = default!;
 
-
+    
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.ApplyConfigurationsFromAssembly(GetType().Assembly);
