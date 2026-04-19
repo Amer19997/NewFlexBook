@@ -20,7 +20,7 @@ namespace WebAPI.Controllers;
 public class AuthController : ApiControllerBase
 {
     //[HttpPost("Login")]
-    //public async Task<ActionResult<TResponse<LoginResponeDto>>> Login([FromBody] LoginAdminCommand command)
+    //public async Task<ActsfsdionResult<TResponse<LoginResponeDto>>> Login([FromBody] LoginAdminCommand command)
     //   => Ok(await Mediator.Send(command));
 
 
